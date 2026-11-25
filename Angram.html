@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angram — 100% Human SEO Articles in 4 Hours (0.0% AI Guaranteed)</title>
+  <meta name="description" content="Send 5 flagged AI drafts and receive 100% human articles verified 0.0% AI on Pangram in under 4 hours—starting at $14.97/1k words." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0F17'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='26' fill='%2310B981'%3EAN%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            canvas: '#FAFAF8',
+            ink: {
+              950: '#0B0F17',
+              900: '#111827',
+              700: '#374151',
+              500: '#6B7280',
+              400: '#9CA3AF',
+            },
+            verified: {
+              50: '#ECFDF5',
+              100: '#D1FAE5',
+              500: '#10B981',
+              600: '#059669',
+              700: '#047857',
+            },
+            flag: {
+              50: '#FEF2F2',
+              100: '#FEE2E2',
+              500: '#EF4444',
+              600: '#DC2626',
+              800: '#991B1B',
+            }
+          },
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+          },
+          boxShadow: {
+            'card': '0 1px 2px rgba(11, 15, 23, 0.04), 0 8px 24px -12px rgba(11, 15, 23, 0.08)',
+            'card-lg': '0 2px 4px rgba(11, 15, 23, 0.04), 0 20px 44px -16px rgba(11, 15, 23, 0.14)',
+            'cta': '0 1px 2px rgba(11, 15, 23, 0.08), 0 8px 20px -6px rgba(11, 15, 23, 0.25)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #FAFAF8;
+        color: #111827;
+        overflow-x: clip;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {
+        outline: 2px solid #059669;
+        outline-offset: 2px;
+      }
+    }
+
+    [id] {
+      scroll-margin-top: 5.5rem;
+    }
+
+    /* Clean forensic X-Ray highlighting */
+    .ai-flag-mark {
+      background-color: #FEE2E2;
+      color: #991B1B;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #EF4444;
+      text-underline-offset: 3px;
+      border-radius: 3px;
+      padding: 0 3px;
+      font-weight: 500;
+    }
+    .samples-plain .ai-flag-mark {
+      background-color: transparent;
+      color: inherit;
+      text-decoration: none;
+      padding: 0;
+      font-weight: inherit;
+    }
+
+    .human-keep-mark {
+      background-color: #ECFDF5;
+      color: #065F46;
+      border-bottom: 1.5px solid #10B981;
+      border-radius: 2px;
+      padding: 0 3px;
+      font-weight: 500;
+    }
+    .samples-plain .human-keep-mark {
+      background-color: transparent;
+      color: inherit;
+      border-bottom: 1px solid #9CA3AF;
+      padding: 0;
+      font-weight: inherit;
+    }
+
+    /* Custom clean range slider */
+    input[type="range"].clean-range {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 6px;
+      background: #E5E7EB;
+      border-radius: 999px;
+      outline: none;
+    }
+    input[type="range"].clean-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: #0B0F17;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      transition: transform 0.12s ease, background-color 0.12s ease;
+    }
+    input[type="range"].clean-range::-webkit-slider-thumb:hover {
+      background: #059669;
+      transform: scale(1.08);
+    }
+    input[type="range"].clean-range::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: #0B0F17;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+
+    .nav-link.nav-active {
+      color: #0B0F17;
+      font-weight: 600;
+    }
+
+    select.clean-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23374151' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 14px;
+      padding-right: 2.25rem;
+    }
+  </style>
+</head>
+<body class="bg-canvas text-ink-900 font-sans selection:bg-verified-100 selection:text-ink-950 pb-20 lg:pb-0">
+
+  <!-- ========================================================= -->
+  <!-- MINIMAL STICKY NAVIGATION                                 -->
+  <!-- ========================================================= -->
+  <header class="sticky top-0 z-40 bg-canvas/90 backdrop-blur-md border-b border-zinc-200/80">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="#" class="flex items-center gap-2.5 shrink-0 group">
+        <span class="w-8 h-8 rounded-lg bg-ink-950 text-verified-500 font-display font-extrabold text-sm flex items-center justify-center tracking-tight">AN</span>
+        <span class="font-display font-bold text-lg tracking-tight text-ink-950">Angram<sup class="text-[10px] font-semibold text-ink-500 ml-0.5">™</sup></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-ink-500" aria-label="Primary navigation">
+        <a href="#proof" class="nav-link hover:text-ink-950 transition-colors">Live Proof</a>
+        <a href="#mechanism" class="nav-link hover:text-ink-950 transition-colors">How It Works</a>
+        <a href="#pricing" class="nav-link hover:text-ink-950 transition-colors">Pricing &amp; ROI</a>
+        <a href="#faq" class="nav-link hover:text-ink-950 transition-colors">FAQ</a>
+      </nav>
+
+      <button type="button" data-plan="blind-test" class="open-order-modal inline-flex items-center gap-2 rounded-lg bg-ink-950 hover:bg-zinc-800 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 shadow-sm transition-colors cursor-pointer shrink-0">
+        <span>Test 5 Articles — $99</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="w-full">
+
+    <!-- ========================================================= -->
+    <!-- SECTION 1: FOCUSED, BREATHABLE HERO                       -->
+    <!-- ========================================================= -->
+    <section class="pt-12 pb-16 sm:pt-16 sm:pb-24 px-5 sm:px-8">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+
+        <!-- Left Editorial Rail -->
+        <div class="lg:col-span-7 flex flex-col items-start gap-6">
+          <div class="inline-flex items-center gap-2 rounded-full bg-white border border-zinc-200 px-3.5 py-1.5 text-xs font-medium text-ink-700 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-verified-500 animate-pulse shrink-0"></span>
+            <span>For SEO Agencies &amp; Content Teams</span>
+            <span class="text-zinc-300">•</span>
+            <span class="font-mono text-verified-700 font-semibold">&lt; 4-hr queue open</span>
+          </div>
+
+          <h1 class="font-display font-extrabold text-[34px] sm:text-5xl lg:text-[52px] tracking-[-0.03em] leading-[1.08] text-ink-950">
+            Turn flagged AI drafts into 100% human articles in 4&nbsp;hours.
+          </h1>
+
+          <p class="text-base sm:text-lg text-ink-700 leading-relaxed max-w-xl">
+            Vetted human writers behind a linguistic air-gap—never AI wrappers. Ship articles verified <strong class="font-semibold text-ink-950">0.0% AI on Pangram, GPTZero &amp; Originality.ai</strong> with your HTML, links, and tables intact, at <strong class="font-semibold text-ink-950">$14.97/1k words</strong> (90.6% less than Verblio).
+          </p>
+
+          <!-- Primary CTA Lockup -->
+          <div class="flex flex-wrap items-center gap-4 pt-1 w-full sm:w-auto">
+            <button type="button" data-plan="blind-test" class="open-order-modal w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-xl bg-ink-950 hover:bg-zinc-800 text-white font-semibold text-base px-6 py-4 shadow-cta transition-all cursor-pointer">
+              <span>Start 5-Article Blind Test ($99)</span>
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+            <a href="#proof" class="inline-flex items-center justify-center gap-1.5 text-sm font-semibold text-ink-700 hover:text-ink-950 px-2 py-2.5 transition-colors">
+              <span>Inspect copyable samples</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Calm Friction-Killer Micro-Line -->
+          <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-sm text-ink-500 pt-1">
+            <span class="inline-flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-verified-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Up to 7,500 words ($19.80/article)
+            </span>
+            <span class="inline-flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-verified-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              100% refunded if flagged or unimpressed
+            </span>
+            <span class="inline-flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-verified-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Credited 100% to Month 1
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Visual Anchor: Single Clean Before -> After Receipt -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl border border-zinc-200/90 shadow-card-lg p-5 sm:p-6 flex flex-col gap-4">
+            <div class="flex items-center justify-between text-xs pb-3 border-b border-zinc-100">
+              <span class="font-mono font-semibold text-ink-500">SAMPLE #AN-90421</span>
+              <span class="inline-flex items-center gap-1.5 font-mono font-semibold text-verified-700 bg-verified-50 border border-verified-100 px-2.5 py-0.5 rounded-full">
+                4-hr SLA verified
+              </span>
+            </div>
+
+            <!-- Before -->
+            <div class="rounded-xl bg-flag-50/70 border border-flag-100 p-4 space-y-2">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-semibold uppercase tracking-wide text-flag-800">Before · Raw Claude Draft</span>
+                <span class="font-mono text-[11px] font-semibold text-flag-600 bg-white border border-flag-100 px-2 py-0.5 rounded-md">99.4% AI</span>
+              </div>
+              <p class="text-[13.5px] text-ink-700 leading-relaxed">
+                “<span class="ai-flag-mark">In today’s dynamic financial ecosystem</span>, leveraging reconciliation is <span class="ai-flag-mark">paramount for unlocking efficiency</span>...”
+              </p>
+            </div>
+
+            <!-- Clean Air-Gap Divider -->
+            <div class="flex items-center gap-3 px-2">
+              <div class="h-px bg-zinc-200 flex-1"></div>
+              <div class="inline-flex items-center gap-1.5 text-[11px] font-mono font-semibold text-ink-700 bg-zinc-100 px-3 py-1 rounded-full">
+                <svg class="w-3.5 h-3.5 text-verified-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+                <span>Clean-Room Air-Gap + Native QA</span>
+              </div>
+              <div class="h-px bg-zinc-200 flex-1"></div>
+            </div>
+
+            <!-- After -->
+            <div class="rounded-xl bg-verified-50/60 border border-verified-100 p-4 space-y-2">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-semibold uppercase tracking-wide text-verified-700">After · Angram Human Prose</span>
+                <span class="font-mono text-[11px] font-semibold text-white bg-verified-600 px-2 py-0.5 rounded-md">0.0% AI</span>
+              </div>
+              <p class="text-[13.5px] text-ink-900 leading-relaxed font-medium">
+                “Corporate card receipts buried in three Slack threads until the 28th cause month-end close to grind to a halt. Direct ledger matching pairs transactions as spending occurs...”
+              </p>
+            </div>
+
+            <!-- Clean 3-Stat Footer -->
+            <div class="grid grid-cols-3 gap-3 pt-2 border-t border-zinc-100 text-center">
+              <div>
+                <div class="font-mono font-bold text-base sm:text-lg text-verified-700">0.0% AI</div>
+                <div class="text-[11px] text-ink-500 mt-0.5">Pangram &amp; GPTZero</div>
+              </div>
+              <div class="border-x border-zinc-100">
+                <div class="font-mono font-bold text-base sm:text-lg text-ink-950">&lt; 4 hrs</div>
+                <div class="text-[11px] text-ink-500 mt-0.5">Turnaround SLA</div>
+              </div>
+              <div>
+                <div class="font-mono font-bold text-base sm:text-lg text-ink-950">$14.97/1k</div>
+                <div class="text-[11px] text-ink-500 mt-0.5">Growth rate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- CALM METRICS BAR                                          -->
+    <!-- ========================================================= -->
+    <section class="border-y border-zinc-200/80 bg-white py-8 px-5 sm:px-8">
+      <div class="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <div class="font-mono font-bold text-xl sm:text-2xl text-ink-950">0.0% AI</div>
+          <p class="text-xs sm:text-sm text-ink-500 mt-1">Verified on Pangram, GPTZero &amp; Originality.ai</p>
+        </div>
+        <div>
+          <div class="font-mono font-bold text-xl sm:text-2xl text-verified-700">90.6% less</div>
+          <p class="text-xs sm:text-sm text-ink-500 mt-1">$14.97/1k words vs. Verblio’s $160/1k</p>
+        </div>
+        <div>
+          <div class="font-mono font-bold text-xl sm:text-2xl text-ink-950">98.4% intact</div>
+          <p class="text-xs sm:text-sm text-ink-500 mt-1">Semantic meaning, links, tables &amp; H1–H3s</p>
+        </div>
+        <div>
+          <div class="font-mono font-bold text-xl sm:text-2xl text-ink-950">200% guarantee</div>
+          <p class="text-xs sm:text-sm text-ink-500 mt-1">Free 2-hr rewrite + 2× credit if ever flagged</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 2: LIVE INTERACTIVE PROOF STUDIO                  -->
+    <!-- ========================================================= -->
+    <section id="proof" class="py-20 sm:py-28 px-5 sm:px-8">
+      <div class="max-w-6xl mx-auto flex flex-col gap-10">
+
+        <div class="max-w-2xl space-y-3">
+          <span class="font-mono text-xs font-semibold uppercase tracking-wider text-verified-700">Live Proof</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-[-0.025em] text-ink-950 leading-tight">
+            Inspect real output—and test it in Pangram yourself.
+          </h2>
+          <p class="text-base text-ink-700 leading-relaxed">
+            Every excerpt below started as a 99% AI-flagged draft. Copy the right column and paste it into Pangram or GPTZero right now to verify both the score and the native prose quality.
+          </p>
+        </div>
+
+        <!-- Clean Studio Container -->
+        <div class="bg-white rounded-2xl border border-zinc-200 shadow-card overflow-hidden">
+          <!-- Controls Bar -->
+          <div class="px-5 sm:px-7 py-4 border-b border-zinc-200/80 bg-zinc-50/70 flex flex-wrap items-center justify-between gap-3">
+            <div class="inline-flex items-center bg-zinc-200/70 p-1 rounded-xl gap-1" role="tablist" aria-label="Sample vertical selector">
+              <button type="button" role="tab" aria-selected="true" data-sample="saas" class="sample-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer bg-white text-ink-950 shadow-sm">B2B SaaS</button>
+              <button type="button" role="tab" aria-selected="false" data-sample="legal" class="sample-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all cursor-pointer text-ink-500 hover:text-ink-950">Legal &amp; Finance</button>
+              <button type="button" role="tab" aria-selected="false" data-sample="local" class="sample-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all cursor-pointer text-ink-500 hover:text-ink-950">Local SEO</button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <button type="button" id="toggle-xray-highlights" aria-pressed="true" class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-200 bg-white text-ink-700 hover:bg-zinc-50 transition-colors cursor-pointer">
+                <span class="w-2 h-2 rounded-full bg-flag-500" id="xray-dot"></span>
+                <span id="xray-label">AI Flags: Shown</span>
+              </button>
+              <button type="button" id="toggle-sample-format" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-200 bg-white text-ink-700 hover:bg-zinc-50 transition-colors cursor-pointer">
+                View: Rendered CMS
+              </button>
+            </div>
+          </div>
+
+          <!-- Two-Column Side-by-Side Comparison -->
+          <div id="sample-gallery-panel" role="tabpanel" class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-zinc-200/80">
+            <!-- Left: Raw Flagged AI -->
+            <div class="p-6 sm:p-8 flex flex-col justify-between gap-6 bg-flag-50/20">
+              <div class="space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-wide text-flag-800">Raw Input (Flagged AI)</span>
+                  <span id="sample-raw-badge" class="font-mono text-xs font-semibold text-flag-600 bg-flag-50 border border-flag-100 px-2.5 py-1 rounded-full">Pangram: 99.4% AI</span>
+                </div>
+                <div id="sample-raw-body" class="text-sm sm:text-[15px] text-ink-700 leading-[1.7] space-y-3"></div>
+              </div>
+              <p id="sample-raw-meta" class="text-xs text-ink-500 pt-4 border-t border-zinc-200/70"></p>
+            </div>
+
+            <!-- Right: Angram Clean Human Output -->
+            <div class="p-6 sm:p-8 flex flex-col justify-between gap-6 bg-white">
+              <div class="space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs font-semibold uppercase tracking-wide text-verified-700">Angram Human Output</span>
+                    <span id="sample-human-badge" class="font-mono text-xs font-semibold text-verified-700 bg-verified-50 border border-verified-100 px-2.5 py-0.5 rounded-full">0.0% AI</span>
+                  </div>
+                  <button type="button" id="copy-sample-text-btn" class="inline-flex items-center gap-1.5 text-xs font-semibold text-ink-950 bg-zinc-100 hover:bg-ink-950 hover:text-white px-3 py-1.5 rounded-lg transition-colors cursor-pointer">
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <span id="copy-sample-btn-text">Copy &amp; Test in Pangram</span>
+                  </button>
+                </div>
+                <div id="sample-human-body" class="text-sm sm:text-[15px] text-ink-900 leading-[1.7] space-y-3"></div>
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-2 pt-4 border-t border-zinc-200/70 text-xs">
+                <span id="sample-human-meta-left" class="font-mono font-medium text-verified-700">Pangram: 0.0% · GPTZero: 0.0% · Originality: 0.0%</span>
+                <span id="sample-human-meta-right" class="font-mono text-ink-500">H2 + Table + Link: 100% intact</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quiet Self-Verification Footer -->
+          <div class="px-5 sm:px-7 py-4 bg-zinc-50 border-t border-zinc-200/80 flex flex-wrap items-center justify-between gap-3">
+            <span id="copy-sample-status" aria-live="polite" class="text-xs sm:text-sm text-ink-700">
+              Want to test on <strong class="text-ink-950">your own client drafts</strong> instead? Send 5 flagged articles for $99.
+            </span>
+            <button type="button" data-plan="blind-test" class="open-order-modal text-xs sm:text-sm font-semibold text-verified-700 hover:text-ink-950 inline-flex items-center gap-1 transition-colors cursor-pointer">
+              <span>Run 5-Article Blind Test ($99)</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 3: WHY ALTERNATIVES FAIL (UNIFIED BENCHMARK)      -->
+    <!-- ========================================================= -->
+    <section id="compare" class="py-20 sm:py-28 px-5 sm:px-8 bg-white border-y border-zinc-200/80">
+      <div class="max-w-6xl mx-auto flex flex-col gap-12">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+          <div class="lg:col-span-8 space-y-3">
+            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-flag-600">The Agency Vise</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-[-0.025em] text-ink-950 leading-tight">
+              Why AI humanizers and manual editing both fail Pangram.
+            </h2>
+            <p class="text-base text-ink-700 leading-relaxed max-w-2xl">
+              You cannot use an LLM to erase an LLM’s statistical fingerprint—and human editors staring at AI English unconsciously keep the exact clause cadence detectors flag. Until now, your only safe alternative was paying Verblio $160/1k words and waiting a week.
+            </p>
+          </div>
+          <div class="lg:col-span-4 lg:text-right">
+            <div class="inline-flex flex-col lg:items-end bg-canvas border border-zinc-200 rounded-xl px-4 py-3 text-left lg:text-right">
+              <span class="text-xs font-medium text-ink-500">1 churned $3k/mo retainer = <strong class="text-ink-950">$36,000/yr lost</strong></span>
+              <span class="text-xs font-semibold text-verified-700 mt-0.5">5-article proof test = $99 refundable</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONE Unified Scannable Benchmark Table (N=100 Detector + Verblio Audit) -->
+        <div class="rounded-2xl border border-zinc-200 overflow-hidden shadow-card">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse min-w-[680px]">
+              <thead>
+                <tr class="bg-zinc-50 border-b border-zinc-200 text-xs font-semibold uppercase tracking-wider text-ink-500">
+                  <th class="py-4 px-5 sm:px-6">Content Pipeline</th>
+                  <th class="py-4 px-4">Pangram Result</th>
+                  <th class="py-4 px-4">Readability &amp; HTML</th>
+                  <th class="py-4 px-4">Turnaround</th>
+                  <th class="py-4 px-5 sm:px-6 text-right">Cost / 1k Words</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-zinc-200/80 text-sm">
+                <tr class="bg-white text-ink-700">
+                  <td class="py-4 px-5 sm:px-6 font-medium text-ink-900">Raw Claude / GPT Draft</td>
+                  <td class="py-4 px-4 font-mono text-xs font-semibold text-flag-600">100% Flagged AI</td>
+                  <td class="py-4 px-4 text-ink-500">Generic tone · HTML intact</td>
+                  <td class="py-4 px-4 text-ink-500">Instant</td>
+                  <td class="py-4 px-5 sm:px-6 text-right font-mono text-ink-500">~$0.20</td>
+                </tr>
+                <tr class="bg-white text-ink-700">
+                  <td class="py-4 px-5 sm:px-6 font-medium text-ink-900">Manual Human Editing of AI</td>
+                  <td class="py-4 px-4 font-mono text-xs font-semibold text-flag-600">99.9% Caught AI*</td>
+                  <td class="py-4 px-4 text-ink-500">AI cadence remains · Drifts</td>
+                  <td class="py-4 px-4 text-ink-500">1–3 days</td>
+                  <td class="py-4 px-5 sm:px-6 text-right font-mono text-ink-500">~$85 / 1k</td>
+                </tr>
+                <tr class="bg-white text-ink-700">
+                  <td class="py-4 px-5 sm:px-6 font-medium text-ink-900">Top 5 AI Humanizers</td>
+                  <td class="py-4 px-4 font-mono text-xs font-semibold text-flag-600">98.8% Caught AI*</td>
+                  <td class="py-4 px-4 text-ink-500">Clunky prose · Broken HTML</td>
+                  <td class="py-4 px-4 text-ink-500">Instant</td>
+                  <td class="py-4 px-5 sm:px-6 text-right font-mono text-ink-500">$29–$99 / mo</td>
+                </tr>
+                <tr class="bg-white text-ink-700">
+                  <td class="py-4 px-5 sm:px-6 font-medium text-ink-900">Verblio / Legacy Writers</td>
+                  <td class="py-4 px-4 font-mono text-xs font-semibold text-ink-700">0.0% AI (Human)</td>
+                  <td class="py-4 px-4 text-ink-500">Native · Manual CMS reformat</td>
+                  <td class="py-4 px-4 text-ink-500">3–7 days</td>
+                  <td class="py-4 px-5 sm:px-6 text-right font-mono font-semibold text-flag-600">$160–$450 / 1k</td>
+                </tr>
+                <tr class="bg-verified-50/75 text-ink-950">
+                  <td class="py-5 px-5 sm:px-6 font-display font-bold text-ink-950">
+                    <div class="flex items-center gap-2">
+                      <span>Angram™ Clean-Room</span>
+                      <span class="text-[10px] font-mono font-semibold uppercase bg-verified-600 text-white px-2 py-0.5 rounded-full">100/100 Passed</span>
+                    </div>
+                  </td>
+                  <td class="py-5 px-4 font-mono text-xs font-bold text-verified-700">0.0% AI Guaranteed</td>
+                  <td class="py-5 px-4 font-medium text-ink-900">Native QA · 100% HTML intact</td>
+                  <td class="py-5 px-4 font-semibold text-ink-950">&lt; 4 hours</td>
+                  <td class="py-5 px-5 sm:px-6 text-right font-mono font-bold text-base text-verified-700">$14.97 / 1k</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="px-5 sm:px-6 py-3 bg-zinc-50 border-t border-zinc-200/80 flex flex-wrap items-center justify-between gap-2 text-xs text-ink-500">
+            <span>*Pangram published detection benchmarks: 1:10,000 false-positive rate, 99.9% catch rate on edited AI, 98.8% on commercial AI humanizers.</span>
+            <span>Blind editorial audit (n=10): Native readability parity with Verblio.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 4: HOW IT WORKS + CLIENT PROOF & CASE STUDY       -->
+    <!-- ========================================================= -->
+    <section id="mechanism" class="py-20 sm:py-28 px-5 sm:px-8">
+      <div class="max-w-6xl mx-auto flex flex-col gap-16">
+
+        <div class="max-w-2xl space-y-3">
+          <span class="font-mono text-xs font-semibold uppercase tracking-wider text-verified-700">How It Works</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-[-0.025em] text-ink-950 leading-tight">
+            AI speed for research. 100% human brains for the prose.
+          </h2>
+          <p class="text-base text-ink-700 leading-relaxed">
+            Every writer is physically isolated from your English AI draft—backed by strict zero-AI contracts and a Senior Native-English editorial gate.
+          </p>
+        </div>
+
+        <!-- 4 Clean Horizontal Steps (2 Quarantine + 2 Human-Only) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Step 01 -->
+          <div class="bg-white rounded-2xl border border-zinc-200 p-6 flex flex-col gap-3 shadow-card">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-xs font-bold text-ink-400">01</span>
+              <span class="text-[11px] font-mono font-medium text-ink-500 bg-zinc-100 px-2 py-0.5 rounded">Quarantine</span>
+            </div>
+            <h3 class="font-display font-bold text-base text-ink-950">Lock SEO &amp; Entities</h3>
+            <p class="text-sm text-ink-700 leading-relaxed">
+              Submit Claude/GPT drafts via API, Zapier/Make, or bulk portal. Every H1–H3, anchor link, stat, quote, and table is locked before writing begins.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="bg-white rounded-2xl border border-zinc-200 p-6 flex flex-col gap-3 shadow-card">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-xs font-bold text-ink-400">02</span>
+              <span class="text-[11px] font-mono font-medium text-flag-600 bg-flag-50 px-2 py-0.5 rounded">Air-Gap</span>
+            </div>
+            <h3 class="font-display font-bold text-base text-ink-950">Strip Every AI Sentence</h3>
+            <p class="text-sm text-ink-700 leading-relaxed">
+              The English AI text is distilled into a structured conceptual brief in a separate working language. Writers never see an AI sentence, eliminating token fingerprints at the root.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="bg-white rounded-2xl border border-verified-200 p-6 flex flex-col gap-3 shadow-card ring-1 ring-verified-100">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-xs font-bold text-verified-600">03</span>
+              <span class="text-[11px] font-mono font-semibold text-verified-700 bg-verified-50 px-2 py-0.5 rounded">Human-Only</span>
+            </div>
+            <h3 class="font-display font-bold text-base text-ink-950">Human Authoring + Native QA</h3>
+            <p class="text-sm text-ink-700 leading-relaxed">
+              Domain writers draft fresh English prose from logic alone. A Senior Native US/UK/AU editor calibrated to your brand-voice samples refines cadence and idioms.
+            </p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="bg-white rounded-2xl border border-verified-200 p-6 flex flex-col gap-3 shadow-card ring-1 ring-verified-100">
+            <div class="flex items-center justify-between">
+              <span class="font-mono text-xs font-bold text-verified-600">04</span>
+              <span class="text-[11px] font-mono font-semibold text-verified-700 bg-verified-50 px-2 py-0.5 rounded">&lt; 4-hr SLA</span>
+            </div>
+            <h3 class="font-display font-bold text-base text-ink-950">Triple-Detector Delivery</h3>
+            <p class="text-sm text-ink-700 leading-relaxed">
+              Automated QA verifies 0.0% AI across Pangram, GPTZero &amp; Originality.ai plus 98.4% semantic retention—delivering ready-to-publish HTML to WordPress, Webflow, or Webhook.
+            </p>
+          </div>
+        </div>
+
+        <!-- Calm Anti-ESL + Built For / Not Built For Strip -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-7 bg-white rounded-2xl border border-zinc-200 p-6 sm:p-7 flex flex-col justify-between gap-4">
+            <div class="space-y-2">
+              <span class="text-xs font-semibold uppercase tracking-wider text-ink-500">Quality Control</span>
+              <h3 class="font-display font-bold text-lg text-ink-950">Why it never reads like awkward translated ESL</h3>
+              <p class="text-sm text-ink-700 leading-relaxed">
+                Writers do <em>not</em> machine-translate sentences back and forth. They author fresh prose from conceptual outlines, and our <strong class="text-ink-950 font-semibold">Native-English Editorial Gate</strong> owns final sentence rhythm, domain vocabulary, and your client's brand voice before anything clears Stage 4.
+              </p>
+            </div>
+            <div>
+              <a href="#proof" class="text-xs font-semibold text-verified-700 hover:text-ink-950 transition-colors">
+                Read the unedited live samples above ↑
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-zinc-100/80 rounded-2xl border border-zinc-200/90 p-6 sm:p-7 space-y-4">
+            <div class="space-y-1">
+              <div class="text-xs font-semibold uppercase tracking-wider text-verified-700">✓ Built for you if</div>
+              <p class="text-sm text-ink-700 leading-relaxed">
+                You ship 20–500+ client articles/mo using Claude/GPT outlines and need verifiable 0.0% AI prose at 90%+ agency margins.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-zinc-200 space-y-1">
+              <div class="text-xs font-semibold uppercase tracking-wider text-ink-500">✕ Not built for you if</div>
+              <p class="text-sm text-ink-500 leading-relaxed">
+                You want a $29/mo instant 2-second synonym spinner. Real human brains write every line here (&lt;4-hr turnaround).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Client Proof: White-Label Certificate + 50-URL Agency Rescue Case Study -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch pt-2">
+          <!-- Left: White-Label Certificate Viewer -->
+          <div class="lg:col-span-7 bg-white rounded-2xl border border-zinc-200 shadow-card p-6 sm:p-7 flex flex-col justify-between gap-5">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-verified-700">Included With Every Article</span>
+                <h3 class="font-display font-bold text-xl text-ink-950 mt-0.5">White-Label Provenance Report</h3>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <div class="inline-flex bg-zinc-100 p-1 rounded-lg gap-0.5">
+                  <button type="button" data-cert-view="pdf" aria-pressed="true" class="cert-view-btn px-2.5 py-1 rounded-md text-xs font-semibold bg-white text-ink-950 shadow-sm cursor-pointer">Client PDF</button>
+                  <button type="button" data-cert-view="json" aria-pressed="false" class="cert-view-btn px-2.5 py-1 rounded-md text-xs font-medium text-ink-500 hover:text-ink-950 cursor-pointer">Webhook JSON</button>
+                </div>
+                <button type="button" id="copy-cert-btn" class="text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-zinc-200 text-ink-700 hover:bg-zinc-50 cursor-pointer">
+                  Copy Hash
+                </button>
+              </div>
+            </div>
+
+            <!-- PDF Preview -->
+            <div id="cert-pdf-preview" class="rounded-xl border border-zinc-200 bg-canvas p-5 space-y-4">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-zinc-200">
+                <span class="font-mono text-xs font-bold text-ink-950">[YOUR AGENCY LOGO] · HUMAN AUDIT #AN-90421</span>
+                <span class="font-mono text-[11px] font-medium text-ink-500 bg-white border border-zinc-200 px-2 py-0.5 rounded">Zero Angram branding</span>
+              </div>
+              <div class="grid grid-cols-3 gap-3">
+                <div class="bg-white rounded-lg border border-zinc-200/80 p-3">
+                  <div class="text-[11px] text-ink-500">Pangram</div>
+                  <div class="font-mono font-bold text-lg text-verified-700 mt-0.5">0.0% AI</div>
+                </div>
+                <div class="bg-white rounded-lg border border-zinc-200/80 p-3">
+                  <div class="text-[11px] text-ink-500">Semantic Match</div>
+                  <div class="font-mono font-bold text-lg text-ink-950 mt-0.5">98.4%</div>
+                </div>
+                <div class="bg-white rounded-lg border border-zinc-200/80 p-3">
+                  <div class="text-[11px] text-ink-500">SEO &amp; Links</div>
+                  <div class="font-mono font-bold text-lg text-verified-700 mt-0.5">100%</div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-x-5 gap-y-1.5 font-mono text-xs text-ink-700">
+                <span>✓ GPTZero: 0.0% AI</span>
+                <span>✓ Originality.ai: 0.0% AI</span>
+                <span>✓ HTML &amp; Tables: Intact</span>
+              </div>
+            </div>
+
+            <!-- JSON Preview -->
+            <pre id="cert-json-preview" class="hidden rounded-xl bg-ink-950 text-verified-100 p-4 font-mono text-xs overflow-x-auto leading-relaxed">{
+  "cert_id": "AN-90421",
+  "pangram_ai": 0.0,
+  "gptzero_ai": 0.0,
+  "originality_ai": 0.0,
+  "semantic_retention": 0.984,
+  "keywords_matched": "100%",
+  "formatting_intact": true,
+  "pdf_white_label": "https://cdn.angram.io/certs/an-90421.pdf"
+}</pre>
+
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-ink-500 pt-1">
+              <span>Turn client AI-check calls into a visible retention moat.</span>
+              <span id="copy-cert-status" aria-live="polite" class="font-mono text-ink-700">AN-90421-PANGRAM-0.0PCT-AI</span>
+            </div>
+          </div>
+
+          <!-- Right: 50-URL Agency Rescue Case Study -->
+          <div class="lg:col-span-5 bg-white rounded-2xl border border-zinc-200 shadow-card p-6 sm:p-7 flex flex-col justify-between gap-5">
+            <div class="space-y-3">
+              <span class="text-xs font-semibold uppercase tracking-wider text-ink-500">Case Study · Retainer Rescue</span>
+              <h3 class="font-display font-bold text-xl text-ink-950 leading-snug">
+                50 flagged posts replaced in 3h 40m saved a $42,000/yr retainer.
+              </h3>
+              <p class="text-sm text-ink-700 leading-relaxed">
+                Before contract renewal, a $3,500/mo B2B client scanned their live blog with Pangram—50 posts failed and GSC impressions stalled. Replacing all 50 URLs via Angram kept every slug and internal link intact for ~$1,122 (vs. $12,000+ on Verblio), clearing 50/50 audits at <strong class="text-ink-950">0.0% AI</strong>.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2.5 text-center">
+              <div class="rounded-xl bg-canvas border border-zinc-200/80 p-3">
+                <div class="font-mono font-bold text-base text-ink-950">3h 40m</div>
+                <div class="text-[11px] text-ink-500 mt-0.5">50 URLs live</div>
+              </div>
+              <div class="rounded-xl bg-canvas border border-zinc-200/80 p-3">
+                <div class="font-mono font-bold text-base text-ink-950">~$1,122</div>
+                <div class="text-[11px] text-ink-500 mt-0.5">Total cost</div>
+              </div>
+              <div class="rounded-xl bg-verified-50 border border-verified-100 p-3">
+                <div class="font-mono font-bold text-base text-verified-700">$42k/yr</div>
+                <div class="text-[11px] text-verified-700 mt-0.5">Retainer saved</div>
+              </div>
+            </div>
+
+            <div class="text-xs text-ink-500 pt-3 border-t border-zinc-100 flex items-center justify-between gap-2">
+              <span>Day 0: 50/50 0.0% AI</span>
+              <span>•</span>
+              <span>Day 30: Re-indexed</span>
+              <span>•</span>
+              <span>Day 60: Recovering</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 5: PRICING & INTERACTIVE MARGIN CALCULATOR        -->
+    <!-- ========================================================= -->
+    <section id="pricing" class="py-20 sm:py-28 px-5 sm:px-8 bg-white border-t border-zinc-200/80">
+      <div class="max-w-6xl mx-auto flex flex-col gap-12">
+
+        <!-- Section Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div class="max-w-2xl space-y-3">
+            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-verified-700">Simple Pricing</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-[-0.025em] text-ink-950 leading-tight">
+              Prove it for $99. Scale at $14.97/1k words.
+            </h2>
+            <p class="text-base text-ink-700 leading-relaxed">
+              Start with a one-time 5-article blind test—zero subscription required. Once it clears your Pangram audit, scale across client accounts at 90%+ gross margins.
+            </p>
+          </div>
+        </div>
+
+        <!-- STEP 1: ZERO-RISK ENTRY RAMP -->
+        <div id="blind-test" class="rounded-2xl bg-canvas border-2 border-ink-950 p-6 sm:p-8 shadow-card flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+          <div class="space-y-3 max-w-2xl">
+            <div class="flex flex-wrap items-center gap-2.5">
+              <span class="font-mono text-xs font-bold uppercase bg-ink-950 text-white px-2.5 py-1 rounded-md">Step 1 · Start Risk-Free</span>
+              <span class="font-mono text-xs font-semibold text-verified-700">$99 one-time · Up to 7,500 words (5 articles)</span>
+            </div>
+            <h3 class="font-display font-bold text-2xl sm:text-[26px] text-ink-950 tracking-tight">
+              The 5-Article Blind Test ($19.80/article)
+            </h3>
+            <p class="text-sm sm:text-base text-ink-700 leading-relaxed">
+              Send 5 of your hardest-flagged AI drafts. Get native human prose + white-label Pangram 0.0% AI certificates in under 4 hours. <strong class="text-ink-950 font-semibold">100% refunded if flagged or unimpressed—or 100% credited toward Month 1</strong> (plus unlocks +25,000 bonus rescue words if you activate Growth within 48h).
+            </p>
+          </div>
+          <div class="flex flex-col items-stretch sm:items-end gap-2 shrink-0">
+            <button type="button" data-plan="blind-test" class="open-order-modal inline-flex items-center justify-center gap-2 rounded-xl bg-ink-950 hover:bg-zinc-800 text-white font-semibold text-sm sm:text-base px-6 py-4 shadow-cta transition-colors cursor-pointer whitespace-nowrap">
+              <span>Start 5-Article Blind Test ($99)</span>
+              <span aria-hidden="true">→</span>
+            </button>
+            <span class="text-xs text-ink-500 text-center sm:text-right">No subscription · Refundable or credited</span>
+          </div>
+        </div>
+
+        <!-- STEP 2 HEADER + BILLING TOGGLE -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+          <div>
+            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-ink-500">Step 2 · Monthly Scale Plans</span>
+            <p id="billing-subnote" class="text-sm text-ink-500 mt-0.5">Switch to Annual to lock 16.7% savings (2 months free).</p>
+          </div>
+          <div class="inline-flex items-center bg-zinc-100 p-1 rounded-xl border border-zinc-200 self-start sm:self-auto" role="group" aria-label="Billing interval toggle">
+            <button type="button" data-billing="monthly" aria-pressed="true" class="billing-toggle px-4 py-2 rounded-lg text-xs font-semibold transition-all cursor-pointer bg-white text-ink-950 shadow-sm">Monthly</button>
+            <button type="button" data-billing="annual" aria-pressed="false" class="billing-toggle px-4 py-2 rounded-lg text-xs font-medium transition-all cursor-pointer text-ink-500 hover:text-ink-950">Annual <span class="text-verified-700 font-semibold">(2 mo free)</span></button>
+          </div>
+        </div>
+
+        <!-- 3 SPACIOUS SCALE TIER CARDS -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+
+          <!-- Tier 1: Boutique Studio -->
+          <div class="bg-white rounded-2xl border border-zinc-200 p-7 flex flex-col justify-between gap-8 shadow-card">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-mono font-semibold text-ink-500 bg-zinc-100 px-2.5 py-1 rounded-md">25k words/mo</span>
+                <span id="boutique-rate-badge" class="text-xs font-mono font-semibold text-ink-700">$19.88 / 1k</span>
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-xl text-ink-950">Boutique Studio</h3>
+                <p class="text-sm text-ink-500 mt-1">~18 articles/mo for lean teams replacing AI humanizers.</p>
+              </div>
+              <div class="flex items-baseline gap-2 pb-5 border-b border-zinc-100">
+                <span id="boutique-price-display" class="font-display font-extrabold text-4xl text-ink-950 tracking-tight">$497</span>
+                <span id="boutique-annual-sub" class="text-sm text-ink-500">/month</span>
+              </div>
+              <ul class="space-y-3 text-sm text-ink-700">
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Under-4-hour turnaround SLA</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Async API + No-Code Bulk Portal</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>White-label Pangram / GPTZero PDFs</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>30-day rollover &amp; 200% Zero-Flag SLA</span>
+                </li>
+              </ul>
+            </div>
+            <button type="button" data-plan="boutique" class="open-order-modal w-full rounded-xl border border-zinc-300 bg-white hover:bg-zinc-50 hover:border-ink-950 text-ink-950 font-semibold text-sm py-3.5 px-4 transition-colors cursor-pointer">
+              Select Boutique Studio
+            </button>
+          </div>
+
+          <!-- Tier 2: Agency Growth Engine (Elevated Obsidian Focal Anchor) -->
+          <div id="growth-engine" class="order-first lg:order-none bg-ink-950 text-white rounded-2xl border border-ink-950 p-7 flex flex-col justify-between gap-8 shadow-card-lg relative">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-mono font-semibold text-verified-500 bg-white/10 px-2.5 py-1 rounded-md">100k words/mo</span>
+                <span id="growth-rate-badge" class="text-xs font-mono font-semibold text-ink-950 bg-verified-500 px-2.5 py-1 rounded-md">$14.97 / 1k (-90.6%)</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="font-display font-bold text-xl text-white">Agency Growth Engine</h3>
+                </div>
+                <p class="text-sm text-zinc-400 mt-1">Fulfill 10–15 client retainers (~75 articles/mo) at 90%+ margins.</p>
+              </div>
+              <div class="flex items-baseline flex-wrap gap-2 pb-5 border-b border-white/10">
+                <span id="growth-price-display" class="font-display font-extrabold text-4xl text-white tracking-tight">$1,497</span>
+                <span id="growth-cycle-display" class="text-sm text-zinc-400">/month</span>
+              </div>
+              <ul class="space-y-3 text-sm text-zinc-200">
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong class="text-white">Under-2h priority rush</strong> + 30-day rollover</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong class="text-white">Free DFY Integration:</strong> Zapier, Make, n8n or WordPress wired for you</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong class="text-white">250-URL Legacy Risk Audit</strong> (find live flagged pages)</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>10 Client Brand-Voice Profiles + <strong class="text-verified-400">+25k bonus words</strong> (48h fast-action)</span>
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-2.5">
+              <button type="button" id="growth-cta-btn" data-plan="growth-engine" class="open-order-modal w-full rounded-xl bg-verified-500 hover:bg-verified-600 text-ink-950 hover:text-white font-semibold text-sm py-3.5 px-4 transition-colors cursor-pointer">
+                Activate Growth Engine ($1,497/mo) →
+              </button>
+              <p class="text-[11px] text-zinc-400 text-center">
+                Most popular · $99 Blind Test credits 100% toward Month 1
+              </p>
+            </div>
+          </div>
+
+          <!-- Tier 3: White-Label Scale -->
+          <div class="bg-white rounded-2xl border border-zinc-200 p-7 flex flex-col justify-between gap-8 shadow-card">
+            <div class="space-y-5">
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-mono font-semibold text-ink-500 bg-zinc-100 px-2.5 py-1 rounded-md">350k words/mo</span>
+                <span id="scale-rate-badge" class="text-xs font-mono font-semibold text-verified-700">$11.42 / 1k</span>
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-xl text-ink-950">White-Label Scale</h3>
+                <p class="text-sm text-ink-500 mt-1">~262 articles/mo for high-volume agencies &amp; publishers.</p>
+              </div>
+              <div class="flex items-baseline gap-2 pb-5 border-b border-zinc-100">
+                <span id="scale-price-display" class="font-display font-extrabold text-4xl text-ink-950 tracking-tight">$3,997</span>
+                <span id="scale-annual-sub" class="text-sm text-ink-500">/month</span>
+              </div>
+              <ul class="space-y-3 text-sm text-ink-700">
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Dedicated API SLA + Priority Slack channel</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Unlimited client brand-voice calibrations</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Priority 2-hour rush queue + 30-day rollover</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-verified-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Custom ACH &amp; agency net invoicing</span>
+                </li>
+              </ul>
+            </div>
+            <button type="button" data-plan="scale" class="open-order-modal w-full rounded-xl border border-zinc-300 bg-white hover:bg-zinc-50 hover:border-ink-950 text-ink-950 font-semibold text-sm py-3.5 px-4 transition-colors cursor-pointer">
+              Select White-Label Scale
+            </button>
+          </div>
+        </div>
+
+        <!-- STREAMLINED INTERACTIVE ROI CALCULATOR -->
+        <div id="roi-calculator" class="rounded-2xl bg-canvas border border-zinc-200 p-6 sm:p-8 flex flex-col gap-7">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-5 border-b border-zinc-200/80">
+            <div>
+              <h3 class="font-display font-bold text-xl text-ink-950">Margin Recovery Calculator</h3>
+              <p class="text-sm text-ink-500 mt-0.5">Compare your current human writing cost against Angram.</p>
+            </div>
+            <div class="inline-flex flex-wrap items-center gap-1.5" role="group" aria-label="Comparison benchmark">
+              <button type="button" data-bench="160" data-bench-label="Verblio ($160/1k)" class="roi-bench-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-ink-950 text-white cursor-pointer">Verblio ($160/1k)</button>
+              <button type="button" data-bench="250" data-bench-label="Freelancers ($250/1k)" class="roi-bench-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-white border border-zinc-200 text-ink-700 hover:border-ink-950 cursor-pointer">Freelancers ($250/1k)</button>
+              <button type="button" data-bench="85" data-bench-label="In-House Editing ($85/1k)" class="roi-bench-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-white border border-zinc-200 text-ink-700 hover:border-ink-950 cursor-pointer">In-House ($85/1k)</button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Sliders -->
+            <div class="lg:col-span-5 space-y-6">
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-2.5">
+                  <label for="roi-volume" class="text-ink-700">Monthly Volume</label>
+                  <span id="roi-volume-label" class="font-mono text-ink-950">100,000 words (~75 articles)</span>
+                </div>
+                <input id="roi-volume" type="range" min="25000" max="350000" step="25000" value="100000" class="clean-range" />
+                <div class="flex justify-between font-mono text-[11px] text-ink-400 mt-1.5">
+                  <span>25k</span><span>100k</span><span>200k</span><span>350k</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-2.5">
+                  <label for="roi-retainer" class="text-ink-700">Avg. Client Retainer</label>
+                  <span id="roi-retainer-label" class="font-mono text-ink-950">$2,000 / client / mo</span>
+                </div>
+                <input id="roi-retainer" type="range" min="1000" max="6000" step="250" value="2000" class="clean-range" />
+                <div class="flex justify-between font-mono text-[11px] text-ink-400 mt-1.5">
+                  <span>$1,000/mo</span><span>$3,500/mo</span><span>$6,000/mo</span>
+                </div>
+              </div>
+
+              <p id="roi-capacity-note" class="text-xs text-ink-500 bg-white border border-zinc-200/80 rounded-lg px-3.5 py-2.5">
+                Covers ~12 client accounts (at 6 articles/client) for 75% of 1 retainer.
+              </p>
+            </div>
+
+            <!-- Output Metrics -->
+            <div class="lg:col-span-7 flex flex-col gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="bg-white rounded-xl border border-zinc-200 p-4">
+                  <div id="roi-bench-heading" class="text-xs text-ink-500">Verblio ($160/1k)</div>
+                  <div id="roi-verblio-cost" class="font-mono font-bold text-xl sm:text-2xl text-ink-950 mt-1">$16,000/mo</div>
+                  <div id="roi-bench-sub" class="text-xs text-ink-400 mt-1">$213/article · 3–7d wait</div>
+                </div>
+                <div class="bg-white rounded-xl border border-zinc-200 p-4">
+                  <div class="text-xs text-ink-500">Angram Best Fit</div>
+                  <div id="roi-angram-cost" class="font-mono font-bold text-xl sm:text-2xl text-ink-950 mt-1">$1,497/mo</div>
+                  <div id="roi-angram-plan" class="text-xs text-ink-500 mt-1">$19.96/article · Growth</div>
+                </div>
+                <div class="bg-verified-50 rounded-xl border border-verified-200 p-4">
+                  <div class="text-xs font-semibold text-verified-700">Profit Recovered</div>
+                  <div id="roi-savings" class="font-mono font-bold text-xl sm:text-2xl text-verified-700 mt-1">$14,503/mo</div>
+                  <div id="roi-annual-savings" class="text-xs font-medium text-verified-700/80 mt-1">+$174,036/yr saved</div>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+                <button type="button" id="roi-plan-cta" data-plan="growth-engine" class="open-order-modal rounded-xl bg-ink-950 hover:bg-zinc-800 text-white text-xs sm:text-sm font-semibold px-5 py-3 transition-colors cursor-pointer">
+                  Activate Agency Growth Engine ($1,497/mo) →
+                </button>
+                <button type="button" data-plan="blind-test" class="open-order-modal text-xs sm:text-sm font-semibold text-ink-700 hover:text-ink-950 transition-colors cursor-pointer">
+                  Or test 5 articles first ($99) →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calm Billing Trust Line -->
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-ink-500">
+          <span>✓ Cancel in 1 click</span>
+          <span>✓ 30-day unused word rollover</span>
+          <span>✓ Billed on delivered words only (HTML excluded)</span>
+          <span>✓ Cards, ACH &amp; agency invoicing</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 6: DOUBLE RISK-REVERSAL & SECURITY                -->
+    <!-- ========================================================= -->
+    <section id="guarantee" class="py-20 sm:py-24 px-5 sm:px-8 border-t border-zinc-200/80">
+      <div class="max-w-6xl mx-auto flex flex-col gap-10">
+
+        <div class="max-w-2xl space-y-2.5">
+          <span class="font-mono text-xs font-semibold uppercase tracking-wider text-verified-700">Zero-Risk Guarantees</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-[-0.025em] text-ink-950 leading-tight">
+            Protected on your first 5 articles—and every article after.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl border border-zinc-200 p-7 shadow-card flex flex-col gap-4">
+            <div class="w-10 h-10 rounded-xl bg-verified-50 border border-verified-100 text-verified-700 flex items-center justify-center">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-ink-950">200% Zero-Flag &amp; 4-Hour SLA Guarantee</h3>
+            <p class="text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              Every deliverable ships at 0.0% AI across Pangram, GPTZero, and Originality.ai. If any article ever triggers an AI flag (&gt;0.0%), drops a required keyword or link, fails native readability review, or misses our 4-hour SLA, we rewrite it free within 2 hours <strong class="text-ink-950 font-semibold">and credit 200% of the word count back</strong> to your account.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-zinc-200 p-7 shadow-card flex flex-col gap-4">
+            <div class="w-10 h-10 rounded-xl bg-verified-50 border border-verified-100 text-verified-700 flex items-center justify-center">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-ink-950">The $99 “Put Us Through Hell” Guarantee</h3>
+            <p class="text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              Send 5 of your hardest AI drafts ($99 one-time, up to 7,500 words). Put them side-by-side against $250/article writers and test every paragraph in Pangram. <strong class="text-ink-950 font-semibold">Unimpressed or flagged? One email refunds 100% of your $99 immediately.</strong> Love it? The full $99 credits toward Month 1.
+            </p>
+          </div>
+        </div>
+
+        <!-- Clean 3-Col Security & Confidentiality Row -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-zinc-200/80">
+          <div class="space-y-1">
+            <div class="text-sm font-semibold text-ink-950">100% Client IP Ownership</div>
+            <p class="text-sm text-ink-500 leading-relaxed">Full work-for-hire copyright transfers to your agency upon delivery.</p>
+          </div>
+          <div class="space-y-1">
+            <div class="text-sm font-semibold text-ink-950">Zero AI Model Training</div>
+            <p class="text-sm text-ink-500 leading-relaxed">Your client drafts and outputs are never used to train models.</p>
+          </div>
+          <div class="space-y-1">
+            <div class="text-sm font-semibold text-ink-950">Strict White-Label NDA</div>
+            <p class="text-sm text-ink-500 leading-relaxed">Writers never see client domains; PDF reports carry zero Angram branding.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 7: CLEAN SCANNABLE FAQ (OPTIMAL READING WIDTH)    -->
+    <!-- ========================================================= -->
+    <section id="faq" class="py-20 sm:py-28 px-5 sm:px-8 bg-white border-t border-zinc-200/80">
+      <div class="max-w-3xl mx-auto flex flex-col gap-10">
+
+        <div class="space-y-5">
+          <div class="space-y-2">
+            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-verified-700">FAQ</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-[-0.025em] text-ink-950 leading-tight">
+              Straight answers before you run your blind test.
+            </h2>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div class="flex flex-wrap items-center gap-1.5">
+              <button type="button" data-faq-filter="all" class="faq-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-ink-950 text-white cursor-pointer">All (10)</button>
+              <button type="button" data-faq-filter="detection" class="faq-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-zinc-100 text-ink-700 hover:bg-zinc-200/70 cursor-pointer">AI Detection</button>
+              <button type="button" data-faq-filter="workflow" class="faq-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-zinc-100 text-ink-700 hover:bg-zinc-200/70 cursor-pointer">Workflow &amp; NDA</button>
+              <button type="button" data-faq-filter="pricing" class="faq-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-zinc-100 text-ink-700 hover:bg-zinc-200/70 cursor-pointer">Pricing &amp; Niches</button>
+            </div>
+            <button type="button" id="faq-expand-all" aria-pressed="false" class="text-xs font-semibold text-ink-500 hover:text-ink-950 cursor-pointer">
+              Expand all
+            </button>
+          </div>
+        </div>
+
+        <div id="faq-accordion" class="divide-y divide-zinc-200 border-y border-zinc-200">
+          <!-- Q1 -->
+          <div class="faq-item py-5" data-faq-cat="detection">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="true">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">Is this secretly an AI wrapper or fine-tuned LLM?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              No. Zero AI generates a single word of your final deliverable. LLM wrappers fail Pangram 98.8% of the time because mathematical token signatures cannot be prompted away. Our Clean-Room Linguistic Air-Gap removes the English AI draft completely and puts vetted human writers in charge of authoring fresh prose—backed by our binding <strong class="text-ink-950 font-semibold">200% Zero-Flag Guarantee</strong>.
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item py-5" data-faq-cat="detection">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="true">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">Does a cross-lingual air-gap make the output read like awkward ESL English?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              No—writers never machine-translate sentences back and forth. Vetted domain specialists author fresh prose from structured logic briefs, and a <strong class="text-ink-950 font-semibold">Senior Native-English Editor</strong> (US, UK, or AU, calibrated to your client voice samples) refines cadence, idioms, and tone before delivery. Run the $99 Blind Test side-by-side against $250/article writers and judge blind.
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item py-5" data-faq-cat="workflow">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">Will my SEO keywords, internal links, facts, or HTML formatting break?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content hidden pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              No. Stage 1 extracts every statistic, internal anchor URL, H1–H3 heading, table, and target keyword into an immutable Entity Lock before writing begins. Stage 4 verifies 98.4% semantic retention and intact HTML/Markdown before delivering straight to WordPress or Webflow.
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item py-5" data-faq-cat="workflow">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">What does “API speed” mean if real humans write every sentence?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content hidden pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              Because real humans write every word, this is not a 2-second synchronous script. We operate via <strong class="text-ink-950 font-semibold">asynchronous API + Webhooks</strong> (or bulk portal) with a strict <strong class="text-ink-950 font-semibold">under-4-hour turnaround SLA</strong>—and under-2-hour priority routing on Growth plans. Drop 50 drafts at 9 AM and publish them before lunch.
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item py-5" data-faq-cat="workflow">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">Do I need a developer to connect Angram to our workflow?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content hidden pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              Not at all. Upload Google Docs or CSVs directly in our No-Code Portal—or let our engineers wire your Zapier, Make.com, n8n, or WordPress drafts pipeline <strong class="text-ink-950 font-semibold">done-for-you at $0 extra cost</strong> on the Agency Growth Engine plan.
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item py-5" data-faq-cat="pricing">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">How can you charge $14.97/1k words when Verblio charges $160/1k?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content hidden pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              Legacy platforms bill you for three expensive bottlenecks: writer sourcing, topic research/outlining, and account-management drag. Because your Claude or GPT draft already finished the research and structure, our pipeline eliminates 80% of production overhead and focuses 100% of human effort on clean linguistic execution.
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="faq-item py-5" data-faq-cat="pricing">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">What happens if I don’t use all my monthly words?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content hidden pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              Unused word credits automatically <strong class="text-ink-950 font-semibold">roll over for 30 days</strong>, so slower client weeks never waste budget. Need extra capacity during a launch? Overages bill transparently at your exact plan rate ($14.97/1k on Growth) with no surge fees.
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="faq-item py-5" data-faq-cat="detection">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">Can you rescue AI-written blog posts already live on client websites?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content hidden pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              Yes. Agency Growth Engine includes a <strong class="text-ink-950 font-semibold">250-URL Legacy Site AI-Risk Audit</strong> free so you can see exactly which published pages fail Pangram today. Run flagged URLs through your monthly balance while preserving every URL slug and internal link.
+            </div>
+          </div>
+
+          <!-- Q9 -->
+          <div class="faq-item py-5" data-faq-cat="workflow">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">How do you handle NDAs, IP ownership, and client confidentiality?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content hidden pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              All drafts and client URLs are strictly isolated under mutual NDA confidentiality. We never train models on your inputs or outputs, writers never see agency client domains, all PDF certificates carry zero Angram branding, and 100% work-for-hire IP ownership transfers upon delivery.
+            </div>
+          </div>
+
+          <!-- Q10 -->
+          <div class="faq-item py-5" data-faq-cat="pricing">
+            <button type="button" class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" aria-expanded="false">
+              <span class="font-display font-semibold text-base sm:text-[17px] text-ink-950">Do you handle technical B2B SaaS, legal, or YMYL niches—and how are words counted?</span>
+              <svg class="faq-chevron w-5 h-5 text-ink-400 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content hidden pt-3 text-sm sm:text-[15px] text-ink-700 leading-relaxed">
+              Yes. Domain terminology, statutory citations, API parameters, and statistics are locked in Stage 1 and verified for 98%+ semantic retention before delivery. Credits bill strictly on <strong class="text-ink-950 font-semibold">delivered output words</strong> (HTML tags excluded), and any tone calibration or guarantee rewrite is free.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 8: CALM HIGH-AUTHORITY FINAL CTA                  -->
+    <!-- ========================================================= -->
+    <section class="py-16 sm:py-24 px-5 sm:px-8">
+      <div class="max-w-5xl mx-auto rounded-3xl bg-ink-950 text-white px-6 py-14 sm:px-14 sm:py-16 text-center flex flex-col items-center gap-6 shadow-card-lg">
+        <div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-xs font-mono font-medium text-verified-400">
+          <span class="w-2 h-2 rounded-full bg-verified-500 animate-pulse"></span>
+          <span>Same-day human queue open · 200% Zero-Flag Guarantee</span>
+        </div>
+
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl md:text-[42px] tracking-[-0.025em] leading-[1.12] max-w-2xl">
+          Verify 5 real human articles in the next 4&nbsp;hours.
+        </h2>
+
+        <p class="text-sm sm:text-base text-zinc-300 max-w-xl leading-relaxed">
+          Send 5 of your hardest AI drafts (up to 7,500 words) for $99. Inspect native human prose + white-label Pangram 0.0% AI certificates. 100% refunded if flagged or unimpressed—or credited to Month 1.
+        </p>
+
+        <button type="button" data-plan="blind-test" class="open-order-modal inline-flex items-center justify-center gap-2.5 rounded-xl bg-verified-500 hover:bg-verified-600 text-ink-950 hover:text-white font-semibold text-base px-7 py-4 transition-colors cursor-pointer mt-1">
+          <span>Start Your 5-Article Blind Test ($99)</span>
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+
+        <p class="text-xs text-zinc-400">
+          No subscription lock-in · Mutual NDA included · Activate Growth within 48h for +25,000 bonus words
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- MINIMAL FOOTER                                            -->
+  <!-- ========================================================= -->
+  <footer class="border-t border-zinc-200/80 py-10 px-5 sm:px-8">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ink-500">
+      <div class="flex items-center gap-2.5">
+        <span class="w-6 h-6 rounded-md bg-ink-950 text-verified-500 font-display font-extrabold text-[11px] flex items-center justify-center">AN</span>
+        <span>Angram™ — Clean-Room Human Content Infrastructure.</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-5">
+        <button type="button" data-policy="sla" class="open-policy-modal hover:text-ink-950 transition-colors cursor-pointer">200% Zero-Flag SLA</button>
+        <button type="button" data-policy="security" class="open-policy-modal hover:text-ink-950 transition-colors cursor-pointer">NDA &amp; Data Isolation</button>
+        <button type="button" data-policy="ip" class="open-policy-modal hover:text-ink-950 transition-colors cursor-pointer">IP &amp; Refund Policy</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- CLEAN MOBILE STICKY CTA BAR                               -->
+  <!-- ========================================================= -->
+  <div id="mobile-sticky-cta" aria-hidden="true" class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-ink-950/95 backdrop-blur-md border-t border-white/10 px-4 py-3 flex items-center justify-between gap-3 translate-y-full pointer-events-none invisible transition-transform duration-200">
+    <div class="flex flex-col min-w-0">
+      <span class="font-display font-bold text-sm text-white truncate">5-Article Blind Test — $99</span>
+      <span class="text-[11px] text-zinc-400 truncate">7,500 words · 0.0% AI or 100% refund</span>
+    </div>
+    <button type="button" data-plan="blind-test" tabindex="-1" class="open-order-modal mobile-sticky-btn rounded-lg bg-verified-500 text-ink-950 font-semibold text-xs px-4 py-2.5 shrink-0 cursor-pointer">
+      Start Test →
+    </button>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- LOW-FRICTION INTAKE MODAL (1 REQUIRED FIELD)              -->
+  <!-- ========================================================= -->
+  <div id="order-modal" class="fixed inset-0 z-50 hidden justify-center items-center bg-ink-950/70 backdrop-blur-xs p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="bg-white text-ink-900 rounded-2xl border border-zinc-200 shadow-card-lg max-w-lg w-full p-6 sm:p-7 flex flex-col gap-5 relative my-auto max-h-[92vh] overflow-y-auto">
+      <div class="flex items-start justify-between gap-4">
+        <div class="space-y-1">
+          <span id="modal-badge" class="inline-block font-mono text-[11px] font-semibold text-verified-700 bg-verified-50 border border-verified-100 px-2.5 py-0.5 rounded-full">$99 one-time · 7,500 words</span>
+          <h3 id="modal-title" class="font-display font-bold text-2xl text-ink-950 tracking-tight">The 5-Article Blind Test</h3>
+        </div>
+        <button type="button" id="close-modal-btn" class="w-8 h-8 rounded-lg border border-zinc-200 text-ink-500 hover:text-ink-950 hover:bg-zinc-50 flex items-center justify-center cursor-pointer shrink-0" aria-label="Close modal">✕</button>
+      </div>
+
+      <!-- Compact Plan Switcher -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 bg-zinc-100 p-1 rounded-xl" role="group" aria-label="Select plan tier">
+        <button type="button" data-modal-plan="blind-test" class="modal-plan-tab px-2.5 py-2 rounded-lg text-left transition-all cursor-pointer"></button>
+        <button type="button" data-modal-plan="boutique" class="modal-plan-tab px-2.5 py-2 rounded-lg text-left transition-all cursor-pointer"></button>
+        <button type="button" data-modal-plan="growth-engine" class="modal-plan-tab px-2.5 py-2 rounded-lg text-left transition-all cursor-pointer"></button>
+        <button type="button" data-modal-plan="scale" class="modal-plan-tab px-2.5 py-2 rounded-lg text-left transition-all cursor-pointer"></button>
+      </div>
+
+      <p id="modal-desc" class="text-sm text-ink-700 leading-relaxed -mt-1"></p>
+
+      <div id="modal-terms" class="rounded-xl bg-canvas border border-zinc-200/80 p-3.5 text-xs text-ink-700 space-y-1.5"></div>
+
+      <form id="modal-intake-form" class="flex flex-col gap-4" novalidate>
+        <div class="space-y-1.5">
+          <label for="intake-email" class="block text-xs font-semibold text-ink-900">Work Email</label>
+          <input id="intake-email" type="email" required placeholder="you@youragency.com" class="w-full rounded-xl border border-zinc-300 bg-white px-3.5 py-3 text-sm text-ink-950 placeholder:text-zinc-400 focus:border-ink-950 focus:ring-0" />
+          <p id="intake-email-error" class="hidden text-xs text-flag-600 font-medium" role="alert"></p>
+        </div>
+
+        <details id="modal-optional-prefs" class="rounded-xl border border-zinc-200 bg-canvas/60">
+          <summary class="px-3.5 py-2.5 text-xs font-medium text-ink-700 cursor-pointer select-none flex items-center justify-between hover:text-ink-950">
+            <span>Customize dialect, CMS or sample URL (optional)</span>
+            <span class="text-ink-400" id="prefs-toggle-label">Defaults: US · Portal · WP ▾</span>
+          </summary>
+          <div class="p-3.5 pt-2 border-t border-zinc-200/80 space-y-3">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <div class="space-y-1">
+                <label for="intake-dialect" class="block text-[11px] font-semibold text-ink-700">Dialect</label>
+                <select id="intake-dialect" class="clean-select w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-2 text-xs text-ink-900 focus:border-ink-950 focus:ring-0">
+                  <option value="US English">US English</option>
+                  <option value="UK English">UK English</option>
+                  <option value="AU English">AU English</option>
+                </select>
+              </div>
+              <div class="space-y-1">
+                <label for="intake-method" class="block text-[11px] font-semibold text-ink-700">Pipeline</label>
+                <select id="intake-method" class="clean-select w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-2 text-xs text-ink-900 focus:border-ink-950 focus:ring-0">
+                  <option value="portal">No-Code Portal</option>
+                  <option value="api">REST API + Webhooks</option>
+                  <option value="automation">Make / Zapier / n8n</option>
+                </select>
+              </div>
+              <div class="space-y-1">
+                <label for="intake-cms" class="block text-[11px] font-semibold text-ink-700">Target CMS</label>
+                <select id="intake-cms" class="clean-select w-full rounded-lg border border-zinc-300 bg-white px-2.5 py-2 text-xs text-ink-900 focus:border-ink-950 focus:ring-0">
+                  <option value="WordPress">WordPress</option>
+                  <option value="Webflow">Webflow CMS</option>
+                  <option value="JSON/Markdown">JSON / Markdown</option>
+                </select>
+              </div>
+            </div>
+            <div class="space-y-1">
+              <label for="intake-sample-url" class="block text-[11px] font-semibold text-ink-700">Sample URL or Niche <span class="font-normal text-ink-400">(optional)</span></label>
+              <input id="intake-sample-url" type="text" placeholder="e.g. Google Doc link or 'B2B SaaS / Legal SEO'" class="w-full rounded-lg border border-zinc-300 bg-white px-3 py-2 text-xs text-ink-900 placeholder:text-zinc-400 focus:border-ink-950 focus:ring-0" />
+            </div>
+          </div>
+        </details>
+
+        <div class="space-y-2.5 pt-1">
+          <button type="submit" id="modal-submit-btn" class="w-full rounded-xl bg-ink-950 hover:bg-zinc-800 text-white font-semibold text-sm py-3.5 px-4 shadow-cta transition-colors cursor-pointer">
+            Reserve 5-Article Blind Test ($99) →
+          </button>
+          <p id="modal-guarantee-note" class="text-[11px] text-ink-500 text-center leading-relaxed">
+            No card entered on this step · Encrypted upload portal &amp; checkout/invoice link sent in 60s · 100% refunded if flagged or unimpressed.
+          </p>
+        </div>
+      </form>
+
+      <!-- Confirmation View -->
+      <div id="modal-confirmation" class="hidden flex-col gap-4">
+        <div class="inline-flex items-center gap-1.5 text-xs font-semibold text-verified-700 bg-verified-50 border border-verified-100 px-3 py-1 rounded-full self-start">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Workspace Reserved</span>
+        </div>
+        <h4 id="confirm-heading" class="font-display font-bold text-xl text-ink-950">Blind Test Workspace Ready</h4>
+        <p id="confirm-summary" class="text-sm text-ink-700 leading-relaxed"></p>
+        <div id="confirm-details" class="rounded-xl bg-canvas border border-zinc-200 p-4 font-mono text-xs text-ink-700 space-y-1.5"></div>
+        <div class="rounded-xl bg-ink-950 text-zinc-200 p-4 text-xs space-y-1.5">
+          <div class="font-semibold text-verified-400">Your next 3 steps (60 seconds):</div>
+          <div>1. Open the encrypted upload portal emailed to your inbox</div>
+          <div>2. Drop up to 5 Google Docs, Markdown, or HTML drafts (≤ 7,500 words)</div>
+          <div>3. Receive native human prose + Pangram 0.0% AI PDFs in &lt; 4 hours</div>
+        </div>
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+          <button type="button" id="modal-edit-btn" class="text-xs font-semibold text-ink-500 hover:text-ink-950 cursor-pointer">← Edit details</button>
+          <div class="flex items-center gap-2">
+            <button type="button" id="copy-intake-btn" class="text-xs font-semibold px-3.5 py-2 rounded-lg border border-zinc-200 hover:bg-zinc-50 cursor-pointer">Copy summary</button>
+            <button type="button" id="modal-done-btn" class="rounded-lg bg-ink-950 text-white text-xs font-semibold px-5 py-2.5 cursor-pointer">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- CLEAN POLICY & SLA MODAL                                  -->
+  <!-- ========================================================= -->
+  <div id="policy-modal" class="fixed inset-0 z-50 hidden justify-center items-center bg-ink-950/70 backdrop-blur-xs p-4" role="dialog" aria-modal="true" aria-labelledby="policy-modal-title">
+    <div class="bg-white text-ink-900 rounded-2xl border border-zinc-200 shadow-card-lg max-w-lg w-full p-6 sm:p-7 flex flex-col gap-4">
+      <div class="flex items-start justify-between gap-4">
+        <div class="space-y-1">
+          <span id="policy-modal-badge" class="inline-block font-mono text-[11px] font-semibold text-verified-700 bg-verified-50 border border-verified-100 px-2.5 py-0.5 rounded-full">Clean-Room Protocol</span>
+          <h3 id="policy-modal-title" class="font-display font-bold text-xl text-ink-950">Policy Details</h3>
+        </div>
+        <button type="button" id="close-policy-btn" class="w-8 h-8 rounded-lg border border-zinc-200 text-ink-500 hover:text-ink-950 hover:bg-zinc-50 flex items-center justify-center cursor-pointer" aria-label="Close policy dialog">✕</button>
+      </div>
+      <div id="policy-modal-body" class="text-sm text-ink-700 leading-relaxed space-y-3"></div>
+      <button type="button" id="done-policy-btn" class="self-end rounded-lg bg-ink-950 text-white text-xs font-semibold px-5 py-2.5 cursor-pointer">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Safe clipboard utility
+    function safeCopyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(() => {});
+      }
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (_) {}
+      document.body.removeChild(ta);
+      return Promise.resolve();
+    }
+
+    // ---------------------------------------------------------
+    // LIVE PROOF STUDIO (Exact Pre-Verified Human Prose Intact)
+    // ---------------------------------------------------------
+    let activeSampleKey = 'saas';
+    let sampleFormat = 'rendered';
+    let xrayOn = true;
+
+    const sampleData = {
+      saas: {
+        rawBadge: 'Pangram: 99.4% AI',
+        rawMeta: 'Red highlights = Pangram AI token triggers ("dynamic ecosystem", "paramount", "delve", "elevate")',
+        rawRendered: '<h4 class="font-display font-bold text-base text-ink-950">Why Automated Reconciliation Matters</h4><p><span class="ai-flag-mark">In today’s dynamic financial ecosystem</span>, leveraging <span class="underline">automated expense reconciliation</span> is <span class="ai-flag-mark">paramount for unlocking efficiency</span>. <span class="ai-flag-mark">Moreover</span>, modern finance leaders must <span class="ai-flag-mark">delve into</span> real-time ledger syncing to <span class="ai-flag-mark">elevate operational transparency</span> across departments.</p><p><span class="ai-flag-mark">By seamlessly bridging the gap</span> between corporate card feeds and ERP ledgers, organizations can <span class="ai-flag-mark">foster a culture of accountability</span> while <span class="ai-flag-mark">mitigating costly human errors</span>. Below is how traditional close cycles compare to automated workflows:</p><div class="overflow-x-auto pt-1"><table class="w-full text-xs border border-zinc-200 rounded-lg overflow-hidden"><thead><tr class="bg-zinc-100/80 border-b border-zinc-200"><th class="p-2 text-left font-semibold text-ink-700">Workflow</th><th class="p-2 text-left font-semibold text-ink-700">Close Speed</th></tr></thead><tbody class="divide-y divide-zinc-200 bg-white"><tr><td class="p-2">Manual Spreadsheet</td><td class="p-2">5–7 Business Days</td></tr><tr><td class="p-2">Real-Time Sync</td><td class="p-2">Same-Day Close</td></tr></tbody></table></div>',
+        rawSource: '<h2>Why Automated Reconciliation Matters</h2>\n<p>In today’s dynamic financial ecosystem, leveraging <a href="/features/reconciliation">automated expense reconciliation</a> is paramount for unlocking efficiency. Moreover, modern finance leaders must delve into real-time ledger syncing to elevate operational transparency across departments.</p>\n<p>By seamlessly bridging the gap between corporate card feeds and ERP ledgers, organizations can foster a culture of accountability while mitigating costly human errors. Below is how traditional close cycles compare to automated workflows:</p>\n<table>\n  <tr><th>Workflow</th><th>Close Speed</th></tr>\n  <tr><td>Manual Spreadsheet</td><td>5–7 Business Days</td></tr>\n  <tr><td>Real-Time Sync</td><td>Same-Day Close</td></tr>\n</table>',
+        humanBadge: '0.0% AI · Passed',
+        humanMetaLeft: 'Pangram: 0.0% · GPTZero: 0.0% · Originality: 0.0%',
+        humanMetaRight: 'H2 + Table + Anchor Link: 100% intact',
+        humanRendered: '<h4 class="font-display font-bold text-base text-ink-950">Why Automated Reconciliation Matters</h4><p>Corporate card receipts buried in three Slack threads and a personal inbox until the 28th of the month cause month-end close to grind to a halt. Controllers spend Friday nights chasing $47 Uber charges instead of reviewing variance reports. Direct ledger matching matches card transactions to GL codes as spending occurs and ensures <span class="human-keep-mark">automated expense reconciliation</span> is continuous rather than reactive.</p><p>This gap shows up in the close calendar. Instead of exporting batches of CSV files every four weeks, finance teams can see uncoded spend immediately – and flag missing VAT invoices before the quarter shuts.</p><div class="overflow-x-auto pt-1"><table class="w-full text-xs border border-zinc-200 rounded-lg overflow-hidden"><thead><tr class="bg-zinc-50 border-b border-zinc-200"><th class="p-2 text-left font-semibold text-ink-700">Workflow</th><th class="p-2 text-left font-semibold text-ink-700">Close Speed</th></tr></thead><tbody class="divide-y divide-zinc-200 bg-white"><tr><td class="p-2">Manual Spreadsheet</td><td class="p-2">5–7 Business Days</td></tr><tr class="bg-verified-50/70"><td class="p-2 font-semibold text-ink-950">Real-Time Sync</td><td class="p-2 font-semibold text-verified-700">Same-Day Close</td></tr></tbody></table></div>',
+        humanPlain: 'Why Automated Reconciliation Matters\n\nCorporate card receipts buried in three Slack threads and a personal inbox until the 28th of the month cause month-end close to grind to a halt. Controllers spend Friday nights chasing $47 Uber charges instead of reviewing variance reports. Direct ledger matching matches card transactions to GL codes as spending occurs and ensures automated expense reconciliation is continuous rather than reactive.\n\nThis gap shows up in the close calendar. Instead of exporting batches of CSV files every four weeks, finance teams can see uncoded spend immediately – and flag missing VAT invoices before the quarter shuts.',
+        humanSource: '<h2>Why Automated Reconciliation Matters</h2>\n<p>Corporate card receipts buried in three Slack threads and a personal inbox until the 28th of the month cause month-end close to grind to a halt. Controllers spend Friday nights chasing $47 Uber charges instead of reviewing variance reports. Direct ledger matching matches card transactions to GL codes as spending occurs and ensures <a href="/features/reconciliation">automated expense reconciliation</a> is continuous rather than reactive.</p>\n<p>This gap shows up in the close calendar. Instead of exporting batches of CSV files every four weeks, finance teams can see uncoded spend immediately – and flag missing VAT invoices before the quarter shuts.</p>\n<table>\n  <tr><th>Workflow</th><th>Close Speed</th></tr>\n  <tr><td>Manual Spreadsheet</td><td>5–7 Business Days</td></tr>\n  <tr><td>Real-Time Sync</td><td>Same-Day Close</td></tr>\n</table>'
+      },
+      legal: {
+        rawBadge: 'Pangram: 99.1% AI',
+        rawMeta: 'Red highlights = uniform AI clause cadence + filler ("pivotal clauses", "optimal financial protection", "imperative")',
+        rawRendered: '<h4 class="font-display font-bold text-base text-ink-950">Key Clauses to Review Before Signing</h4><p><span class="ai-flag-mark">Navigating commercial real estate agreements requires careful consideration</span> of <span class="ai-flag-mark">pivotal clauses</span>. <span class="ai-flag-mark">Furthermore</span>, prospective tenants should examine <span class="underline">commercial lease audit</span> escalation schedules for <span class="ai-flag-mark">optimal financial protection</span> across multi-year occupancy terms.</p><p><span class="ai-flag-mark">It is imperative for businesses</span> to thoroughly scrutinize operating expense definitions before executing any binding commitment:</p><ul class="list-disc list-inside text-xs sm:text-sm space-y-1.5 text-ink-700"><li>Base-year property tax stop calculation</li><li>HVAC capital vs. routine repair cap</li></ul>',
+        rawSource: '<h2>Key Clauses to Review Before Signing</h2>\n<p>Navigating commercial real estate agreements requires careful consideration of pivotal clauses. Furthermore, prospective tenants should examine <a href="/guides/commercial-lease-audit">commercial lease audit</a> escalation schedules for optimal financial protection across multi-year occupancy terms.</p>\n<p>It is imperative for businesses to thoroughly scrutinize operating expense definitions before executing any binding commitment:</p>\n<ul>\n  <li>Base-year property tax stop calculation</li>\n  <li>HVAC capital vs. routine repair cap</li>\n</ul>',
+        humanBadge: '0.0% AI · Passed',
+        humanMetaLeft: 'Pangram: 0.0% · GPTZero: 0.0% · Originality: 0.0%',
+        humanMetaRight: 'H2 + List + Anchor Link: 100% intact',
+        humanRendered: '<h4 class="font-display font-bold text-base text-ink-950">Key Clauses to Review Before Signing</h4><p>You negotiate a base rent per square foot, sign the lease and 18 months later get hit with an uncapped CAM reconciliation bill. One vague pass-through phrase can add five figures to your annual occupancy cost. Before you sign on the dotted line of a five-year <span class="human-keep-mark">commercial lease</span> commitment, audit every line item for building expenses that will be passed on to your P&amp;L.</p><p>Pay special attention to definitions landlords rarely volunteer upfront:</p><ul class="list-disc list-inside text-xs sm:text-sm space-y-1.5 text-ink-700"><li><strong class="text-ink-950">Tax stops:</strong> Verify the base-year property tax baseline reflects full building reassessment, not partial construction values</li><li><strong class="text-ink-950">HVAC carve-outs:</strong> Draw a hard dollar cap separating routine filter service from $40,000 rooftop unit replacements</li></ul>',
+        humanPlain: 'Key Clauses to Review Before Signing\n\nYou negotiate a base rent per square foot, sign the lease and 18 months later get hit with an uncapped CAM reconciliation bill. One vague pass-through phrase can add five figures to your annual occupancy cost. Before you sign on the dotted line of a five-year commercial lease commitment, audit every line item for building expenses that will be passed on to your P&L.\n\nPay special attention to definitions landlords rarely volunteer upfront. First, check tax stops so the base-year property tax baseline reflects full building reassessment rather than partial construction values. Second, enforce HVAC carve-outs with a hard dollar cap separating routine filter service from forty-thousand-dollar rooftop unit replacements.',
+        humanSource: '<h2>Key Clauses to Review Before Signing</h2>\n<p>You negotiate a base rent per square foot, sign the lease and 18 months later get hit with an uncapped CAM reconciliation bill. One vague pass-through phrase can add five figures to your annual occupancy cost. Before you sign on the dotted line of a five-year <a href="/guides/commercial-lease-audit">commercial lease</a> commitment, audit every line item for building expenses that will be passed on to your P&amp;L.</p>\n<p>Pay special attention to definitions landlords rarely volunteer upfront:</p>\n<ul>\n  <li><strong>Tax stops:</strong> Verify the base-year property tax baseline reflects full building reassessment, not partial construction values</li>\n  <li><strong>HVAC carve-outs:</strong> Draw a hard dollar cap separating routine filter service from $40,000 rooftop unit replacements</li>\n</ul>'
+      },
+      local: {
+        rawBadge: 'Pangram: 98.7% AI',
+        rawMeta: 'Red highlights = generic local AI boilerplate ("As temperatures soar", "crucial for", "seamless peace of mind")',
+        rawRendered: '<h4 class="font-display font-bold text-base text-ink-950">Signs Your AC Compressor Is Failing</h4><p><span class="ai-flag-mark">As temperatures soar in Austin</span>, maintaining a reliable cooling system is <span class="ai-flag-mark">crucial for homeowner comfort</span>. <span class="ai-flag-mark">Additionally</span>, trusted <span class="underline">emergency HVAC repair in Austin</span> technicians recommend <span class="ai-flag-mark">proactive vigilance</span> when warning signs emerge during peak summer humidity.</p><p><span class="ai-flag-mark">Recognizing these vital indicators</span> early helps protect your household investment and ensures <span class="ai-flag-mark">seamless peace of mind</span>:</p><ul class="list-disc list-inside text-xs sm:text-sm space-y-1.5 text-ink-700"><li>Breaker trips immediately on startup</li><li>Warm air despite thermostat set to 70°F</li></ul>',
+        rawSource: '<h2>Signs Your AC Compressor Is Failing</h2>\n<p>As temperatures soar in Austin, maintaining a reliable cooling system is crucial for homeowner comfort. Additionally, trusted <a href="/austin-emergency-hvac">emergency HVAC repair in Austin</a> technicians recommend proactive vigilance when warning signs emerge during peak summer humidity.</p>\n<p>Recognizing these vital indicators early helps protect your household investment and ensures seamless peace of mind:</p>\n<ul>\n  <li>Breaker trips immediately on startup</li>\n  <li>Warm air despite thermostat set to 70°F</li>\n</ul>',
+        humanBadge: '0.0% AI · Passed',
+        humanMetaLeft: 'Pangram: 0.0% · GPTZero: 0.0% · Originality: 0.0%',
+        humanMetaRight: 'Geo Keyword + List + Link: 100% intact',
+        humanRendered: '<h4 class="font-display font-bold text-base text-ink-950">Signs Your AC Compressor Is Failing</h4><p>If you’re in Round Rock in July, when it’s 103 degrees outside, and the air coming from your hallway vents is stale and muggy, it’s probably because your outdoor condenser gave you warning signs twenty-four hours earlier. Of course, you probably didn’t notice because you were more focused on getting your thermostat down to 68, which can overheat your struggling run capacitor and eventually cause the compressor to lock up. But if you could have detected these symptoms early on, you could have booked <span class="human-keep-mark">emergency HVAC repair in Austin</span> before your $220 capacitor swap turned into a $2,800 compressor replacement.</p><p>Shut the system off at the thermostat and call a tech if you notice either failure pattern:</p><ul class="list-disc list-inside text-xs sm:text-sm space-y-1.5 text-ink-700"><li><strong class="text-ink-950">Hard-start breaker trip:</strong> The 240V outdoor disconnect snaps back off within 3 seconds of startup</li><li><strong class="text-ink-950">Ambient supply air:</strong> Indoor blower runs continuously, yet registers push warm air even set to 70°F</li></ul>',
+        humanPlain: 'Signs Your AC Compressor Is Failing\n\nIf you’re in Round Rock in July, when it’s 103 degrees outside, and the air coming from your hallway vents is stale and muggy, it’s probably because your outdoor condenser gave you warning signs twenty-four hours earlier. Of course, you probably didn’t notice because you were more focused on getting your thermostat down to 68, which can overheat your struggling run capacitor and eventually cause the compressor to lock up. But if you could have detected these symptoms early on, you could have booked emergency HVAC repair in Austin before your $220 capacitor swap turned into a $2,800 compressor replacement.\n\nShut the system off at the thermostat and call a tech if you notice either failure pattern. First, watch for a hard-start breaker trip where the 240V outdoor disconnect snaps off within 3 seconds of startup. Second, check for ambient supply air where the indoor blower runs continuously yet registers push warm air even set to 70°F.',
+        humanSource: '<h2>Signs Your AC Compressor Is Failing</h2>\n<p>If you’re in Round Rock in July, when it’s 103 degrees outside, and the air coming from your hallway vents is stale and muggy, it’s probably because your outdoor condenser gave you warning signs twenty-four hours earlier. Of course, you probably didn’t notice because you were more focused on getting your thermostat down to 68, which can overheat your struggling run capacitor and eventually cause the compressor to lock up. But if you could have detected these symptoms early on, you could have booked <a href="/austin-emergency-hvac">emergency HVAC repair in Austin</a> before your $220 capacitor swap turned into a $2,800 compressor replacement.</p>\n<p>Shut the system off at the thermostat and call a tech if you notice either failure pattern:</p>\n<ul>\n  <li><strong>Hard-start breaker trip:</strong> The 240V outdoor disconnect snaps back off within 3 seconds of startup</li>\n  <li><strong>Ambient supply air:</strong> Indoor blower runs continuously, yet registers push warm air even set to 70°F</li>\n</ul>'
+      }
+    };
+
+    const samplePanelEl = document.getElementById('sample-gallery-panel');
+    function renderSampleGallery() {
+      const data = sampleData[activeSampleKey];
+      if (!data) return;
+      document.getElementById('sample-raw-badge').textContent = data.rawBadge;
+      document.getElementById('sample-raw-meta').textContent = data.rawMeta;
+      document.getElementById('sample-human-badge').textContent = data.humanBadge;
+      document.getElementById('sample-human-meta-left').textContent = data.humanMetaLeft;
+      document.getElementById('sample-human-meta-right').textContent = data.humanMetaRight;
+
+      const rawEl = document.getElementById('sample-raw-body');
+      const humanEl = document.getElementById('sample-human-body');
+      samplePanelEl?.classList.toggle('samples-plain', !xrayOn);
+
+      if (sampleFormat === 'source') {
+        rawEl.className = 'font-mono text-xs text-ink-700 bg-white border border-zinc-200 rounded-xl p-4 whitespace-pre-wrap leading-relaxed overflow-x-auto';
+        rawEl.textContent = data.rawSource;
+        humanEl.className = 'font-mono text-xs text-ink-900 bg-canvas border border-zinc-200 rounded-xl p-4 whitespace-pre-wrap leading-relaxed overflow-x-auto';
+        humanEl.textContent = data.humanSource;
+      } else {
+        rawEl.className = 'text-sm sm:text-[15px] text-ink-700 leading-[1.7] space-y-3';
+        rawEl.innerHTML = data.rawRendered;
+        humanEl.className = 'text-sm sm:text-[15px] text-ink-900 leading-[1.7] space-y-3';
+        humanEl.innerHTML = data.humanRendered;
+      }
+    }
+
+    document.querySelectorAll('.sample-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.sample-tab').forEach(t => {
+          const active = t === tab;
+          t.setAttribute('aria-selected', String(active));
+          t.classList.toggle('bg-white', active);
+          t.classList.toggle('text-ink-950', active);
+          t.classList.toggle('font-semibold', active);
+          t.classList.toggle('shadow-sm', active);
+          t.classList.toggle('text-ink-500', !active);
+          t.classList.toggle('font-medium', !active);
+        });
+        activeSampleKey = tab.dataset.sample;
+        renderSampleGallery();
+      });
+    });
+
+    const xrayBtn = document.getElementById('toggle-xray-highlights');
+    xrayBtn?.addEventListener('click', () => {
+      xrayOn = !xrayOn;
+      xrayBtn.setAttribute('aria-pressed', String(xrayOn));
+      document.getElementById('xray-label').textContent = xrayOn ? 'AI Flags: Shown' : 'AI Flags: Hidden';
+      document.getElementById('xray-dot').className = xrayOn ? 'w-2 h-2 rounded-full bg-flag-500' : 'w-2 h-2 rounded-full bg-zinc-300';
+      renderSampleGallery();
+    });
+
+    const toggleSampleFormatBtn = document.getElementById('toggle-sample-format');
+    toggleSampleFormatBtn?.addEventListener('click', () => {
+      sampleFormat = sampleFormat === 'rendered' ? 'source' : 'rendered';
+      toggleSampleFormatBtn.textContent = sampleFormat === 'rendered' ? 'View: Rendered CMS' : 'View: HTML Source';
+      renderSampleGallery();
+    });
+
+    const copySampleTextBtn = document.getElementById('copy-sample-text-btn');
+    const copySampleBtnText = document.getElementById('copy-sample-btn-text');
+    const copySampleStatusEl = document.getElementById('copy-sample-status');
+    copySampleTextBtn?.addEventListener('click', () => {
+      const data = sampleData[activeSampleKey];
+      if (!data) return;
+      safeCopyText(sampleFormat === 'source' ? data.humanSource : data.humanPlain);
+      if (copySampleBtnText) copySampleBtnText.textContent = 'Copied! Paste into Pangram';
+      if (copySampleStatusEl) {
+        copySampleStatusEl.innerHTML = '<strong class="text-verified-700">Copied clean prose to clipboard.</strong> Paste it directly into Pangram or GPTZero to verify.';
+      }
+      setTimeout(() => {
+        if (copySampleBtnText) copySampleBtnText.textContent = 'Copy & Test in Pangram';
+        if (copySampleStatusEl) {
+          copySampleStatusEl.innerHTML = 'Want to test on <strong class="text-ink-950">your own client drafts</strong> instead? Send 5 flagged articles for $99.';
+        }
+      }, 2800);
+    });
+    renderSampleGallery();
+
+    // ---------------------------------------------------------
+    // CERTIFICATE PDF / JSON TOGGLE & HASH COPY
+    // ---------------------------------------------------------
+    const certPdfEl = document.getElementById('cert-pdf-preview');
+    const certJsonEl = document.getElementById('cert-json-preview');
+    document.querySelectorAll('.cert-view-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const view = btn.dataset.certView;
+        document.querySelectorAll('.cert-view-btn').forEach(b => {
+          const active = b === btn;
+          b.setAttribute('aria-pressed', String(active));
+          b.classList.toggle('bg-white', active);
+          b.classList.toggle('text-ink-950', active);
+          b.classList.toggle('font-semibold', active);
+          b.classList.toggle('shadow-sm', active);
+          b.classList.toggle('text-ink-500', !active);
+          b.classList.toggle('font-medium', !active);
+        });
+        certPdfEl.classList.toggle('hidden', view === 'json');
+        certJsonEl.classList.toggle('hidden', view !== 'json');
+      });
+    });
+
+    const copyCertBtn = document.getElementById('copy-cert-btn');
+    const copyCertStatus = document.getElementById('copy-cert-status');
+    copyCertBtn?.addEventListener('click', () => {
+      safeCopyText('AN-90421-PANGRAM-0.0PCT-AI');
+      copyCertBtn.textContent = 'Copied!';
+      if (copyCertStatus) copyCertStatus.textContent = 'Copied: AN-90421-PANGRAM-0.0PCT-AI';
+      setTimeout(() => {
+        copyCertBtn.textContent = 'Copy Hash';
+        if (copyCertStatus) copyCertStatus.textContent = 'AN-90421-PANGRAM-0.0PCT-AI';
+      }, 2200);
+    });
+
+    // ---------------------------------------------------------
+    // BILLING TOGGLE & INTERACTIVE ROI CALCULATOR
+    // ---------------------------------------------------------
+    let billingCycle = 'monthly';
+    let benchmarkRatePer1k = 160;
+    let benchmarkLabel = 'Verblio ($160/1k)';
+    const roiVolumeEl = document.getElementById('roi-volume');
+    const roiRetainerEl = document.getElementById('roi-retainer');
+    const roiPlanCtaEl = document.getElementById('roi-plan-cta');
+
+    function updateRoiCalculator() {
+      if (!roiVolumeEl || !roiRetainerEl) return;
+      const words = Number(roiVolumeEl.value);
+      const retainer = Number(roiRetainerEl.value);
+      const articles = Math.floor(words * 0.00075);
+      const compCost = (words / 1000) * benchmarkRatePer1k;
+      const isAnnual = billingCycle === 'annual';
+      const discount = isAnnual ? (10 / 12) : 1;
+
+      let monthlyBaseCost = 1497;
+      let planKey = 'growth-engine';
+      let planName = 'Growth Engine';
+      let isOverageBlend = false;
+
+      if (words <= 25000) {
+        monthlyBaseCost = 497;
+        planKey = 'boutique';
+        planName = 'Boutique Studio';
+      } else if (words === 50000) {
+        monthlyBaseCost = 994;
+        planKey = 'boutique';
+        planName = 'Boutique + 25k';
+        isOverageBlend = true;
+      } else if (words <= 100000) {
+        monthlyBaseCost = 1497;
+        planKey = 'growth-engine';
+        planName = 'Growth Engine';
+      } else {
+        const growthWithOverage = 1497 + ((words - 100000) / 1000) * 14.97;
+        if (growthWithOverage >= 3997) {
+          monthlyBaseCost = 3997;
+          planKey = 'scale';
+          planName = 'White-Label Scale';
+        } else {
+          monthlyBaseCost = Math.round(growthWithOverage);
+          planKey = 'growth-engine';
+          planName = 'Growth + Overages';
+          isOverageBlend = true;
+        }
+      }
+
+      const effectiveCost = Math.round(monthlyBaseCost * discount);
+      const savings = Math.max(0, compCost - effectiveCost);
+      const annualSavings = Math.round(savings * 12);
+      const ratio = effectiveCost / retainer;
+      const coverageText = ratio < 1
+        ? `${Math.round(ratio * 100)}% of 1 retainer`
+        : `${ratio.toFixed(1)}× of 1 retainer`;
+      const clientAccounts = Math.max(1, Math.round(articles / 6));
+      const compPerArticle = Math.round(compCost / Math.max(1, articles));
+      const angramPerArticle = (effectiveCost / Math.max(1, articles)).toFixed(2);
+
+      document.getElementById('roi-volume-label').textContent = `${words.toLocaleString()} words (~${articles} articles)`;
+      document.getElementById('roi-retainer-label').textContent = `$${retainer.toLocaleString()} / client / mo`;
+      document.getElementById('roi-bench-heading').textContent = benchmarkLabel;
+      document.getElementById('roi-verblio-cost').textContent = `$${compCost.toLocaleString()}/mo`;
+      document.getElementById('roi-bench-sub').textContent = benchmarkRatePer1k === 85
+        ? `$${compPerArticle}/article · 99.9% flag risk`
+        : (benchmarkRatePer1k === 250 ? `$${compPerArticle}/article · 7-day wait` : `$${compPerArticle}/article · 3–7d wait`);
+      document.getElementById('roi-angram-cost').textContent = `$${effectiveCost.toLocaleString()}/mo${isAnnual ? ' eff.' : ''}`;
+      document.getElementById('roi-angram-plan').textContent = `$${angramPerArticle}/article · ${planName}`;
+      document.getElementById('roi-savings').textContent = `$${Math.round(savings).toLocaleString()}/mo`;
+      document.getElementById('roi-annual-savings').textContent = `+$${annualSavings.toLocaleString()}/yr saved`;
+      document.getElementById('roi-capacity-note').textContent = `Covers ~${clientAccounts} client accounts (at 6 articles/client) for ${coverageText}.`;
+
+      if (roiPlanCtaEl) {
+        roiPlanCtaEl.dataset.plan = planKey;
+        const shortName = planKey === 'boutique' ? 'Boutique Studio' : (planKey === 'scale' ? 'White-Label Scale' : 'Agency Growth Engine');
+        const basePrice = planKey === 'boutique' ? Math.round(497 * discount) : (planKey === 'scale' ? Math.round(3997 * discount) : Math.round(1497 * discount));
+        roiPlanCtaEl.textContent = isOverageBlend
+          ? `Activate ${shortName} ($${basePrice.toLocaleString()}/mo + Overages) →`
+          : `Activate ${shortName} ($${effectiveCost.toLocaleString()}/mo${isAnnual ? ' eff.' : ''}) →`;
+      }
+    }
+
+    document.querySelectorAll('.roi-bench-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        benchmarkRatePer1k = Number(btn.dataset.bench || 160);
+        benchmarkLabel = btn.dataset.benchLabel || 'Verblio ($160/1k)';
+        document.querySelectorAll('.roi-bench-btn').forEach(b => {
+          const active = b === btn;
+          b.className = active
+            ? 'roi-bench-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-ink-950 text-white cursor-pointer'
+            : 'roi-bench-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-white border border-zinc-200 text-ink-700 hover:border-ink-950 cursor-pointer';
+        });
+        updateRoiCalculator();
+      });
+    });
+
+    function updateBillingUi() {
+      const isAnnual = billingCycle === 'annual';
+      document.querySelectorAll('.billing-toggle').forEach(btn => {
+        const active = btn.dataset.billing === billingCycle;
+        btn.setAttribute('aria-pressed', String(active));
+        btn.classList.toggle('bg-white', active);
+        btn.classList.toggle('text-ink-950', active);
+        btn.classList.toggle('font-semibold', active);
+        btn.classList.toggle('shadow-sm', active);
+        btn.classList.toggle('text-ink-500', !active);
+        btn.classList.toggle('font-medium', !active);
+      });
+
+      document.getElementById('billing-subnote').textContent = isAnnual
+        ? 'Annual billing active: 2 months free applied across all plans.'
+        : 'Switch to Annual to lock 16.7% savings (2 months free).';
+
+      document.getElementById('growth-rate-badge').textContent = isAnnual ? '$12.48 / 1k (-92.2%)' : '$14.97 / 1k (-90.6%)';
+      document.getElementById('growth-price-display').textContent = isAnnual ? '$1,248' : '$1,497';
+      document.getElementById('growth-cycle-display').textContent = isAnnual ? '/mo eff. ($14,970/yr · Save $2,994)' : '/month';
+      document.getElementById('growth-cta-btn').textContent = isAnnual
+        ? 'Activate Growth Engine ($1,248/mo eff.) →'
+        : 'Activate Growth Engine ($1,497/mo) →';
+
+      document.getElementById('boutique-rate-badge').textContent = isAnnual ? '$16.57 / 1k' : '$19.88 / 1k';
+      document.getElementById('boutique-price-display').textContent = isAnnual ? '$414' : '$497';
+      document.getElementById('boutique-annual-sub').textContent = isAnnual ? '/mo eff. ($4,970/yr)' : '/month';
+
+      document.getElementById('scale-rate-badge').textContent = isAnnual ? '$9.52 / 1k' : '$11.42 / 1k';
+      document.getElementById('scale-price-display').textContent = isAnnual ? '$3,331' : '$3,997';
+      document.getElementById('scale-annual-sub').textContent = isAnnual ? '/mo eff. ($39,970/yr)' : '/month';
+
+      updateRoiCalculator();
+    }
+
+    roiVolumeEl?.addEventListener('input', updateRoiCalculator);
+    roiRetainerEl?.addEventListener('input', updateRoiCalculator);
+    document.querySelectorAll('.billing-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        billingCycle = btn.dataset.billing;
+        updateBillingUi();
+        if (modal && !modal.classList.contains('hidden')) renderModalPlan(activePlanKey);
+      });
+    });
+
+    // ---------------------------------------------------------
+    // FAQ ACCORDION, CATEGORY FILTERS & EXPAND ALL
+    // ---------------------------------------------------------
+    const expandAllFaqBtn = document.getElementById('faq-expand-all');
+    function syncFaqExpandButton() {
+      const visibleItems = Array.from(document.querySelectorAll('.faq-item')).filter(el => !el.classList.contains('hidden'));
+      const everyOpen = visibleItems.length > 0 && visibleItems.every(el => !el.querySelector('.faq-content').classList.contains('hidden'));
+      if (expandAllFaqBtn) {
+        expandAllFaqBtn.textContent = everyOpen ? 'Collapse all' : 'Expand all';
+        expandAllFaqBtn.setAttribute('aria-pressed', String(everyOpen));
+      }
+    }
+
+    function setFaqOpenState(item, shouldOpen) {
+      const content = item.querySelector('.faq-content');
+      const toggle = item.querySelector('.faq-toggle');
+      const icon = toggle.querySelector('.faq-chevron');
+      content.classList.toggle('hidden', !shouldOpen);
+      icon?.classList.toggle('rotate-180', shouldOpen);
+      toggle.setAttribute('aria-expanded', String(shouldOpen));
+    }
+
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const currentlyClosed = item.querySelector('.faq-content').classList.contains('hidden');
+        setFaqOpenState(item, currentlyClosed);
+        syncFaqExpandButton();
+      });
+    });
+
+    document.querySelectorAll('.faq-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.faqFilter;
+        document.querySelectorAll('.faq-filter-btn').forEach(b => {
+          const active = b === btn;
+          b.className = active
+            ? 'faq-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-ink-950 text-white cursor-pointer'
+            : 'faq-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-zinc-100 text-ink-700 hover:bg-zinc-200/70 cursor-pointer';
+        });
+        const items = Array.from(document.querySelectorAll('.faq-item'));
+        items.forEach(item => {
+          const match = filter === 'all' || item.dataset.faqCat === filter;
+          item.classList.toggle('hidden', !match);
+        });
+        const visible = items.filter(el => !el.classList.contains('hidden'));
+        if (filter !== 'all' && visible.length && visible.every(el => el.querySelector('.faq-content').classList.contains('hidden'))) {
+          setFaqOpenState(visible[0], true);
+        }
+        syncFaqExpandButton();
+      });
+    });
+
+    expandAllFaqBtn?.addEventListener('click', () => {
+      const visible = Array.from(document.querySelectorAll('.faq-item')).filter(el => !el.classList.contains('hidden'));
+      const everyOpen = visible.length > 0 && visible.every(el => !el.querySelector('.faq-content').classList.contains('hidden'));
+      visible.forEach(item => setFaqOpenState(item, !everyOpen));
+      syncFaqExpandButton();
+    });
+    syncFaqExpandButton();
+
+    // ---------------------------------------------------------
+    // SCROLL-SPY & MOBILE STICKY BAR
+    // ---------------------------------------------------------
+    const mobileStickyCta = document.getElementById('mobile-sticky-cta');
+    const mobileStickyBtn = document.querySelector('.mobile-sticky-btn');
+    const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+    const observedSections = navLinks.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+
+    function updateScrollUi() {
+      if (mobileStickyCta) {
+        const showSticky = window.scrollY > 520;
+        mobileStickyCta.classList.toggle('translate-y-full', !showSticky);
+        mobileStickyCta.classList.toggle('pointer-events-none', !showSticky);
+        mobileStickyCta.classList.toggle('invisible', !showSticky);
+        mobileStickyCta.setAttribute('aria-hidden', String(!showSticky));
+        if (mobileStickyBtn) mobileStickyBtn.setAttribute('tabindex', showSticky ? '0' : '-1');
+      }
+
+      let currentId = '';
+      observedSections.forEach(sec => {
+        if (sec.getBoundingClientRect().top <= 160) currentId = `#${sec.id}`;
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle('nav-active', link.getAttribute('href') === currentId);
+      });
+    }
+    window.addEventListener('scroll', updateScrollUi, { passive: true });
+    updateScrollUi();
+
+    // ---------------------------------------------------------
+    // LOW-FRICTION INTAKE MODAL
+    // ---------------------------------------------------------
+    const modal = document.getElementById('order-modal');
+    const modalForm = document.getElementById('modal-intake-form');
+    const modalConfirm = document.getElementById('modal-confirmation');
+    const emailInput = document.getElementById('intake-email');
+    const emailError = document.getElementById('intake-email-error');
+    const sampleUrlInput = document.getElementById('intake-sample-url');
+    const modalPrefsEl = document.getElementById('modal-optional-prefs');
+    let activePlanKey = 'blind-test';
+    let lastTriggerEl = null;
+    let lastIntakeSummaryText = '';
+
+    const modalPlans = {
+      'blind-test': {
+        monthly: {
+          pillTop: 'Blind Test', pillSub: '$99 once',
+          badge: '$99 one-time · up to 7,500 words',
+          cta: 'Reserve 5-Article Blind Test ($99) →',
+          terms: [
+            '✓ 5 full articles (up to 7,500 words) delivered in under 4 hours',
+            '✓ 100% refunded if flagged or unimpressed—or 100% credited to Month 1',
+            '✓ Includes white-label Pangram, GPTZero & Originality.ai PDFs'
+          ]
+        },
+        annual: {
+          pillTop: 'Blind Test', pillSub: '$99 once',
+          badge: '$99 one-time · up to 7,500 words',
+          cta: 'Reserve 5-Article Blind Test ($99) →',
+          terms: [
+            '✓ 5 full articles (up to 7,500 words) delivered in under 4 hours',
+            '✓ 100% refunded if flagged or unimpressed—or 100% credited to Month 1',
+            '✓ Includes white-label Pangram, GPTZero & Originality.ai PDFs'
+          ]
+        },
+        title: 'The 5-Article Blind Test',
+        desc: 'Send 5 flagged AI drafts and verify native human prose + 0.0% AI scores in under 4 hours.',
+        guarantee: 'No card entered on this step · Encrypted upload portal & checkout link sent in 60s · 100% refundable.'
+      },
+      'boutique': {
+        monthly: {
+          pillTop: 'Boutique', pillSub: '$497/mo',
+          badge: '25,000 words/mo · $19.88 / 1k',
+          cta: 'Reserve Boutique Studio ($497/mo) →',
+          terms: [
+            '✓ 25,000 Clean-Room Human Words/month (~18 articles)',
+            '✓ Under-4-hour turnaround SLA + 30-day credit rollover',
+            '✓ Backed by our 200% Zero-Flag Guarantee · Cancel anytime'
+          ]
+        },
+        annual: {
+          pillTop: 'Boutique', pillSub: '$414/mo',
+          badge: '25,000 words/mo · $4,970/yr (Save $994)',
+          cta: 'Reserve Boutique Studio ($4,970/yr) →',
+          terms: [
+            '✓ 25,000 Clean-Room Human Words/month at $16.57/1k (2 months free)',
+            '✓ Under-4-hour turnaround SLA + 30-day credit rollover',
+            '✓ Backed by our 200% Zero-Flag Guarantee'
+          ]
+        },
+        title: 'Boutique Studio',
+        desc: 'For lean content teams replacing AI humanizers with verified human prose.',
+        guarantee: 'No card entered on this step · Portal access & Stripe/invoice link sent in 60s · Cancel anytime.'
+      },
+      'growth-engine': {
+        monthly: {
+          pillTop: 'Growth', pillSub: '$1,497/mo',
+          badge: 'Most Popular · 100k words/mo ($14.97/1k)',
+          cta: 'Reserve Agency Growth Engine ($1,497/mo) →',
+          terms: [
+            '✓ 100,000 words/mo (~75 articles) + 25,000 fast-action bonus words',
+            '✓ Free DFY Zapier/Make/n8n/WP setup + 250-URL Site Risk Audit',
+            '✓ Under-2-hour priority rush + 30-day rollover · Cancel anytime'
+          ]
+        },
+        annual: {
+          pillTop: 'Growth', pillSub: '$1,248/mo',
+          badge: 'Most Popular · $14,970/yr (Save $2,994)',
+          cta: 'Reserve Agency Growth Engine ($14,970/yr) →',
+          terms: [
+            '✓ 100,000 words/mo at $12.48/1k + 25,000 bonus words + 12-mo rate lock',
+            '✓ Free DFY Zapier/Make/n8n/WP setup + 250-URL Site Risk Audit',
+            '✓ Under-2-hour priority rush + 30-day rollover'
+          ]
+        },
+        title: 'Agency Growth Engine',
+        desc: 'Fulfill 10–15 client retainers at 90%+ gross margins with hands-free automation.',
+        guarantee: 'No card entered on this step · Portal access & Stripe/ACH invoice sent in 60s · Cancel anytime.'
+      },
+      'scale': {
+        monthly: {
+          pillTop: 'Scale', pillSub: '$3,997/mo',
+          badge: '350,000 words/mo · $11.42 / 1k',
+          cta: 'Reserve White-Label Scale ($3,997/mo) →',
+          terms: [
+            '✓ 350,000 words/mo (~262 articles) + dedicated API SLA & Slack',
+            '✓ Unlimited brand-voice calibrations + 2-hour rush queue',
+            '✓ Strict mutual NDA, ACH & agency invoicing supported'
+          ]
+        },
+        annual: {
+          pillTop: 'Scale', pillSub: '$3,331/mo',
+          badge: '350,000 words/mo · $39,970/yr (Save $7,994)',
+          cta: 'Reserve White-Label Scale ($39,970/yr) →',
+          terms: [
+            '✓ 350,000 words/mo at $9.52/1k (2 months free) + dedicated API SLA',
+            '✓ Unlimited brand-voice calibrations + 2-hour rush queue',
+            '✓ Strict mutual NDA, ACH & agency invoicing supported'
+          ]
+        },
+        title: 'White-Label Scale',
+        desc: 'High-volume human content infrastructure for large agencies and multi-brand publishers.',
+        guarantee: 'No card entered on this step · Dedicated onboarding & ACH invoice sent within 60s.'
+      }
+    };
+
+    modalPrefsEl?.addEventListener('toggle', () => {
+      const lbl = document.getElementById('prefs-toggle-label');
+      if (lbl) lbl.textContent = modalPrefsEl.open ? 'Hide options ▴' : 'Defaults: US · Portal · WP ▾';
+    });
+
+    function renderModalPlan(planKey) {
+      activePlanKey = planKey in modalPlans ? planKey : 'blind-test';
+      const plan = modalPlans[activePlanKey];
+      const mode = billingCycle === 'annual' ? 'annual' : 'monthly';
+      const variant = plan[mode];
+
+      document.getElementById('modal-badge').textContent = variant.badge;
+      document.getElementById('modal-title').textContent = plan.title;
+      document.getElementById('modal-desc').textContent = plan.desc;
+      document.getElementById('modal-terms').innerHTML = variant.terms.map(t => `<div>${t}</div>`).join('');
+      document.getElementById('modal-guarantee-note').textContent = plan.guarantee;
+      document.getElementById('modal-submit-btn').textContent = variant.cta;
+
+      if (modalPrefsEl) {
+        modalPrefsEl.open = false;
+        const lbl = document.getElementById('prefs-toggle-label');
+        if (lbl) lbl.textContent = 'Defaults: US · Portal · WP ▾';
+      }
+
+      document.querySelectorAll('.modal-plan-tab').forEach(tab => {
+        const key = tab.dataset.modalPlan;
+        const isCurrent = key === activePlanKey;
+        const v = modalPlans[key][mode];
+        tab.innerHTML = `<span class="block text-xs font-semibold ${isCurrent ? 'text-ink-950' : 'text-ink-700'}">${v.pillTop}</span><span class="block text-[11px] font-mono ${isCurrent ? 'text-verified-700' : 'text-ink-400'}">${v.pillSub}</span>`;
+        tab.classList.toggle('bg-white', isCurrent);
+        tab.classList.toggle('shadow-sm', isCurrent);
+        tab.classList.toggle('hover:bg-white/60', !isCurrent);
+      });
+    }
+
+    function openModal(planKey, triggerEl) {
+      lastTriggerEl = triggerEl || document.activeElement;
+      renderModalPlan(planKey);
+      modalForm.classList.remove('hidden');
+      modalConfirm.classList.add('hidden');
+      modalConfirm.classList.remove('flex');
+      emailError.classList.add('hidden');
+      emailInput?.classList.remove('border-flag-500');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => emailInput?.focus(), 30);
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+      lastTriggerEl?.focus?.();
+    }
+
+    emailInput?.addEventListener('input', () => {
+      if (!emailError.classList.contains('hidden')) {
+        emailError.classList.add('hidden');
+        emailInput.classList.remove('border-flag-500');
+      }
+    });
+
+    document.querySelectorAll('.open-order-modal').forEach(btn => {
+      btn.addEventListener('click', () => openModal(btn.dataset.plan || 'blind-test', btn));
+    });
+    document.querySelectorAll('.modal-plan-tab').forEach(tab => {
+      tab.addEventListener('click', () => renderModalPlan(tab.dataset.modalPlan));
+    });
+
+    modalForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = emailInput.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        emailError.textContent = 'Please enter a valid work email so we can send your upload portal & Pangram PDFs.';
+        emailError.classList.remove('hidden');
+        emailInput.classList.add('border-flag-500');
+        emailInput.focus();
+        return;
+      }
+
+      const dialect = document.getElementById('intake-dialect')?.value || 'US English';
+      const method = document.getElementById('intake-method').selectedOptions[0].textContent;
+      const cms = document.getElementById('intake-cms').value;
+      const sampleContext = sampleUrlInput?.value.trim() || 'Will upload via portal';
+      const info = modalPlans[activePlanKey];
+      const refCode = `AN-${Math.floor(10000 + Math.random() * 89999)}`;
+      const billingText = activePlanKey === 'blind-test'
+        ? 'One-Time ($99 Credited to Month 1)'
+        : (billingCycle === 'annual' ? 'Annual (2 Months Free)' : 'Monthly');
+
+      document.getElementById('confirm-heading').textContent = `${info.title} — Ready`;
+      document.getElementById('confirm-summary').textContent = `Your encrypted upload portal and onboarding link are queued for ${email}.`;
+
+      const detailLines = [
+        `REF ID: ${refCode}`,
+        `PLAN: ${info.title}`,
+        `BILLING: ${billingText}`,
+        `DIALECT: ${dialect}`,
+        `PIPELINE: ${method}`,
+        `TARGET CMS: ${cms}`,
+        `CONTEXT: ${sampleContext}`,
+        `SLA: Under 4 Hours (0.0% AI Verified)`
+      ];
+      lastIntakeSummaryText = detailLines.join('\n');
+
+      const detailsEl = document.getElementById('confirm-details');
+      detailsEl.innerHTML = '';
+      detailLines.forEach(line => {
+        const [label, ...rest] = line.split(': ');
+        const row = document.createElement('div');
+        const strong = document.createElement('strong');
+        strong.className = 'text-ink-950';
+        strong.textContent = `${label}: `;
+        row.appendChild(strong);
+        row.appendChild(document.createTextNode(rest.join(': ')));
+        detailsEl.appendChild(row);
+      });
+
+      modalForm.classList.add('hidden');
+      modalConfirm.classList.remove('hidden');
+      modalConfirm.classList.add('flex');
+      document.getElementById('modal-done-btn')?.focus();
+    });
+
+    const copyIntakeBtn = document.getElementById('copy-intake-btn');
+    copyIntakeBtn?.addEventListener('click', () => {
+      if (!lastIntakeSummaryText) return;
+      safeCopyText(lastIntakeSummaryText);
+      copyIntakeBtn.textContent = 'Copied!';
+      setTimeout(() => { copyIntakeBtn.textContent = 'Copy summary'; }, 2000);
+    });
+
+    document.getElementById('modal-edit-btn')?.addEventListener('click', () => {
+      modalConfirm.classList.add('hidden');
+      modalConfirm.classList.remove('flex');
+      modalForm.classList.remove('hidden');
+      emailInput?.focus();
+    });
+
+    document.getElementById('close-modal-btn')?.addEventListener('click', closeModal);
+    document.getElementById('modal-done-btn')?.addEventListener('click', closeModal);
+    modal?.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+    // ---------------------------------------------------------
+    // POLICY & SLA MODAL
+    // ---------------------------------------------------------
+    const policyModal = document.getElementById('policy-modal');
+    const policyMap = {
+      sla: {
+        badge: '200% Zero-Flag SLA',
+        title: '200% Zero-Flag & 4-Hour Turnaround SLA',
+        body: [
+          'Every article delivered through Angram includes live verification across Pangram, GPTZero, and Originality.ai.',
+          'If any piece triggers an AI flag (>0.0% AI), drops a required keyword or anchor link, fails native readability review, or exceeds our 4-hour turnaround SLA, we rewrite it free within 2 hours and automatically credit 200% of the word count back to your account.'
+        ]
+      },
+      security: {
+        badge: 'NDA & Data Isolation',
+        title: 'Clean-Room Confidentiality & Zero AI Training',
+        body: [
+          'Your agency drafts, target keywords, and client domains are protected under strict mutual confidentiality.',
+          'Inputs are never used to train AI models. Writers receive stripped conceptual briefs without client domain exposure, and automated post-delivery data purge schedules are available across all agency tiers.'
+        ]
+      },
+      ip: {
+        badge: 'IP & Refund Policy',
+        title: '100% Client IP Ownership & Refund Guarantee',
+        body: [
+          'Upon delivery, 100% of work-for-hire copyright and publishing rights transfer immediately to your agency and clients.',
+          'On the $99 5-Article Blind Test, if your team is not thrilled with native readability or if any paragraph trips Pangram, email us once for a full $99 refund. Subscriptions include 30-day credit rollover and cancel anytime with zero lock-in.'
+        ]
+      }
+    };
+
+    function closePolicyModal() {
+      policyModal?.classList.add('hidden');
+      policyModal?.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.open-policy-modal').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const p = policyMap[btn.dataset.policy];
+        if (!p || !policyModal) return;
+        document.getElementById('policy-modal-badge').textContent = p.badge;
+        document.getElementById('policy-modal-title').textContent = p.title;
+        document.getElementById('policy-modal-body').innerHTML = p.body.map(line => `<p>${line}</p>`).join('');
+        policyModal.classList.remove('hidden');
+        policyModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+        document.getElementById('close-policy-btn')?.focus();
+      });
+    });
+
+    document.getElementById('close-policy-btn')?.addEventListener('click', closePolicyModal);
+    document.getElementById('done-policy-btn')?.addEventListener('click', closePolicyModal);
+    policyModal?.addEventListener('click', (e) => { if (e.target === policyModal) closePolicyModal(); });
+
+    // Keyboard Escape & Focus Trap
+    document.addEventListener('keydown', (e) => {
+      if (policyModal && !policyModal.classList.contains('hidden') && e.key === 'Escape') {
+        closePolicyModal();
+        return;
+      }
+      if (!modal || modal.classList.contains('hidden')) return;
+      if (e.key === 'Escape') {
+        closeModal();
+        return;
+      }
+      if (e.key === 'Tab') {
+        const focusables = Array.from(modal.querySelectorAll('button, input, select, summary, a[href]'))
+          .filter(el => !el.closest('.hidden') && el.offsetParent !== null);
+        if (!focusables.length) return;
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    updateBillingUi();
+  </script>
+</body>
+</html>
