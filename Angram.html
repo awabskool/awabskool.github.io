@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Angram™ — 100% Human SEO Articles in 4 Hours (0.0% AI)</title>
-  <meta name="description" content="Keep Claude’s speed and publish 100% human SEO articles clearing Pangram at 0.0% AI in under 4 hours—from $11–$20/1k words." />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111318'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='26' fill='%23FFE135'%3EAN%3C/text%3E%3C/svg%3E" />
+  <title>Angram™ — Write at AI Speed. Publish 100% Human Prose (0.0% AI on Pangram)</title>
+  <meta name="description"
+    content="Real human editors re-author your Claude or GPT drafts from scratch in under 24 hours—guaranteed 0.0% AI on Pangram, GPTZero & Originality. Start with 5 flexible credits for $99 (valid 12 months)." />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111318'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='26' fill='%23FFE135'%3EAN%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
     tailwind.config = {
@@ -45,7 +50,9 @@
   </script>
   <style>
     @layer base {
-      html, body {
+
+      html,
+      body {
         margin: 0;
         padding: 0;
         background-color: #FAF9F6;
@@ -53,59 +60,66 @@
         overflow-x: clip;
         -webkit-font-smoothing: antialiased;
       }
-      a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      textarea:focus-visible {
         outline: 2px solid #111318;
         outline-offset: 2px;
       }
     }
+
     @media (min-width: 1024px) {
       #mobile-sticky-cta {
         display: none !important;
       }
     }
+
     .marker-highlight {
       box-shadow: inset 0 -0.42em 0 #FFE135;
       padding: 0 2px;
     }
+
     .nav-active {
       color: #111318;
       background-color: #F2EFE9;
     }
+
     .sample-tab[aria-selected="true"] {
       background-color: #111318;
       color: #FFFFFF;
       border-color: #111318;
     }
+
     .sample-tab[aria-selected="false"] {
       background-color: #FFFFFF;
       color: #3F4451;
       border-color: #E4E0D8;
     }
+
     .sample-tab[aria-selected="false"]:hover {
       border-color: #111318;
       color: #111318;
     }
+
     .cert-view-btn[aria-pressed="true"] {
       background-color: #111318;
       color: #FFFFFF;
       border-color: #111318;
     }
+
     .cert-view-btn[aria-pressed="false"] {
       background-color: #FFFFFF;
       color: #3F4451;
       border-color: #E4E0D8;
     }
+
     [id] {
       scroll-margin-top: 5rem;
     }
-    select.clean-select {
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23111318' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 0.75rem center;
-      background-size: 14px;
-      padding-right: 2.25rem;
-    }
+
     .ai-flag-mark {
       background-color: #FEE2E2;
       border-bottom: 2px solid #EF4444;
@@ -114,6 +128,7 @@
       color: #991B1B;
       font-weight: 500;
     }
+
     .samples-plain .ai-flag-mark {
       background-color: transparent;
       border-bottom: none;
@@ -121,6 +136,7 @@
       color: inherit;
       font-weight: inherit;
     }
+
     .human-keep-mark {
       background-color: #D1FAE5;
       border-bottom: 2px solid #059669;
@@ -129,6 +145,7 @@
       font-weight: 600;
       color: #065F46;
     }
+
     .samples-plain .human-keep-mark {
       background-color: transparent;
       border-bottom: none;
@@ -137,31 +154,43 @@
     }
   </style>
 </head>
+
 <body class="bg-brand-paper text-brand-ink font-sans selection:bg-brand-accent selection:text-brand-ink pb-20 lg:pb-0">
 
-  <!-- CLEAN STICKY HEADER -->
+  <!-- STICKY HEADER -->
   <header class="sticky top-0 w-full z-40 bg-brand-paper/95 backdrop-blur-md border-b border-brand-line">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
       <a class="flex items-center gap-2.5 shrink-0 whitespace-nowrap" href="#">
-        <div class="w-8 h-8 rounded-lg bg-brand-ink text-brand-accent flex items-center justify-center font-extrabold text-sm tracking-tight shrink-0">
+        <div
+          class="w-8 h-8 rounded-lg bg-brand-ink text-brand-accent flex items-center justify-center font-extrabold text-sm tracking-tight shrink-0">
           AN
         </div>
         <div class="flex items-baseline gap-2">
           <span class="font-extrabold text-lg tracking-tight text-brand-ink">Angram™</span>
-          <span class="hidden lg:inline-block text-xs font-medium text-brand-muted whitespace-nowrap">AI watermark removal</span>
+          <span class="hidden lg:inline-block text-xs font-medium text-brand-muted whitespace-nowrap">Clean-room human
+            rewriting</span>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-1 text-sm font-medium text-brand-slate shrink-0" aria-label="Section navigation">
-        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap" href="#proof">Live Proof</a>
-        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap" href="#mechanism">How It Works</a>
-        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap" href="#guarantee">Guarantee</a>
-        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap" href="#pricing">Pricing</a>
-        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap" href="#faq">FAQ</a>
+      <nav class="hidden md:flex items-center gap-1 text-sm font-medium text-brand-slate shrink-0"
+        aria-label="Section navigation">
+        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap"
+          href="#proof">Live Proof</a>
+        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap"
+          href="#who-its-for">Use Cases</a>
+        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap"
+          href="#mechanism">How It Works</a>
+        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap"
+          href="#guarantee">Guarantee</a>
+        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap"
+          href="#pricing">Pricing</a>
+        <a class="nav-link px-3 py-1.5 rounded-lg hover:text-brand-ink transition-colors whitespace-nowrap"
+          href="#faq">FAQ</a>
       </nav>
 
-      <button type="button" data-plan="blind-test" class="open-order-modal bg-brand-ink hover:bg-brand-slate text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg transition-colors whitespace-nowrap shrink-0 cursor-pointer">
-        Test 5 Articles — $99
+      <button type="button" data-plan="blind-test"
+        class="open-order-modal bg-brand-ink hover:bg-brand-slate text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg transition-colors whitespace-nowrap shrink-0 cursor-pointer">
+        Get 5 Credits — $99
       </button>
     </div>
     <div class="w-full h-[2px] bg-brand-line/60">
@@ -172,91 +201,124 @@
   <main class="w-full flex flex-col">
 
     <!-- ========================================================= -->
-    <!-- SECTION 1: HERO (RAZOR-SHARP EYE-PATH + ZERO ORPHANS)     -->
+    <!-- SECTION 1: HERO (UNIFIED ENEMY + FLEXIBLE 5-CREDIT WEDGE) -->
     <!-- ========================================================= -->
     <section class="w-full bg-brand-paper pt-8 pb-12 sm:pt-11 sm:pb-16 px-4 sm:px-6 lg:px-8 border-b border-brand-line">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-9 lg:gap-12 items-center">
 
         <!-- Left Column -->
         <div class="lg:col-span-6 flex flex-col items-start gap-4 sm:gap-5">
-          <div class="inline-flex items-center gap-2 rounded-full bg-brand-surface border border-brand-line px-3.5 py-1.5 text-xs font-semibold text-brand-slate whitespace-nowrap">
+          <div
+            class="inline-flex items-center gap-2 rounded-full bg-brand-surface border border-brand-line px-3.5 py-1.5 text-xs font-semibold text-brand-slate">
             <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse shrink-0"></span>
-            <span>100% human on Pangram guaranteed</span>
+            <span>0.0% AI on Pangram, GPTZero &amp; Originality — Guaranteed</span>
           </div>
 
-          <h1 class="text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight text-brand-ink leading-[1.16]">
-            Turn flagged AI drafts into <span class="marker-highlight">100% human</span> articles in 4&nbsp;hours.
+          <h1 class="text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight text-brand-ink leading-[1.14]">
+            AI writing <span class="marker-highlight">without the fingerprinting</span>
           </h1>
 
-          <p class="text-base sm:text-lg text-brand-slate leading-relaxed max-w-lg">
-            Vetted domain writers turn your raw AI drafts into native English prose in <strong class="text-brand-ink font-semibold">under 4 hours</strong> (90% less than Verblio)—with every H1–H3, anchor link, and table intact.
+          <p class="text-base sm:text-lg text-brand-slate leading-relaxed max-w-xl">
+            Whether it’s an essay or 50 client SEO pages. Real human editors re-author every sentence from scratch,
+            keeping your voice, arguments, and links intact
           </p>
 
           <div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-1 w-full sm:w-auto">
-            <button type="button" data-plan="blind-test" class="open-order-modal w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brand-accent hover:bg-brand-accentHover text-brand-ink font-bold text-base px-6 py-4 rounded-xl border border-brand-ink shadow-cta transition-all active:translate-y-0.5 cursor-pointer whitespace-nowrap">
-              <span>Test 5 Articles Risk-Free — $99</span>
-              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <button type="button" data-plan="blind-test"
+              class="open-order-modal w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brand-accent hover:bg-brand-accentHover text-brand-ink font-bold text-base px-6 py-4 rounded-xl border border-brand-ink shadow-cta transition-all active:translate-y-0.5 cursor-pointer whitespace-nowrap">
+              <span>Start With 5 Credits — $99</span>
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
             </button>
-            <a href="#live-samples" class="inline-flex items-center justify-center sm:justify-start text-sm font-semibold text-brand-ink hover:text-brand-slate underline underline-offset-4 py-2 whitespace-nowrap">
-              Inspect Live Samples ↓
+            <a href="#live-samples"
+              class="inline-flex items-center justify-center sm:justify-start text-sm font-semibold text-brand-ink hover:text-brand-slate underline underline-offset-4 py-2 whitespace-nowrap">
+              Test Live Samples on Pangram ↓
             </a>
           </div>
 
           <!-- Friction-Killer Micro-Line -->
-          <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-sm text-brand-slate pt-1">
-            <span class="inline-flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-brand-emerald shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              Up to 7,500 words ($19.80/article)
-            </span>
-            <span class="inline-flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-brand-emerald shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              100% refunded if flagged or unimpressed
-            </span>
-            <span class="inline-flex items-center gap-1.5">
-              <svg class="w-4 h-4 text-brand-emerald shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              Credited 100% to your first pack
-            </span>
+          <div class="flex flex-col gap-1.5 text-xs sm:text-sm text-brand-slate pt-1">
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-1.5">
+              <span class="inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-brand-emerald shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span><strong class="text-brand-ink">Use 1 credit today</strong>, save 4 for up to 12 months (7,500w
+                  total)</span>
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-1.5">
+              <span class="inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-brand-emerald shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>100% refunded if flagged or unimpressed (keep the rewrite)</span>
+              </span>
+              <span class="inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-brand-emerald shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Zero subscriptions</span>
+              </span>
+            </div>
           </div>
         </div>
 
-        <!-- Right Column: Self-Testable Proof Receipt Card -->
+        <!-- Right Column: Realistic Claude-to-Human Proof Receipt Card -->
         <div class="lg:col-span-6">
           <div class="bg-white rounded-2xl border border-brand-line shadow-card-lg p-5 sm:p-6 flex flex-col gap-4">
             <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-brand-line">
-              <span class="font-mono text-[11px] sm:text-xs font-semibold text-brand-muted whitespace-nowrap">PROOF <span class="hidden sm:inline">RECEIPT </span>// #AN-90421</span>
-              <span class="font-mono text-[11px] font-semibold bg-brand-emeraldBg text-brand-emerald px-2.5 py-1 rounded-full whitespace-nowrap">
-                Delivered in 3h 18m
+              <span class="font-mono text-[11px] sm:text-xs font-semibold text-brand-muted whitespace-nowrap">LIVE SCAN
+                // CLAUDE → ANGRAM™</span>
+              <span
+                class="font-mono text-[11px] font-semibold bg-brand-emeraldBg text-brand-emerald px-2.5 py-1 rounded-full whitespace-nowrap">
+                Turnaround: 3h 12m
               </span>
             </div>
 
+            <!-- Realistic Modern Claude Draft (Even without "delve", Pangram catches symmetry!) -->
             <div class="rounded-xl bg-brand-dangerBg/60 border border-red-200 p-4">
               <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
-                <span class="font-mono text-[11px] font-semibold uppercase text-brand-danger whitespace-nowrap">Input • Claude Draft</span>
-                <span class="font-mono text-[11px] font-bold text-brand-danger whitespace-nowrap">99.4% AI Flagged</span>
+                <span class="font-mono text-[11px] font-semibold uppercase text-brand-danger whitespace-nowrap">Input •
+                  Edited Claude Draft</span>
+                <span class="font-mono text-[11px] font-bold text-brand-danger whitespace-nowrap">Pangram: 99.2%
+                  AI</span>
               </div>
               <p class="text-sm text-brand-slate leading-relaxed">
-                “<span class="ai-flag-mark">In today’s dynamic financial ecosystem</span>, leveraging reconciliation is <span class="ai-flag-mark">paramount for unlocking efficiency</span>...”
+                “Most early-stage founders assume stalling revenue <span class="ai-flag-mark">isn’t a product
+                  problem—it’s a pipeline problem</span>. <span class="ai-flag-mark">Instead of refining positioning,
+                  they immediately hire</span> a VP of Sales from a Big Tech logo...”
+              </p>
+              <p class="font-mono text-[11px] text-brand-danger mt-2">
+                ↑ Zero “delve” clichés—yet Pangram still flags Claude’s contrastive sentence rhythm.
               </p>
             </div>
 
             <div class="flex items-center justify-center gap-2 text-xs font-mono font-semibold text-brand-muted">
               <span class="h-px flex-1 bg-brand-line"></span>
-              <span class="whitespace-nowrap">Clean-Room Human Rewrite + Native QA</span>
+              <span class="whitespace-nowrap">Clean-Room Human Rewrite + Voice Match</span>
               <span class="h-px flex-1 bg-brand-line"></span>
             </div>
 
+            <!-- Verified Human Prose -->
             <div class="rounded-xl bg-brand-emeraldBg/50 border border-emerald-200 p-4">
               <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
-                <span class="font-mono text-[11px] font-semibold uppercase text-brand-emerald whitespace-nowrap">Output • <span class="hidden sm:inline">Angram™ Human </span>Prose</span>
-                <div class="flex items-center gap-1.5 shrink-0">
-                  <button type="button" id="hero-copy-sample-btn" class="font-mono text-[10px] font-semibold bg-white hover:bg-brand-surface text-brand-ink border border-brand-line px-2 py-0.5 rounded cursor-pointer transition-colors whitespace-nowrap" title="Copy exact 158-word sample (opens identically to quote below) to test in Pangram">
-                    Copy 158w Sample
-                  </button>
-                  <span class="font-mono text-[11px] font-bold bg-brand-emerald text-white px-2 py-0.5 rounded whitespace-nowrap">0.0% AI</span>
-                </div>
+                <span class="font-mono text-[11px] font-semibold uppercase text-brand-emerald whitespace-nowrap">Output
+                  • Human Prose</span>
+                <span
+                  class="font-mono text-[11px] font-bold bg-brand-emerald text-white px-2 py-0.5 rounded whitespace-nowrap">Pangram:
+                  0.0% AI</span>
               </div>
-              <p class="text-sm text-brand-ink font-medium leading-relaxed" id="hero-sample-quote">
-                “Month-end close stalls when card receipts sit across three separate inboxes until the 28th. Direct ledger matching pairs receipts as spend happens, keeping automated expense reconciliation continuous rather than reactive...”
+              <p class="text-sm text-brand-ink font-medium leading-relaxed">
+                “Revenue stalls at $40k MRR and the board’s reflex is almost always the same: go hire a VP of Sales out
+                of Salesforce. Six months and $140k in burned base salary later, you learn a painful lesson—nobody can
+                scale a pitch the founders haven’t closed twenty times themselves...”
               </p>
             </div>
           </div>
@@ -266,64 +328,90 @@
     </section>
 
     <!-- ========================================================= -->
-    <!-- CALM METRICS BAR (RIGHT BELOW THE FOLD)                   -->
+    <!-- UNIVERSAL TRUST & PROOF METRICS BAR                       -->
     <!-- ========================================================= -->
-    <section class="w-full bg-white border-b border-brand-line py-8 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+    <section class="w-full bg-white border-b border-brand-line py-7 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
         <div>
-          <div class="font-mono font-bold text-xl sm:text-2xl text-brand-emerald">90.6% less</div>
-          <p class="text-xs sm:text-sm text-brand-muted mt-1">$15/1k words on Grow vs. Verblio’s $160/1k</p>
+          <div class="font-mono font-bold text-xl sm:text-2xl text-brand-emerald">0.0% AI</div>
+          <p class="text-xs sm:text-sm text-brand-muted mt-1">Cleared on Pangram, GPTZero &amp; Originality before
+            delivery</p>
         </div>
         <div>
-          <div class="font-mono font-bold text-xl sm:text-2xl text-brand-ink">98.4% intact</div>
-          <p class="text-xs sm:text-sm text-brand-muted mt-1">Semantic meaning, links, tables &amp; <span class="whitespace-nowrap">H1–H3s</span></p>
+          <div class="font-mono font-bold text-xl sm:text-2xl text-brand-ink">&lt; 24 Hours</div>
+          <p class="text-xs sm:text-sm text-brand-muted mt-1">Same-day human desk vs. 5–7 days at legacy agencies</p>
+        </div>
+        <div>
+          <div class="font-mono font-bold text-xl sm:text-2xl text-brand-ink">12-Mo Credits</div>
+          <p class="text-xs sm:text-sm text-brand-muted mt-1">Submit 1 draft today, bank the rest for a full year</p>
         </div>
         <div>
           <div class="font-mono font-bold text-xl sm:text-2xl text-brand-ink">200% guarantee</div>
-          <p class="text-xs sm:text-sm text-brand-muted mt-1">Free 2-hr rewrite + 2× credit if ever flagged</p>
+          <p class="text-xs sm:text-sm text-brand-muted mt-1">Free 2-hr rush rewrite + 2× word credit if ever flagged
+          </p>
         </div>
       </div>
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 2: LIVE PROOF GALLERY + COPY-TO-PANGRAM BRIDGE    -->
+    <!-- SECTION 2: LIVE PROOF GALLERY + 2-CLICK PANGRAM BRIDGE    -->
     <!-- ========================================================= -->
     <section class="w-full bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-brand-line" id="proof">
       <div class="max-w-6xl mx-auto flex flex-col gap-7" id="live-samples">
 
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5">
           <div class="max-w-xl flex flex-col gap-2">
-            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">Live Proof // Self-Verify on Pangram</span>
+            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">Live Proof // Don’t
+              Trust. Verify.</span>
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-brand-ink leading-tight">
-              AI fingerprints stripped. SEO structure 100% intact.
+              Your voice, arguments &amp; links 100% kept.
             </h2>
             <p class="text-sm sm:text-base text-brand-slate">
-              Skeptical? Click <strong class="text-brand-ink">Copy &amp; Test in Pangram</strong> below and scan any 150+ word output yourself right now.
+              Even heavily prompted Claude drafts leave statistical token patterns Pangram catches. Copy any output
+              below and paste it into Pangram yourself.
             </p>
           </div>
 
-          <div class="flex items-center gap-1.5 shrink-0 flex-wrap sm:flex-nowrap" role="tablist" aria-label="Sample vertical selector">
-            <button type="button" role="tab" aria-selected="true" data-sample="saas" class="sample-tab text-xs font-semibold px-3.5 py-2 rounded-lg border transition-colors cursor-pointer whitespace-nowrap shrink-0">B2B SaaS</button>
-            <button type="button" role="tab" aria-selected="false" data-sample="legal" class="sample-tab text-xs font-semibold px-3.5 py-2 rounded-lg border transition-colors cursor-pointer whitespace-nowrap shrink-0">Legal / Finance</button>
-            <button type="button" role="tab" aria-selected="false" data-sample="local" class="sample-tab text-xs font-semibold px-3.5 py-2 rounded-lg border transition-colors cursor-pointer whitespace-nowrap shrink-0">Local SEO</button>
+          <div class="flex items-center gap-1.5 shrink-0 flex-wrap" role="tablist"
+            aria-label="Sample vertical selector">
+            <button type="button" role="tab" aria-selected="true" data-sample="essay"
+              class="sample-tab text-xs font-semibold px-3.5 py-2 rounded-lg border transition-colors cursor-pointer whitespace-nowrap shrink-0">Founder
+              Essay / Blog</button>
+            <button type="button" role="tab" aria-selected="false" data-sample="saas"
+              class="sample-tab text-xs font-semibold px-3.5 py-2 rounded-lg border transition-colors cursor-pointer whitespace-nowrap shrink-0">B2B
+              SaaS</button>
+            <button type="button" role="tab" aria-selected="false" data-sample="legal"
+              class="sample-tab text-xs font-semibold px-3.5 py-2 rounded-lg border transition-colors cursor-pointer whitespace-nowrap shrink-0">Legal
+              / Finance</button>
+            <button type="button" role="tab" aria-selected="false" data-sample="local"
+              class="sample-tab text-xs font-semibold px-3.5 py-2 rounded-lg border transition-colors cursor-pointer whitespace-nowrap shrink-0">Local
+              SEO</button>
           </div>
         </div>
 
         <div class="rounded-2xl border border-brand-line bg-brand-paper p-4 sm:p-6 shadow-card flex flex-col gap-5">
           <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-brand-line">
             <div class="flex flex-wrap items-center gap-2">
-              <button type="button" id="toggle-xray-highlights" aria-pressed="true" class="font-mono text-xs font-semibold px-3 py-1.5 rounded-lg bg-brand-ink text-white cursor-pointer transition-colors whitespace-nowrap">
+              <button type="button" id="toggle-xray-highlights" aria-pressed="true"
+                class="font-mono text-xs font-semibold px-3 py-1.5 rounded-lg bg-brand-ink text-white cursor-pointer transition-colors whitespace-nowrap">
                 Forensic X-Ray: ON
               </button>
-              <button type="button" id="toggle-sample-format" class="font-mono text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-brand-line text-brand-ink hover:border-brand-ink cursor-pointer transition-colors whitespace-nowrap">
+              <button type="button" id="toggle-sample-format"
+                class="font-mono text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-brand-line text-brand-ink hover:border-brand-ink cursor-pointer transition-colors whitespace-nowrap">
                 View: Rendered CMS
               </button>
             </div>
-            <div class="flex items-center gap-3">
-              <span id="copy-sample-status" aria-live="polite" class="hidden sm:inline font-mono text-xs text-brand-emerald font-semibold">0.0% AI Verified</span>
-              <button type="button" id="copy-sample-text-btn" class="font-mono text-xs font-semibold bg-brand-accent hover:bg-brand-accentHover text-brand-ink px-3.5 py-1.5 rounded-lg border border-brand-ink cursor-pointer transition-colors whitespace-nowrap">
-                Copy &amp; Test in Pangram
+            <div class="flex flex-wrap items-center gap-2">
+              <span id="copy-sample-status" aria-live="polite"
+                class="hidden md:inline font-mono text-xs text-brand-emerald font-semibold">0.0% AI Verified</span>
+              <button type="button" id="copy-sample-text-btn"
+                class="font-mono text-xs font-semibold bg-brand-accent hover:bg-brand-accentHover text-brand-ink px-3.5 py-1.5 rounded-lg border border-brand-ink cursor-pointer transition-colors whitespace-nowrap">
+                1. Copy Human Sample
               </button>
+              <a href="https://www.pangram.com" target="_blank" rel="noopener noreferrer"
+                class="font-mono text-xs font-semibold bg-white hover:bg-brand-surface text-brand-ink px-3 py-1.5 rounded-lg border border-brand-line hover:border-brand-ink transition-colors whitespace-nowrap">
+                2. Test on Pangram.com ↗
+              </a>
             </div>
           </div>
 
@@ -331,34 +419,43 @@
             <div class="bg-white rounded-xl border border-red-200 p-5 flex flex-col justify-between gap-4">
               <div class="flex flex-col gap-3">
                 <div class="flex items-center justify-between gap-2">
-                  <span class="font-mono text-xs font-semibold text-brand-danger">RAW INPUT (AI DRAFT)</span>
-                  <span class="font-mono text-xs font-bold bg-brand-dangerBg text-brand-danger px-2.5 py-0.5 rounded-full whitespace-nowrap" id="sample-raw-badge">Pangram: 99.4% AI Flagged</span>
+                  <span class="font-mono text-xs font-semibold text-brand-danger">RAW INPUT (PROMPTED AI DRAFT)</span>
+                  <span
+                    class="font-mono text-xs font-bold bg-brand-dangerBg text-brand-danger px-2.5 py-0.5 rounded-full whitespace-nowrap"
+                    id="sample-raw-badge">Pangram: 99.2% AI Flagged</span>
                 </div>
-                <h3 class="text-base font-bold text-brand-ink" id="sample-raw-title">B2B SaaS: Automated Expense Reconciliation</h3>
+                <h3 class="text-base font-bold text-brand-ink" id="sample-raw-title"></h3>
                 <div class="text-sm text-brand-slate leading-relaxed" id="sample-raw-body"></div>
               </div>
-              <div class="font-mono text-xs text-brand-danger border-t border-brand-line pt-3" id="sample-raw-meta"></div>
+              <div class="font-mono text-xs text-brand-danger border-t border-brand-line pt-3" id="sample-raw-meta">
+              </div>
             </div>
 
-            <div class="bg-white rounded-xl border border-emerald-300 p-5 flex flex-col justify-between gap-4 shadow-card">
+            <div
+              class="bg-white rounded-xl border border-emerald-300 p-5 flex flex-col justify-between gap-4 shadow-card">
               <div class="flex flex-col gap-3">
                 <div class="flex items-center justify-between gap-2">
-                  <span class="font-mono text-xs font-semibold text-brand-emerald">ANGRAM™ CLEAN OUTPUT</span>
-                  <span class="font-mono text-xs font-bold bg-brand-emeraldBg text-brand-emerald px-2.5 py-0.5 rounded-full whitespace-nowrap" id="sample-human-badge">Pangram: 0.0% AI • Intact</span>
+                  <span class="font-mono text-xs font-semibold text-brand-emerald">ANGRAM™ HUMAN RE-AUTHORED</span>
+                  <span
+                    class="font-mono text-xs font-bold bg-brand-emeraldBg text-brand-emerald px-2.5 py-0.5 rounded-full whitespace-nowrap"
+                    id="sample-human-badge">Pangram: 0.0% AI • Intact</span>
                 </div>
-                <h3 class="text-base font-bold text-brand-ink" id="sample-human-title">B2B SaaS: Automated Expense Reconciliation</h3>
+                <h3 class="text-base font-bold text-brand-ink" id="sample-human-title"></h3>
                 <div class="text-sm text-brand-ink leading-relaxed" id="sample-human-body"></div>
               </div>
-              <div class="flex flex-wrap items-center justify-between gap-2 font-mono text-xs font-semibold text-brand-emerald border-t border-brand-line pt-3" id="sample-human-meta"></div>
+              <div
+                class="flex flex-wrap items-center justify-between gap-2 font-mono text-xs font-semibold text-brand-emerald border-t border-brand-line pt-3"
+                id="sample-human-meta"></div>
             </div>
           </div>
 
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
             <span class="text-xs sm:text-sm text-brand-slate">
-              Want to test on your own client drafts instead?
+              Have a draft sitting in Google Docs or Notion right now? Use 1 credit today and bank 4 for later.
             </span>
-            <button type="button" data-plan="blind-test" class="open-order-modal inline-flex items-center justify-center gap-2 bg-brand-ink hover:bg-brand-slate text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-lg cursor-pointer transition-colors whitespace-nowrap self-start sm:self-auto">
-              <span>Test 5 Articles Risk-Free — $99 →</span>
+            <button type="button" data-plan="blind-test"
+              class="open-order-modal inline-flex items-center justify-center gap-2 bg-brand-ink hover:bg-brand-slate text-white font-semibold text-xs sm:text-sm px-4 py-2.5 rounded-lg cursor-pointer transition-colors whitespace-nowrap self-start sm:self-auto">
+              <span>Start With 5 Credits — $99 →</span>
             </button>
           </div>
         </div>
@@ -367,31 +464,143 @@
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 3: WHY OPTIONS FAIL + 3-GATE EDITORIAL MECHANISM  -->
+    <!-- SECTION 3: DUAL-TRACK PERSONA FORK (SOLO + AGENCY WHALES) -->
     <!-- ========================================================= -->
-    <section class="w-full bg-brand-paper py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-brand-line" id="mechanism">
+    <section class="w-full bg-brand-paper py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-brand-line"
+      id="who-its-for">
+      <div class="max-w-6xl mx-auto flex flex-col gap-8">
+
+        <div class="max-w-2xl flex flex-col gap-2">
+          <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">Two Tracks, Same
+            Clean-Room Desk</span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-brand-ink leading-tight">
+            Built whether you publish 1 essay a month—or 200 client articles.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Track A: Solo Founders, Writers, Newsletter Authors, Execs -->
+          <div
+            class="bg-white rounded-2xl border border-brand-line p-6 sm:p-7 shadow-card flex flex-col justify-between gap-6">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center justify-between gap-2">
+                <span
+                  class="font-mono text-xs font-bold uppercase bg-brand-surface text-brand-ink px-3 py-1 rounded-full">For
+                  Founders, Writers &amp; Creators</span>
+                <span class="font-mono text-xs font-semibold text-brand-emerald">Reputation Shield</span>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-brand-ink leading-snug">
+                Never get ratio’d by a Pangram screenshot on X or LinkedIn.
+              </h3>
+              <p class="text-sm text-brand-slate leading-relaxed">
+                You use Claude to brainstorm, structure, and get a rough draft out of your head fast—your ideas are
+                real, so you shouldn’t be shamed online because a detector caught LLM phrasing.
+              </p>
+              <ul class="space-y-2.5 text-sm text-brand-ink">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-brand-emerald font-bold mt-0.5">✓</span>
+                  <span><strong>Keeps your hot takes &amp; personal stories:</strong> Zero bland “SEO content mill”
+                    voice—calibrated to 3 samples of your real writing.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-brand-emerald font-bold mt-0.5">✓</span>
+                  <span><strong>No batch required:</strong> Buy the $99 5-credit pack, submit <strong>1 blog post or
+                      newsletter today</strong>, and save 4 credits for 12 months.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-brand-emerald font-bold mt-0.5">✓</span>
+                  <span><strong>Total discretion:</strong> Strict NDA, blind writer desk (writers never see your name or
+                    URL), and auto-purge.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-brand-line flex items-center justify-between gap-3">
+              <span class="font-mono text-xs text-brand-muted">$19.80 / 1,500w post</span>
+              <button type="button" data-plan="blind-test"
+                class="open-order-modal font-semibold text-xs sm:text-sm bg-brand-ink hover:bg-brand-slate text-white px-4 py-2.5 rounded-lg cursor-pointer transition-colors whitespace-nowrap">
+                Humanize 1 Draft Today ($99 / 5-Pack) →
+              </button>
+            </div>
+          </div>
+
+          <!-- Track B: SEO Agencies, Content Ops & Niche Publishers -->
+          <div
+            class="bg-brand-ink text-white rounded-2xl border border-brand-ink p-6 sm:p-7 shadow-card-lg flex flex-col justify-between gap-6">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center justify-between gap-2">
+                <span
+                  class="font-mono text-xs font-bold uppercase bg-brand-accent text-brand-ink px-3 py-1 rounded-full">For
+                  SEO &amp; Content Agencies</span>
+                <span class="font-mono text-xs font-semibold text-brand-accent">High-Margin Scale</span>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-white leading-snug">
+                Protect client retainers at 90% less than Verblio.
+              </h3>
+              <p class="text-sm text-neutral-300 leading-relaxed">
+                Enterprise clients now audit deliverables on Pangram before paying invoices. Keep your fast Claude/GPT
+                outline workflow while delivering verifiable 100% human articles at $11–$15/1k words.
+              </p>
+              <ul class="space-y-2.5 text-sm text-neutral-100">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-brand-accent font-bold mt-0.5">✓</span>
+                  <span><strong>90.6% margin savings:</strong> Pay $11–$15/1k on Grow &amp; Build packs vs. $160–$450/1k
+                    at Verblio or legacy content shops.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-brand-accent font-bold mt-0.5">✓</span>
+                  <span><strong>Strict SEO &amp; HTML Entity Lock:</strong> Exact H1–H3s, target keywords, internal
+                    anchor URLs, stats, and tables stay intact.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-brand-accent font-bold mt-0.5">✓</span>
+                  <span><strong>White-Label Proof PDFs + CMS Push:</strong> Attach unbranded 0.0% AI certificates to
+                    client reports; push via Zapier, API, or WordPress.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-white/15 flex items-center justify-between gap-3">
+              <span class="font-mono text-xs text-brand-accent">$11–$15 / 1k at volume</span>
+              <a href="#volume-packs"
+                class="font-bold text-xs sm:text-sm bg-brand-accent hover:bg-brand-accentHover text-brand-ink px-4 py-2.5 rounded-lg transition-colors whitespace-nowrap">
+                See Agency Volume Packs ↓
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECTION 4: WHY HUMANIZERS FAIL + 3-GATE MECHANISM         -->
+    <!-- ========================================================= -->
+    <section class="w-full bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-brand-line" id="mechanism">
       <div class="max-w-6xl mx-auto flex flex-col gap-10">
 
         <!-- Problem + Responsive Benchmark Comparison -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           <div class="lg:col-span-5 flex flex-col gap-4">
-            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">Why Other Options Fail</span>
+            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">Why Other Options
+              Fail</span>
             <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-ink leading-tight">
-              Why AI humanizers and manual editing both fail Pangram.
+              AI humanizers and light manual edits still get caught 98.8% of the time.
             </h2>
             <p class="text-sm sm:text-base text-brand-slate leading-relaxed">
-              Using an LLM to rewrite your writing cannot remove the statistical fingerprint of an LLM. Until now, the only safe alternative was Verblio: $160/1k words and waiting a week.
+              Asking an LLM to “write more human” or swapping a few adjectives cannot erase the statistical fingerprint
+              of AI. The only way to score 100% Human today and on every future Pangram
+              update is to have a human write the sentences from scratch.
             </p>
           </div>
 
-          <div class="lg:col-span-7 bg-white rounded-2xl border border-brand-line shadow-card overflow-hidden">
-            <div class="px-5 py-4 border-b border-brand-line flex flex-wrap items-center justify-between gap-2">
-              <span class="font-mono text-xs font-bold uppercase text-brand-ink">Benchmark Study (N=100 Articles)</span>
+          <div class="lg:col-span-7 bg-brand-paper rounded-2xl border border-brand-line shadow-card overflow-hidden">
+            <div
+              class="px-5 py-4 bg-white border-b border-brand-line flex flex-wrap items-center justify-between gap-2">
+              <span class="font-mono text-xs font-bold uppercase text-brand-ink">Detector Survival Benchmark</span>
               <span class="font-mono text-xs text-brand-muted">Pangram • GPTZero • Originality.ai</span>
             </div>
 
             <!-- Mobile Stacked Benchmark Cards -->
-            <div class="md:hidden divide-y divide-brand-line text-sm">
+            <div class="md:hidden divide-y divide-brand-line text-sm bg-white">
               <div class="p-4 flex items-center justify-between gap-3">
                 <div>
                   <div class="font-semibold text-brand-ink">Raw LLM (Claude / GPT)</div>
@@ -401,7 +610,7 @@
               </div>
               <div class="p-4 flex items-center justify-between gap-3">
                 <div>
-                  <div class="font-semibold text-brand-ink">Humanizers / Manual Edits</div>
+                  <div class="font-semibold text-brand-ink">AI Humanizers / Manual Edits</div>
                   <div class="font-mono text-xs text-brand-danger mt-0.5">98.8%–99.9% Caught* • 1–4h</div>
                 </div>
                 <div class="font-mono text-sm font-semibold text-brand-muted shrink-0">$29–$85/1k</div>
@@ -409,7 +618,7 @@
               <div class="p-4 flex items-center justify-between gap-3">
                 <div>
                   <div class="font-semibold text-brand-ink">Verblio / Legacy Agencies</div>
-                  <div class="font-mono text-xs text-brand-emerald mt-0.5">0.0% AI • 3–7 days</div>
+                  <div class="font-mono text-xs text-brand-emerald mt-0.5">0.0% AI • 5–7 days</div>
                 </div>
                 <div class="font-mono text-sm font-semibold text-brand-ink shrink-0">$160–$450/1k</div>
               </div>
@@ -417,16 +626,18 @@
                 <div>
                   <div class="font-bold text-brand-ink">Angram™</div>
                   <div class="mt-1 flex items-center gap-2">
-                    <span class="inline-block whitespace-nowrap font-mono text-[11px] font-bold bg-brand-emerald text-white px-2 py-0.5 rounded">100% Human Guaranteed</span>
-                    <span class="font-mono text-xs text-brand-ink font-semibold">&lt;4 hrs</span>
+                    <span
+                      class="inline-block whitespace-nowrap font-mono text-[11px] font-bold bg-brand-emerald text-white px-2 py-0.5 rounded">0.0%
+                      AI Guaranteed</span>
+                    <span class="font-mono text-xs text-brand-ink font-semibold">12 hrs</span>
                   </div>
                 </div>
-                <div class="font-mono text-base font-extrabold text-brand-ink shrink-0">$15/1k</div>
+                <div class="font-mono text-base font-extrabold text-brand-ink shrink-0">$11–$20/1k</div>
               </div>
             </div>
 
             <!-- Desktop Table -->
-            <div class="hidden md:block">
+            <div class="hidden md:block bg-white">
               <table class="w-full text-left border-collapse text-sm">
                 <thead>
                   <tr class="bg-brand-surface font-mono text-xs text-brand-slate border-b border-brand-line">
@@ -444,7 +655,7 @@
                     <td class="py-3.5 px-4 text-right font-mono text-brand-muted">~$0.10</td>
                   </tr>
                   <tr>
-                    <td class="py-3.5 px-4 font-medium text-brand-ink">AI Humanizers / Manual Edits</td>
+                    <td class="py-3.5 px-4 font-medium text-brand-ink">AI Humanizers / Light Edits</td>
                     <td class="py-3.5 px-4 font-mono text-xs font-semibold text-brand-danger">98.8%–99.9% Caught*</td>
                     <td class="py-3.5 px-4 text-brand-muted">1–4 hrs</td>
                     <td class="py-3.5 px-4 text-right font-mono text-brand-muted">$29–$85</td>
@@ -452,113 +663,108 @@
                   <tr>
                     <td class="py-3.5 px-4 font-medium text-brand-ink">Verblio / Legacy Agencies</td>
                     <td class="py-3.5 px-4 font-mono text-xs font-semibold text-brand-emerald">0.0% AI</td>
-                    <td class="py-3.5 px-4 text-brand-muted">3–7 days</td>
+                    <td class="py-3.5 px-4 text-brand-muted">5–7 days</td>
                     <td class="py-3.5 px-4 text-right font-mono font-semibold text-brand-ink">$160–$450</td>
                   </tr>
                   <tr class="bg-brand-accent/25">
                     <td class="py-4 px-4 font-bold text-brand-ink">Angram™</td>
-                    <td class="py-4 px-4"><span class="inline-block whitespace-nowrap font-mono text-xs font-bold bg-brand-emerald text-white px-2.5 py-0.5 rounded">100% Human Guaranteed</span></td>
-                    <td class="py-4 px-4 font-semibold text-brand-ink whitespace-nowrap">&lt; 4 hours</td>
-                    <td class="py-4 px-4 text-right font-mono font-extrabold text-brand-ink whitespace-nowrap">$15</td>
+                    <td class="py-4 px-4"><span
+                        class="inline-block whitespace-nowrap font-mono text-xs font-bold bg-brand-emerald text-white px-2.5 py-0.5 rounded">0.0%
+                        AI Guaranteed</span></td>
+                    <td class="py-4 px-4 font-semibold text-brand-ink whitespace-nowrap">12 hours</td>
+                    <td class="py-4 px-4 text-right font-mono font-extrabold text-brand-ink whitespace-nowrap">$11–$20
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
             <div class="px-5 py-2.5 bg-brand-paper border-t border-brand-line font-mono text-[11px] text-brand-muted">
-              *Pangram published catch rates across edited AI drafts (99.9%) and commercial humanizers (98.8%).
+              *Published Pangram catch rates on lightly edited AI drafts (99.9%) and commercial AI humanizers (98.8%).
             </div>
           </div>
         </div>
 
-        <!-- How It Works: 3-Gate Editorial & Clean-Room Pipeline -->
+        <!-- How It Works: 3-Gate Clean-Room Pipeline -->
         <div class="flex flex-col gap-6 pt-8 border-t border-brand-line">
           <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">3-Gate Editorial Protocol</span>
+              <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">3-Gate Clean-Room
+                Protocol</span>
               <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-ink mt-1">
-                AI handles research. Vetted human editors write every word.
+                Your AI draft brings the research. Humans write every final word.
               </h2>
             </div>
-            <span class="font-mono text-xs font-semibold text-brand-emerald bg-brand-emeraldBg px-3 py-1.5 rounded-full self-start md:self-auto whitespace-nowrap">
-              Zero AI writes your final copy
+            <span
+              class="font-mono text-xs font-semibold text-brand-emerald bg-brand-emeraldBg px-3 py-1.5 rounded-full self-start md:self-auto whitespace-nowrap">
+              Immune to future detector updates
             </span>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-2xl border border-brand-line p-6 flex flex-col gap-3">
+            <div class="bg-brand-paper rounded-2xl border border-brand-line p-6 flex flex-col gap-3">
               <div class="flex items-center justify-between">
-                <div class="w-8 h-8 rounded-lg bg-brand-surface font-mono text-xs font-bold flex items-center justify-center text-brand-ink">01</div>
-                <span class="font-mono text-[11px] font-semibold text-brand-muted">ENTITY &amp; SEO LOCK</span>
+                <div
+                  class="w-8 h-8 rounded-lg bg-white border border-brand-line font-mono text-xs font-bold flex items-center justify-center text-brand-ink">
+                  01</div>
+                <span class="font-mono text-[11px] font-semibold text-brand-muted">VOICE &amp; ENTITY LOCK</span>
               </div>
-              <h3 class="text-lg font-bold text-brand-ink">Drop AI Drafts &amp; Lock Rules</h3>
+              <h3 class="text-lg font-bold text-brand-ink">Strip AI Tokens, Lock Core Facts</h3>
               <p class="text-sm text-brand-slate leading-relaxed">
-                Send Claude or GPT drafts via portal, API, or Zapier. Every H1–H3, target keyword, stat, citation, and internal anchor link is locked before writing begins.
+                Drop a Google Doc, Markdown, or HTML draft. We extract your thesis, anecdotes, stats, H1–H3s, tables,
+                and exact anchor URLs into a clean outline—destroying the raw AI sentences before writing starts.
               </p>
             </div>
 
-            <div class="bg-white rounded-2xl border border-brand-line p-6 flex flex-col gap-3">
+            <div class="bg-brand-paper rounded-2xl border border-brand-line p-6 flex flex-col gap-3">
               <div class="flex items-center justify-between">
-                <div class="w-8 h-8 rounded-lg bg-brand-surface font-mono text-xs font-bold flex items-center justify-center text-brand-ink">02</div>
-                <span class="font-mono text-[11px] font-semibold text-brand-muted">NATIVE QA GATE</span>
+                <div
+                  class="w-8 h-8 rounded-lg bg-white border border-brand-line font-mono text-xs font-bold flex items-center justify-center text-brand-ink">
+                  02</div>
+                <span class="font-mono text-[11px] font-semibold text-brand-muted">AIR-GAPPED AUTHORSHIP</span>
               </div>
-              <h3 class="text-lg font-bold text-brand-ink">Air-Gapped Domain Drafting</h3>
+              <h3 class="text-lg font-bold text-brand-ink">Fresh Human Drafting + Native Edit</h3>
               <p class="text-sm text-brand-slate leading-relaxed">
-                <strong>Writers never see an AI sentence.</strong> Domain-matched writers (SaaS, Legal, Local) draft fresh prose from structured facts, then a Senior Native Editor (US/UK/AU) matches your 3 voice samples.
+                <strong>Writers never see your raw AI sentences</strong>, so AI syntax cannot bleed through. A
+                domain-matched writer authors fresh prose from the structured brief, and a Senior Native Editor
+                (US/UK/AU) calibrates tone to your samples.
               </p>
             </div>
 
-            <div class="bg-white rounded-2xl border border-brand-line p-6 flex flex-col gap-3">
+            <div class="bg-brand-paper rounded-2xl border border-brand-line p-6 flex flex-col gap-3">
               <div class="flex items-center justify-between">
-                <div class="w-8 h-8 rounded-lg bg-brand-emeraldBg font-mono text-xs font-bold flex items-center justify-center text-brand-emerald">03</div>
-                <span class="font-mono text-[11px] font-semibold text-brand-emerald">3-DETECTOR PASS</span>
+                <div
+                  class="w-8 h-8 rounded-lg bg-brand-emeraldBg font-mono text-xs font-bold flex items-center justify-center text-brand-emerald">
+                  03</div>
+                <span class="font-mono text-[11px] font-semibold text-brand-emerald">TRIPLE-DETECTOR GATE</span>
               </div>
-              <h3 class="text-lg font-bold text-brand-ink">0.0% AI Proof in &lt; 4 Hours</h3>
+              <h3 class="text-lg font-bold text-brand-ink">0.0% AI Proof</h3>
               <p class="text-sm text-brand-slate leading-relaxed">
-                Automated QA verifies <strong>0.0% AI on Pangram, GPTZero &amp; Originality.ai</strong> plus 98.4% semantic &amp; HTML accuracy—pushing straight to WordPress, Webflow, or Webhook.
+                Every piece must clear <strong>Pangram, GPTZero, and Originality.ai at 0.0% AI</strong> plus a
+                link/structure diff check before delivery to your inbox, WordPress, Webflow, or Webhook.
               </p>
             </div>
           </div>
 
-          <!-- Case Study + ICP Qualifier -->
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-            <div class="lg:col-span-7 rounded-2xl bg-brand-ink text-white p-6 flex flex-col justify-between gap-4">
-              <div class="flex flex-col gap-1.5">
-                <span class="font-mono text-xs font-semibold text-brand-accent uppercase">Agency Rescue Case Study • Live Blog Retrofit</span>
-                <h3 class="text-lg sm:text-xl font-bold">50 clean rewrites in 3h 40m saved a $42,000/yr B2B retainer</h3>
-                <p class="text-sm text-neutral-300 leading-relaxed">
-                  When a $3,500/mo client ran Pangram across their live blog before renewal, 50 posts failed. Replacing all 50 URLs via Angram™ cost ~$1,122 (vs. $12,000+ on Verblio), kept every URL slug &amp; internal link intact, and cleared 50/50 audits at 0.0% AI.
-                </p>
-              </div>
-              <div class="grid grid-cols-3 gap-3 text-center bg-white/5 border border-white/10 rounded-xl p-3">
-                <div>
-                  <div class="font-mono text-[11px] text-neutral-400">SPEED</div>
-                  <div class="text-base sm:text-lg font-extrabold text-white">3h 40m</div>
-                </div>
-                <div>
-                  <div class="font-mono text-[11px] text-neutral-400">RESCUE COST</div>
-                  <div class="text-base sm:text-lg font-extrabold text-white">$1,122</div>
-                </div>
-                <div>
-                  <div class="font-mono text-[11px] text-brand-accent">RETAINER SAVED</div>
-                  <div class="text-base sm:text-lg font-extrabold text-brand-accent">$42k/yr</div>
-                </div>
-              </div>
+          <!-- Reason-Why Economics Box (Defuses "How is $15/1k real human writing?" Early) -->
+          <div
+            class="rounded-2xl bg-brand-surface/80 border border-brand-line p-5 sm:p-6 flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+            <div class="flex flex-col gap-1.5 max-w-3xl">
+              <span class="font-mono text-xs font-bold text-brand-ink uppercase">“Wait—how is human writing
+                $11–$20/1k instead of $160/1k?”</span>
+              <p class="text-sm text-brand-slate leading-relaxed">
+                Traditional agencies charge $160–$450/1k because <strong>80% of writer hours go to topic research, SME
+                  interviews, outlining, and account-manager back-and-forth</strong>. Your Claude or GPT draft already
+                did the 80% heavy lifting. Our writers spend 100% of their billable time doing one thing fast: turning
+                structured briefs into crisp human sentences. And because real humans author every token, <strong>future
+                  Pangram model updates will never retroactively flag your published archive.</strong>
+              </p>
             </div>
-
-            <div class="lg:col-span-5 rounded-2xl bg-white border border-brand-line p-6 flex flex-col justify-between gap-4">
-              <div>
-                <span class="font-mono text-xs font-semibold text-brand-emerald uppercase">✓ Built For You If</span>
-                <p class="text-sm text-brand-slate mt-1 leading-relaxed">
-                  You ship <strong class="text-brand-ink">15–300+ articles/mo</strong> from Claude/GPT outlines (or need to rescue already-published flagged client posts) at agency margins.
-                </p>
-              </div>
-              <div class="border-t border-brand-line pt-4">
-                <span class="font-mono text-xs font-semibold text-brand-danger uppercase">✕ Not For You If</span>
-                <p class="text-sm text-brand-slate mt-1 leading-relaxed">
-                  You want a $29/mo instant 2-second synonym spinner. Real vetted editors write every sentence here under a 4-hour SLA.
-                </p>
-              </div>
+            <div class="shrink-0">
+              <span
+                class="inline-flex items-center gap-1.5 font-mono text-xs font-bold bg-white border border-brand-line text-brand-ink px-3.5 py-2 rounded-xl whitespace-nowrap">
+                ✓ Zero AI in final prose
+              </span>
             </div>
           </div>
         </div>
@@ -567,242 +773,369 @@
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 4: WHITE-LABEL PROOF + RISK-REVERSAL GUARANTEE    -->
+    <!-- SECTION 5: SOCIAL PROOF + DOUBLE GUARANTEE + CERTIFICATE  -->
     <!-- ========================================================= -->
-    <section class="w-full bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-brand-line" id="guarantee">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+    <section class="w-full bg-brand-paper py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-brand-line"
+      id="guarantee">
+      <div class="max-w-6xl mx-auto flex flex-col gap-12">
 
-        <!-- Left: White-Label Certificate Preview -->
-        <div class="lg:col-span-6 bg-brand-paper rounded-2xl border border-brand-line p-5 sm:p-6 shadow-card flex flex-col gap-4">
-          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-brand-line">
+        <!-- Peer Proof Across Both Personas -->
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
             <div>
-              <span class="font-mono text-xs font-semibold text-brand-muted uppercase">Included With Every Article</span>
-              <h3 class="text-lg font-bold text-brand-ink">White-Label Proof Certificate</h3>
-            </div>
-            <div class="flex items-center gap-1.5 shrink-0">
-              <button class="cert-view-btn font-mono text-xs font-semibold px-2.5 py-1 rounded-md border cursor-pointer whitespace-nowrap" data-cert-view="pdf" type="button" aria-pressed="true">Client PDF</button>
-              <button class="cert-view-btn font-mono text-xs font-semibold px-2.5 py-1 rounded-md border cursor-pointer whitespace-nowrap" data-cert-view="json" type="button" aria-pressed="false">JSON</button>
-              <button class="font-mono text-xs font-semibold px-2.5 py-1 rounded-md bg-white border border-brand-line hover:border-brand-ink cursor-pointer whitespace-nowrap" id="copy-cert-btn" type="button">Copy ID</button>
+              <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">Verified
+                Buyers</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-ink mt-1">
+                Used by solo founders protecting their name &amp; agencies protecting retainers.
+              </h2>
             </div>
           </div>
 
-          <div id="cert-pdf-preview" class="bg-white rounded-xl border border-brand-line p-4 font-mono text-xs space-y-3">
-            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-brand-line pb-2 font-bold text-brand-ink">
-              <span>[YOUR AGENCY LOGO] // PROVENANCE</span>
-              <span class="bg-brand-surface px-2 py-0.5 rounded text-[11px] whitespace-nowrap">WHITE-LABEL</span>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div
+              class="bg-white rounded-2xl border border-brand-line p-5 flex flex-col justify-between gap-4 shadow-card">
+              <p class="text-sm text-brand-ink leading-relaxed">
+                “A $9,500/mo enterprise SaaS client started running every blog deliverable through Pangram without
+                telling us. Switching our Claude workflow to Angram saved the retainer overnight—and kept our gross
+                margin above 78%.”
+              </p>
+              <div class="border-t border-brand-line pt-3 flex items-center justify-between gap-2">
+                <div>
+                  <div class="text-xs font-bold text-brand-ink">Marcus V.</div>
+                  <div class="font-mono text-[11px] text-brand-muted">Managing Partner, B2B SEO Agency</div>
+                </div>
+                <span
+                  class="font-mono text-[10px] font-semibold bg-brand-emeraldBg text-brand-emerald px-2 py-0.5 rounded">Grow
+                  Pack</span>
+              </div>
             </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-brand-slate">
-              <div>
-                <div class="text-[10px] text-brand-muted uppercase">Pangram</div>
-                <strong class="text-brand-emerald whitespace-nowrap">0.0% AI</strong>
+
+            <div
+              class="bg-white rounded-2xl border border-brand-line p-5 flex flex-col justify-between gap-4 shadow-card">
+              <p class="text-sm text-brand-ink leading-relaxed">
+                “I voice-note rough rants into Claude for my Substack and founder blog, then send one draft a week here.
+                It comes back sounding like me on my sharpest day—not an SEO bot—and scores 0.0% AI every single time.”
+              </p>
+              <div class="border-t border-brand-line pt-3 flex items-center justify-between gap-2">
+                <div>
+                  <div class="text-xs font-bold text-brand-ink">Elena R.</div>
+                  <div class="font-mono text-[11px] text-brand-muted">Seed SaaS Founder &amp; Writer</div>
+                </div>
+                <span
+                  class="font-mono text-[10px] font-semibold bg-brand-surface text-brand-ink px-2 py-0.5 rounded">5-Credit
+                  Pack</span>
               </div>
-              <div>
-                <div class="text-[10px] text-brand-muted uppercase">GPTZero</div>
-                <strong class="text-brand-emerald whitespace-nowrap">0.0% AI</strong>
-              </div>
-              <div>
-                <div class="text-[10px] text-brand-muted uppercase">Originality</div>
-                <strong class="text-brand-emerald whitespace-nowrap">0.0% AI</strong>
-              </div>
-              <div>
-                <div class="text-[10px] text-brand-muted uppercase">Retention</div>
-                <strong class="text-brand-ink whitespace-nowrap">98.4%</strong>
-              </div>
-              <div>
-                <div class="text-[10px] text-brand-muted uppercase">Keywords</div>
-                <strong class="text-brand-ink whitespace-nowrap">100% Lock</strong>
-              </div>
-              <div>
-                <div class="text-[10px] text-brand-muted uppercase">HTML / Links</div>
-                <strong class="text-brand-ink whitespace-nowrap">Intact</strong>
+            </div>
+
+            <div
+              class="bg-white rounded-2xl border border-brand-line p-5 flex flex-col justify-between gap-4 shadow-card">
+              <p class="text-sm text-brand-ink leading-relaxed">
+                “Tried three ‘undetectable’ humanizers first—Pangram flagged all three at 99% AI and mangled our HTML
+                comparison tables. Angram returned 14 posts in 3.5 hours with every internal anchor and table
+                untouched.”
+              </p>
+              <div class="border-t border-brand-line pt-3 flex items-center justify-between gap-2">
+                <div>
+                  <div class="text-xs font-bold text-brand-ink">Devon K.</div>
+                  <div class="font-mono text-[11px] text-brand-muted">Head of Content Ops, LegalTech</div>
+                </div>
+                <span
+                  class="font-mono text-[10px] font-semibold bg-brand-emeraldBg text-brand-emerald px-2 py-0.5 rounded">Build
+                  Pack</span>
               </div>
             </div>
           </div>
+        </div>
 
-          <pre id="cert-json-preview" class="hidden bg-brand-ink text-brand-accent rounded-xl p-4 font-mono text-xs whitespace-pre-wrap break-all leading-relaxed">{
+        <!-- Guarantee + Certificate Split -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start pt-8 border-t border-brand-line">
+
+          <!-- Left: Double Risk-Reversal Guarantee -->
+          <div class="lg:col-span-6 flex flex-col gap-5">
+            <div>
+              <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">Ironclad Risk
+                Reversal</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-ink mt-1">
+                Backed twice—so you risk zero dollars and zero reputation.
+              </h3>
+            </div>
+
+            <div class="bg-white rounded-xl border border-brand-line p-5 flex flex-col gap-2 shadow-card">
+              <div class="font-mono text-xs font-bold text-brand-emerald uppercase">✓ Guarantee 1 // $99 5-Credit
+                Starter Pack</div>
+              <h4 class="text-base font-bold text-brand-ink">100% Refunded + Keep the Rewrite—or 100% Credited When You
+                Upgrade</h4>
+              <p class="text-sm text-brand-slate leading-relaxed">
+                Test us on your hardest draft today. If any paragraph flags above 0.0% AI or you aren’t blown away by
+                how natural the prose reads, reply to your delivery email for a full $99 refund and keep the article.
+                Ready to scale? Apply your full $99 toward a Grow or Build pack within 30 days.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl border border-brand-line p-5 flex flex-col gap-2 shadow-card">
+              <div class="font-mono text-xs font-bold text-brand-ink uppercase">✓ Guarantee 2 // Every Ongoing
+                Deliverable</div>
+              <h4 class="text-base font-bold text-brand-ink">200% Word Credit</h4>
+              <p class="text-sm text-brand-slate leading-relaxed">
+                If any article ever scores above 0.0% AI on Pangram, GPTZero, or Originality.ai, drops a locked
+                link/keyword, or misses our turnaround SLA, we credit double the
+                words back to your account.
+              </p>
+            </div>
+
+            <div
+              class="rounded-xl bg-brand-surface border border-brand-line px-4 py-3 text-xs text-brand-slate flex items-center justify-between gap-3">
+              <span><strong>Personal Desk Accountability:</strong> Direct reply to any delivery email triggers a
+                same-day refund—zero forms or hoops.</span>
+            </div>
+          </div>
+
+          <!-- Right: Provenance & White-Label Proof Certificate -->
+          <div
+            class="lg:col-span-6 bg-white rounded-2xl border border-brand-line p-5 sm:p-6 shadow-card flex flex-col gap-4">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-brand-line">
+              <div>
+                <span class="font-mono text-xs font-semibold text-brand-muted uppercase">Included With Every
+                  Rewrite</span>
+                <h3 class="text-lg font-bold text-brand-ink">3-Detector Audit Receipt (White-Label Ready)</h3>
+              </div>
+              <div class="flex items-center gap-1.5 shrink-0">
+                <button
+                  class="cert-view-btn font-mono text-xs font-semibold px-2.5 py-1 rounded-md border cursor-pointer whitespace-nowrap"
+                  data-cert-view="pdf" type="button" aria-pressed="true">Clean PDF</button>
+                <button
+                  class="cert-view-btn font-mono text-xs font-semibold px-2.5 py-1 rounded-md border cursor-pointer whitespace-nowrap"
+                  data-cert-view="json" type="button" aria-pressed="false">Webhook JSON</button>
+                <button
+                  class="font-mono text-xs font-semibold px-2.5 py-1 rounded-md bg-brand-paper border border-brand-line hover:border-brand-ink cursor-pointer whitespace-nowrap"
+                  id="copy-cert-btn" type="button">Copy ID</button>
+              </div>
+            </div>
+
+            <p class="text-xs text-brand-slate">
+              Keep for your own peace of mind before hitting publish—or add your agency logo in one click to hand
+              clients undeniable human provenance.
+            </p>
+
+            <div id="cert-pdf-preview"
+              class="bg-brand-paper rounded-xl border border-brand-line p-4 font-mono text-xs space-y-3">
+              <div
+                class="flex flex-wrap items-center justify-between gap-2 border-b border-brand-line pb-2 font-bold text-brand-ink">
+                <span>HUMAN AUTHORSHIP AUDIT // #AN-90421</span>
+                <span
+                  class="bg-white border border-brand-line px-2 py-0.5 rounded text-[11px] whitespace-nowrap">UNBRANDED
+                  PDF</span>
+              </div>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-brand-slate">
+                <div>
+                  <div class="text-[10px] text-brand-muted uppercase">Pangram</div>
+                  <strong class="text-brand-emerald whitespace-nowrap">0.0% AI</strong>
+                </div>
+                <div>
+                  <div class="text-[10px] text-brand-muted uppercase">GPTZero</div>
+                  <strong class="text-brand-emerald whitespace-nowrap">0.0% AI</strong>
+                </div>
+                <div>
+                  <div class="text-[10px] text-brand-muted uppercase">Originality</div>
+                  <strong class="text-brand-emerald whitespace-nowrap">0.0% AI</strong>
+                </div>
+                <div>
+                  <div class="text-[10px] text-brand-muted uppercase">Voice Match</div>
+                  <strong class="text-brand-ink whitespace-nowrap">Calibrated</strong>
+                </div>
+                <div>
+                  <div class="text-[10px] text-brand-muted uppercase">Anchor Links</div>
+                  <strong class="text-brand-ink whitespace-nowrap">100% Locked</strong>
+                </div>
+                <div>
+                  <div class="text-[10px] text-brand-muted uppercase">HTML / Tables</div>
+                  <strong class="text-brand-ink whitespace-nowrap">Intact</strong>
+                </div>
+              </div>
+            </div>
+
+            <pre id="cert-json-preview"
+              class="hidden bg-brand-ink text-brand-accent rounded-xl p-4 font-mono text-xs whitespace-pre-wrap break-all leading-relaxed">{
   "cert_id": "AN-90421",
   "pangram_ai": 0.0,
   "gptzero_ai": 0.0,
   "originality_ai": 0.0,
-  "semantic_retention": 0.984,
-  "keywords_matched": "100%",
+  "anchors_locked": true,
   "formatting_intact": true,
   "pdf_white_label": "https://cdn.angram.io/certs/an-90421.pdf"
 }</pre>
 
-          <div class="flex flex-wrap items-center justify-between gap-2 font-mono text-xs text-brand-muted">
-            <span>Zero Angram branding—send straight to clients</span>
-            <span id="copy-cert-status" aria-live="polite" class="text-brand-ink font-semibold whitespace-nowrap">ID: AN-90421</span>
-          </div>
-        </div>
-
-        <!-- Right: Double Risk-Reversal Guarantee -->
-        <div class="lg:col-span-6 flex flex-col gap-5">
-          <div>
-            <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">Zero-Risk Guarantee</span>
-            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-ink mt-1">
-              Backed twice so you risk zero budget or client trust
-            </h2>
+            <div class="flex flex-wrap items-center justify-between gap-2 font-mono text-xs text-brand-muted">
+              <span>✓ 100% IP Transfer • ✓ Zero LLM Training • ✓ NDA</span>
+              <span id="copy-cert-status" aria-live="polite" class="text-brand-ink font-semibold whitespace-nowrap">ID:
+                AN-90421</span>
+            </div>
           </div>
 
-          <div class="bg-brand-paper rounded-xl border border-brand-line p-5 flex flex-col gap-2">
-            <div class="font-mono text-xs font-bold text-brand-emerald uppercase">✓ Guarantee 1 // Every Article Delivered</div>
-            <h3 class="text-base font-bold text-brand-ink">Free 2-Hour Rush Rewrite + 200% Word Credit</h3>
-            <p class="text-sm text-brand-slate leading-relaxed">
-              If any deliverable ever flags above 0.0% AI on Pangram, GPTZero, or Originality.ai, drops a required keyword/link, or misses our 4-hour SLA, we rewrite it free in 2 hours and credit double the words back to your balance.
-            </p>
-          </div>
-
-          <div class="bg-brand-paper rounded-xl border border-brand-line p-5 flex flex-col gap-2">
-            <div class="font-mono text-xs font-bold text-brand-ink uppercase">✓ Guarantee 2 // $99 5-Article Blind Test</div>
-            <h3 class="text-base font-bold text-brand-ink">100% Refunded + Keep the Articles, or Credited to Your First Pack</h3>
-            <p class="text-sm text-brand-slate leading-relaxed">
-              Put 5 of your hardest flagged drafts through hell for $99. Unimpressed or flagged? One email refunds every dollar. Love it? The full $99 credits toward your first word pack—making the test effectively free.
-            </p>
-          </div>
-
-          <div class="flex flex-wrap gap-x-6 gap-y-2 pt-1 font-mono text-xs text-brand-muted">
-            <span class="whitespace-nowrap">✓ 100% Client IP Transfer</span>
-            <span class="whitespace-nowrap">✓ Zero LLM Training</span>
-            <span class="whitespace-nowrap">✓ Mutual NDA &amp; Auto-Purge</span>
-          </div>
         </div>
 
       </div>
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 5: TIERED WORD PACK PRICING                       -->
+    <!-- SECTION 6: PRICING (STARTER 5-PACK FIRST + 12-MO CREDITS) -->
     <!-- ========================================================= -->
     <section class="w-full bg-brand-ink text-white py-14 sm:py-20 px-4 sm:px-6 lg:px-8" id="pricing">
       <div class="max-w-5xl mx-auto flex flex-col gap-8">
 
         <!-- Section Header -->
         <div class="max-w-2xl flex flex-col gap-2.5">
-          <span class="font-mono text-xs font-bold uppercase tracking-wider text-brand-accent">Tiered Word Packs • Zero Subscriptions</span>
+          <span class="font-mono text-xs font-bold uppercase tracking-wider text-brand-accent">Simple Word Credits •
+            Valid for 12 Full Months</span>
           <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-extrabold tracking-tight leading-[1.12] text-white">
-            Your rate automatically drops as your volume climbs.
+            Start with 5 flexible credits for $99—or lock in volume rates.
           </h2>
           <p class="text-sm sm:text-base text-neutral-300 leading-relaxed">
-            No subscriptions or auto-rebill. Just buy what you need. Credits expire after <strong class="text-white">3 months</strong>.
+            Zero subscriptions or auto-rebill traps. Spend credits one post at a time or 50 at once—every pack stays
+            valid for <strong class="text-white">12 months</strong>.
           </p>
         </div>
 
-        <!-- Clean Structured Pack Stack + Highest-Tier Perks -->
-        <div class="flex flex-col gap-4">
-
-          <!-- 3 Structured Tier Rows (Price = Direct Buy Button) -->
-          <div class="flex flex-col gap-3">
-
-            <!-- Tier 1: Start (25,000 Words) -->
-            <div class="rounded-2xl bg-white/[0.04] border border-white/15 p-4 sm:px-6 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div class="min-w-0">
-                <div class="flex flex-wrap items-center gap-2">
-                  <span class="text-lg sm:text-xl font-extrabold text-white whitespace-nowrap">Start</span>
-                  <span class="font-mono text-xs font-semibold text-neutral-300 whitespace-nowrap">• 25,000 words</span>
-                  <span class="font-mono text-[11px] text-neutral-400 whitespace-nowrap">(~18 articles)</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-2.5 mt-1.5 font-mono text-xs text-neutral-300">
-                  <span class="text-white font-bold">$20 / 1k</span>
-                  <span class="text-neutral-500">•</span>
-                  <span>Buy overage credits anytime • Valid 3 months</span>
-                </div>
-              </div>
-              <button type="button" data-plan="start" class="open-order-modal shrink-0 bg-white/10 hover:bg-brand-accent text-white hover:text-brand-ink font-extrabold font-mono text-base sm:text-lg px-6 py-3.5 rounded-xl border border-white/25 hover:border-brand-accent transition-colors cursor-pointer whitespace-nowrap text-center">
-                Buy $500 →
-              </button>
-            </div>
-
-            <!-- Tier 2: Grow (100,000 Words — MOST POPULAR) -->
-            <div id="growth-engine" class="rounded-2xl bg-brand-accent/[0.11] border-2 border-brand-accent p-4 sm:px-6 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div class="min-w-0">
-                <div class="flex flex-wrap items-center gap-2">
-                  <span class="text-lg sm:text-xl font-extrabold text-white whitespace-nowrap">Grow</span>
-                  <span class="font-mono text-xs font-semibold text-neutral-200 whitespace-nowrap">• 100,000 words</span>
-                  <span class="font-mono text-[10px] font-bold bg-brand-accent text-brand-ink px-2 py-0.5 rounded whitespace-nowrap">MOST POPULAR</span>
-                  <span class="font-mono text-[11px] text-neutral-300 whitespace-nowrap">(~75 articles)</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-2.5 mt-1.5 font-mono text-xs">
-                  <span class="text-brand-accent font-extrabold">$15 / 1k</span>
-                  <span class="text-neutral-400 line-through">$20/1k</span>
-                  <span class="font-semibold text-emerald-300 bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 rounded whitespace-nowrap">25% OFF (-$500)</span>
-                  <span class="text-neutral-300">90.6% less than Verblio</span>
-                </div>
-              </div>
-              <button type="button" data-plan="grow" class="open-order-modal shrink-0 bg-brand-accent hover:bg-brand-accentHover text-brand-ink font-extrabold font-mono text-base sm:text-lg px-6 py-3.5 rounded-xl border border-brand-ink shadow-cta transition-colors cursor-pointer whitespace-nowrap text-center">
-                Buy $1,500 →
-              </button>
-            </div>
-
-            <!-- Tier 3: Build (350,000 Words — LOWEST RATE) -->
-            <div class="rounded-2xl bg-white/[0.04] border border-white/15 p-4 sm:px-6 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div class="min-w-0">
-                <div class="flex flex-wrap items-center gap-2">
-                  <span class="text-lg sm:text-xl font-extrabold text-white whitespace-nowrap">Build</span>
-                  <span class="font-mono text-xs font-semibold text-neutral-200 whitespace-nowrap">• 350,000 words</span>
-                  <span class="font-mono text-[10px] font-bold bg-emerald-400 text-brand-ink px-2 py-0.5 rounded whitespace-nowrap">LOWEST RATE</span>
-                  <span class="font-mono text-[11px] text-neutral-400 whitespace-nowrap">(~262 articles)</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-2.5 mt-1.5 font-mono text-xs">
-                  <span class="text-emerald-400 font-extrabold">$11 / 1k</span>
-                  <span class="text-neutral-400 line-through">$20/1k</span>
-                  <span class="font-semibold text-emerald-400 bg-emerald-500/15 border border-emerald-500/25 px-2 py-0.5 rounded whitespace-nowrap">45% OFF (-$3,150)</span>
-                  <span class="text-brand-accent">+ Unlocks API SLA, Slack &amp; ACH</span>
-                </div>
-              </div>
-              <button type="button" data-plan="build" class="open-order-modal shrink-0 bg-white hover:bg-brand-accent text-brand-ink font-extrabold font-mono text-base sm:text-lg px-6 py-3.5 rounded-xl border border-white hover:border-brand-accent transition-colors cursor-pointer whitespace-nowrap text-center">
-                Buy $3,850 →
-              </button>
-            </div>
-
-          </div>
-
-          <!-- Structured Inclusion vs. Build-Only Gate -->
-          <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-            <div class="rounded-xl bg-emerald-500/10 border border-emerald-500/30 p-3.5 flex flex-col gap-2">
-              <span class="font-mono text-[11px] font-bold text-emerald-400">✓ ALL PACKS (START, GROW &amp; BUILD)</span>
-              <ul class="space-y-1 text-neutral-200 leading-snug">
-                <li>✓ Credits valid for 3 months</li>
-                <li>✓ Buy overage credits anytime</li>
-                <li>✓ 100% Human on Pangram (&lt;4h SLA)</li>
-                <li>✓ Zero subscriptions or auto-rebill</li>
-              </ul>
-            </div>
-            <div class="rounded-xl bg-white/[0.03] border border-white/15 p-3.5 flex flex-col gap-2">
-              <span class="font-mono text-[11px] font-bold text-brand-accent">UNLOCKED ONLY ON BUILD (350K)</span>
-              <ul class="space-y-1 text-neutral-200 leading-snug">
-                <li>✓ Dedicated API SLA + Priority Slack</li>
-                <li>✓ Unlimited client brand-voice profiles</li>
-                <li>✓ Priority 4-hour rush</li>
-                <li>✓ Custom ACH &amp; agency invoicing</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Entry Wedge: The $99 5-Article Blind Test -->
-        <div id="blind-test" class="rounded-2xl bg-gradient-to-br from-brand-accent/15 via-white/[0.06] to-white/[0.03] border-2 border-brand-accent p-6 sm:p-7 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <!-- TOP SPOTLIGHT: $99 5-CREDIT STARTER PACK (PERFECT SCENT-MATCH WITH HERO) -->
+        <div id="blind-test"
+          class="rounded-2xl bg-gradient-to-br from-brand-accent/20 via-white/[0.07] to-white/[0.03] border-2 border-brand-accent p-6 sm:p-7 flex flex-col lg:flex-row lg:items-center justify-between gap-6 shadow-card-lg">
           <div class="flex flex-col gap-3 max-w-2xl">
             <div class="flex flex-wrap items-center gap-2">
-              <span class="font-mono text-xs font-bold text-brand-ink bg-brand-accent px-2.5 py-0.5 rounded">FIRST-TIME BUYER? START HERE</span>
-              <span class="font-mono text-xs font-semibold text-brand-accent">7,500 WORDS (~5 ARTICLES) • $13.20/1K (34% OFF BASE RATE)</span>
+              <span class="font-mono text-xs font-bold text-brand-ink bg-brand-accent px-2.5 py-0.5 rounded">START HERE
+                • LIMIT 1 PER ACCOUNT</span>
+              <span class="font-mono text-xs font-semibold text-brand-accent">SUBSIDIZED INTRO RATE ($13.20/1K)</span>
             </div>
-            <h3 class="text-xl sm:text-2xl font-bold text-white">
-              Test Pack — $99 One-Time
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+              Starter 7,500 Credit Pack — $99 One-Time
             </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm text-neutral-200">
-              <span>✓ 5 human rewrites back today (&lt;4h SLA)</span>
-              <span>✓ Custom voice calibration (3 samples)</span>
-              <span>✓ Zero subscription or auto-rebill</span>
+            <p class="text-sm text-neutral-200 leading-relaxed">
+              Includes <strong class="text-white">7,500 human words (~5 articles at 1,500w each)</strong>. Only have 1
+              post ready today? Submit 1 draft right now and keep your remaining 4 credits banked for <strong
+                class="text-white">12 months</strong>.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm text-neutral-200 pt-1">
+              <span>✓ Use 1 credit today or all 5 at once</span>
+              <span>✓ Custom voice match (drop 3 writing samples)</span>
               <span>✓ 100% refunded if flagged or unimpressed</span>
+              <span>✓ Full $99 credited when upgrading to Grow/Build</span>
             </div>
           </div>
-          <div class="flex flex-col items-stretch sm:items-end gap-1.5 shrink-0">
-            <button type="button" data-plan="blind-test" class="open-order-modal bg-brand-accent hover:bg-brand-accentHover text-brand-ink font-extrabold text-sm sm:text-base px-6 py-4 rounded-xl cursor-pointer transition-colors whitespace-nowrap shadow-cta">
-              Test 5 Articles Risk-Free — $99 →
+          <div class="flex flex-col items-stretch sm:items-end gap-2 shrink-0">
+            <button type="button" data-plan="blind-test"
+              class="open-order-modal bg-brand-accent hover:bg-brand-accentHover text-brand-ink font-extrabold text-base px-7 py-4 rounded-xl cursor-pointer transition-colors whitespace-nowrap shadow-cta">
+              Get 5 Credits — $99 →
             </button>
-            <span class="font-mono text-[11px] text-neutral-300 text-center sm:text-right">100% refunded if unimpressed • Credited 100% to first pack</span>
+            <span class="font-mono text-[11px] text-neutral-300 text-center sm:text-right">Valid 12 months • Zero
+              auto-rebill</span>
+          </div>
+        </div>
+
+        <!-- VOLUME WORD PACKS (FOR ONGOING WRITERS & AGENCIES) -->
+        <div id="volume-packs" class="flex flex-col gap-3 pt-2">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-1">
+            <span class="font-mono text-xs font-bold uppercase tracking-wider text-neutral-300">Ongoing &amp; Agency
+              Volume Packs (All Valid 12 Months)</span>
+            <span class="font-mono text-xs text-emerald-400">Upgrading from Starter? Your $99 credits toward Grow or
+              Build</span>
+          </div>
+
+          <!-- Tier 1: Start (25,000 Words) -->
+          <div
+            class="rounded-2xl bg-white/[0.04] border border-white/15 p-4 sm:px-6 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-lg sm:text-xl font-extrabold text-white whitespace-nowrap">Start</span>
+                <span class="font-mono text-xs font-semibold text-neutral-300 whitespace-nowrap">• 25,000 words</span>
+                <span class="font-mono text-[11px] text-neutral-400 whitespace-nowrap">(~16 articles @ 1,500w)</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-2.5 mt-1.5 font-mono text-xs text-neutral-300">
+                <span class="text-white font-bold">$20 / 1k</span>
+                <span class="text-neutral-500">•</span>
+                <span>Ideal for solo blogs &amp; newsletters • Valid 12 months</span>
+              </div>
+            </div>
+            <button type="button" data-plan="start"
+              class="open-order-modal shrink-0 bg-white/10 hover:bg-brand-accent text-white hover:text-brand-ink font-extrabold font-mono text-base px-6 py-3.5 rounded-xl border border-white/25 hover:border-brand-accent transition-colors cursor-pointer whitespace-nowrap text-center">
+              Select Start — $500 →
+            </button>
+          </div>
+
+          <!-- Tier 2: Grow (100,000 Words — MOST POPULAR) -->
+          <div id="growth-engine"
+            class="rounded-2xl bg-white/[0.08] border-2 border-emerald-400 p-4 sm:px-6 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-lg sm:text-xl font-extrabold text-white whitespace-nowrap">Grow</span>
+                <span class="font-mono text-xs font-semibold text-neutral-200 whitespace-nowrap">• 100,000 words</span>
+                <span
+                  class="font-mono text-[10px] font-bold bg-emerald-400 text-brand-ink px-2 py-0.5 rounded whitespace-nowrap">MOST
+                  POPULAR AGENCY PACK</span>
+                <span class="font-mono text-[11px] text-neutral-300 whitespace-nowrap">(~66 articles @ 1,500w)</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-2.5 mt-1.5 font-mono text-xs">
+                <span class="text-emerald-400 font-extrabold">$15 / 1k</span>
+                <span class="text-neutral-400 line-through">$20/1k</span>
+                <span
+                  class="font-semibold text-emerald-300 bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 rounded whitespace-nowrap">SAVE
+                  $500 (25% OFF)</span>
+                <span class="text-neutral-300">Only $1,401 if upgrading from $99 Starter</span>
+              </div>
+            </div>
+            <button type="button" data-plan="grow"
+              class="open-order-modal shrink-0 bg-emerald-400 hover:bg-emerald-300 text-brand-ink font-extrabold font-mono text-base px-6 py-3.5 rounded-xl border border-brand-ink transition-colors cursor-pointer whitespace-nowrap text-center">
+              Select Grow — $1,500 →
+            </button>
+          </div>
+
+          <!-- Tier 3: Build (350,000 Words — LOWEST RATE) -->
+          <div
+            class="rounded-2xl bg-white/[0.04] border border-white/15 p-4 sm:px-6 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-lg sm:text-xl font-extrabold text-white whitespace-nowrap">Build</span>
+                <span class="font-mono text-xs font-semibold text-neutral-200 whitespace-nowrap">• 350,000 words</span>
+                <span
+                  class="font-mono text-[10px] font-bold bg-brand-accent text-brand-ink px-2 py-0.5 rounded whitespace-nowrap">LOWEST
+                  RATE</span>
+                <span class="font-mono text-[11px] text-neutral-400 whitespace-nowrap">(~233 articles @ 1,500w)</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-2.5 mt-1.5 font-mono text-xs">
+                <span class="text-brand-accent font-extrabold">$11 / 1k</span>
+                <span class="text-neutral-400 line-through">$20/1k</span>
+                <span
+                  class="font-semibold text-brand-accent bg-brand-accent/15 border border-brand-accent/30 px-2 py-0.5 rounded whitespace-nowrap">SAVE
+                  $3,150 (45% OFF)</span>
+                <span class="text-neutral-200">+ Dedicated API SLA, Slack, Unlimited Voices &amp; ACH</span>
+              </div>
+            </div>
+            <button type="button" data-plan="build"
+              class="open-order-modal shrink-0 bg-white hover:bg-brand-accent text-brand-ink font-extrabold font-mono text-base px-6 py-3.5 rounded-xl border border-white hover:border-brand-accent transition-colors cursor-pointer whitespace-nowrap text-center">
+              Select Build — $3,850 →
+            </button>
+          </div>
+        </div>
+
+        <!-- Inclusion Comparison Grid -->
+        <div
+          class="rounded-2xl bg-white/[0.04] border border-white/10 p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+          <div class="rounded-xl bg-emerald-500/10 border border-emerald-500/30 p-3.5 flex flex-col gap-2">
+            <span class="font-mono text-[11px] font-bold text-emerald-400">✓ INCLUDED IN EVERY PACK ($99 TO
+              $3,850)</span>
+            <ul class="space-y-1 text-neutral-200 leading-snug">
+              <li>✓ Full 12-month credit validity (use 1 post at a time or in bulk)</li>
+              <li>✓ 0.0% AI on Pangram, GPTZero &amp; Originality (&lt;4h SLA)</li>
+              <li>✓ Voice match + H1–H3, anchor link &amp; table preservation</li>
+              <li>✓ Unbranded Proof PDFs + 200% Zero-Flag Guarantee</li>
+            </ul>
+          </div>
+          <div class="rounded-xl bg-white/[0.03] border border-white/15 p-3.5 flex flex-col gap-2">
+            <span class="font-mono text-[11px] font-bold text-brand-accent">UNLOCKED ON BUILD (350K AGENCY SCALE)</span>
+            <ul class="space-y-1 text-neutral-200 leading-snug">
+              <li>✓ Dedicated API SLA + Priority Slack channel with Managing Editor</li>
+              <li>✓ Unlimited client brand-voice profiles</li>
+              <li>✓ Priority 2-to-4-hour batch rush lane</li>
+              <li>✓ Custom ACH &amp; net-terms agency invoicing</li>
+            </ul>
           </div>
         </div>
 
@@ -810,7 +1143,7 @@
     </section>
 
     <!-- ========================================================= -->
-    <!-- SECTION 6: CONCISE FAQ (SINGLE-ROW FILTERS)               -->
+    <!-- SECTION 7: OBJECTION-CRUSHING FAQ                         -->
     <!-- ========================================================= -->
     <section class="w-full bg-brand-paper py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-b border-brand-line" id="faq">
       <div class="max-w-4xl mx-auto flex flex-col gap-7">
@@ -819,85 +1152,169 @@
           <div class="min-w-0">
             <span class="font-mono text-xs font-semibold uppercase tracking-wider text-brand-muted">FAQ</span>
             <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-ink mt-1">
-              Straight answers before you test
+              Every skeptical question, answered straight
             </h2>
           </div>
           <div class="flex flex-wrap sm:flex-nowrap items-center gap-1.5 shrink-0">
-            <button type="button" data-faq-filter="all" class="faq-filter-btn bg-brand-ink text-white font-mono text-xs font-semibold px-3 py-1.5 rounded-lg cursor-pointer whitespace-nowrap">All (7)</button>
-            <button type="button" data-faq-filter="detection" class="faq-filter-btn bg-white text-brand-slate border border-brand-line font-mono text-xs font-semibold px-3 py-1.5 rounded-lg cursor-pointer whitespace-nowrap">Detection</button>
-            <button type="button" data-faq-filter="workflow" class="faq-filter-btn bg-white text-brand-slate border border-brand-line font-mono text-xs font-semibold px-3 py-1.5 rounded-lg cursor-pointer whitespace-nowrap">Workflow</button>
-            <button type="button" data-faq-filter="pricing" class="faq-filter-btn bg-white text-brand-slate border border-brand-line font-mono text-xs font-semibold px-3 py-1.5 rounded-lg cursor-pointer whitespace-nowrap">Pricing</button>
+            <button type="button" data-faq-filter="all"
+              class="faq-filter-btn bg-brand-ink text-white font-mono text-xs font-semibold px-3 py-1.5 rounded-lg cursor-pointer whitespace-nowrap">All
+              (8)</button>
+            <button type="button" data-faq-filter="detection"
+              class="faq-filter-btn bg-white text-brand-slate border border-brand-line font-mono text-xs font-semibold px-3 py-1.5 rounded-lg cursor-pointer whitespace-nowrap">Detection
+              &amp; Voice</button>
+            <button type="button" data-faq-filter="workflow"
+              class="faq-filter-btn bg-white text-brand-slate border border-brand-line font-mono text-xs font-semibold px-3 py-1.5 rounded-lg cursor-pointer whitespace-nowrap">Workflow</button>
+            <button type="button" data-faq-filter="pricing"
+              class="faq-filter-btn bg-white text-brand-slate border border-brand-line font-mono text-xs font-semibold px-3 py-1.5 rounded-lg cursor-pointer whitespace-nowrap">Credits
+              &amp; Pricing</button>
           </div>
         </div>
 
         <div class="flex flex-col gap-3" id="faq-accordion">
-          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="detection">
-            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" type="button" aria-expanded="true">
-              <span class="text-sm sm:text-base font-bold text-brand-ink">Is this secretly another AI wrapper or fine-tuned LLM?</span>
-              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="pricing">
+            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer"
+              type="button" aria-expanded="true">
+              <span class="text-sm sm:text-base font-bold text-brand-ink">I only have 1 blog post or essay ready today.
+                Do I have to submit all 5 articles at once?</span>
+              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform rotate-180"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
             </button>
             <div class="faq-content pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
-              No. Zero AI generates a single word of your final deliverable. Wrappers fail Pangram 98.8% of the time because statistical token distributions cannot be prompted away. Our air-gapped pipeline strips your AI prose down to a structured conceptual brief, and vetted human writers draft every sentence from scratch.
+              Not at all. Your $99 Starter Pack gives you a flexible <strong>7,500-word bank (~5 articles at 1,500w, or
+                ~10 shorter 750w essays/newsletters)</strong> valid for <strong>12 full months</strong>. Submit one
+              draft today, verify it hits 0.0% AI on Pangram in under 4 hours, and spend your remaining words whenever
+              you publish next.
             </div>
           </div>
 
           <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="detection">
-            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" type="button" aria-expanded="false">
-              <span class="text-sm sm:text-base font-bold text-brand-ink">Does the copy read like awkward ESL or translated English?</span>
-              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer"
+              type="button" aria-expanded="false">
+              <span class="text-sm sm:text-base font-bold text-brand-ink">Will you flatten my personal opinions,
+                stories, and voice into generic “SEO blog” copy?</span>
+              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
             </button>
-            <div class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
-              Never. Writers do not machine-translate drafts. Domain specialists author fresh English from structured logic briefs, and a Senior Native-English Editor (US, UK, or AU calibrated to 3 client voice samples) polishes idioms, cadence, and flow before delivery. Put our $99 5-Article Blind Test side-by-side against $250/article writers and judge blind.
-            </div>
-          </div>
-
-          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="workflow">
-            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" type="button" aria-expanded="false">
-              <span class="text-sm sm:text-base font-bold text-brand-ink">Do SEO keywords, internal links, tables, and HTML stay intact?</span>
-              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
-              Yes. Stage 1 extracts every statistic, exact anchor URL, H1–H3 tag, table, and target keyword into an immutable Entity Lock before writing starts, and automated QA verifies 98.4% semantic &amp; structural retention prior to pushing directly to WordPress, Webflow, or Webhook.
-            </div>
-          </div>
-
-          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="workflow">
-            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" type="button" aria-expanded="false">
-              <span class="text-sm sm:text-base font-bold text-brand-ink">Do I need a developer? How does 4-hour human delivery work via API?</span>
-              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
-              No developer needed. Upload Google Docs or CSVs in our No-Code Portal—or connect Zapier, Make.com, n8n, or WordPress. We run an asynchronous webhook queue with a strict under-4-hour SLA (plus priority 4-hour rush and Dedicated API SLA on Build).
-            </div>
-          </div>
-
-          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="pricing">
-            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" type="button" aria-expanded="false">
-              <span class="text-sm sm:text-base font-bold text-brand-ink">How can you charge $15/1k words when Verblio charges $160/1k?</span>
-              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
-              Traditional human agencies price in writer sourcing, topic research, outlining, and account management drag. Because your Claude or GPT draft already brings the research and outline, our Clean-Room pipeline strips 80% of production overhead and focuses 100% of human effort on clean writing.
-            </div>
-          </div>
-
-          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="pricing">
-            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" type="button" aria-expanded="false">
-              <span class="text-sm sm:text-base font-bold text-brand-ink">When do word packs expire, and can you handle technical B2B or YMYL?</span>
-              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
-              No subscriptions or auto-rebill—just buy what you need, and credits expire after <strong>3 months</strong>. You can buy overage credits anytime, billed strictly on delivered output words (HTML tags excluded). Technical B2B SaaS, Legal, and YMYL niches are supported via domain-matched writers and strict Entity Locks.
+            <div
+              class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
+              Never. If you submit a first-person founder essay or newsletter, our editors preserve every contrarian
+              take, anecdote, and specific example—calibrating sentence cadence and vocabulary to up to 3 samples of
+              your real writing. If you submit an SEO brief, we lock your exact H1–H3s and keywords instead.
             </div>
           </div>
 
           <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="detection">
-            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer" type="button" aria-expanded="false">
-              <span class="text-sm sm:text-base font-bold text-brand-ink">What about client confidentiality, NDAs, and already-published AI posts?</span>
-              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer"
+              type="button" aria-expanded="false">
+              <span class="text-sm sm:text-base font-bold text-brand-ink">What if Pangram updates its model 6 months
+                from now? Could my old posts get flagged later?</span>
+              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
             </button>
-            <div class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
-              All inputs run under strict mutual NDA, zero AI model training, and blind writer isolation (writers never see client domains), with 100% IP transfer upon delivery. Already have live AI posts? Send flagged URLs through your word pack balance to retrofit them cleanly while keeping slugs and internal links intact.
+            <div
+              class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
+              That’s the exact trap of AI “humanizer” tools—every time Pangram retrains on newer LLM outputs, previously
+              “humanized” posts light up red retroactively. Because Angram uses air-gapped human writers authoring every
+              sentence from scratch without seeing your raw AI prose, there is zero statistical LLM watermark left to
+              uncover in future updates.
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="detection">
+            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer"
+              type="button" aria-expanded="false">
+              <span class="text-sm sm:text-base font-bold text-brand-ink">Does the copy ever read like awkward ESL or
+                spun English?</span>
+              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div
+              class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
+              Never. Domain-matched writers draft fresh English from structured logic briefs, and a Senior Native Editor
+              (US, UK, or AU) edits every piece for natural idiom, rhythm, and clarity before it reaches Gate 3. If you
+              ever dislike the prose on your $99 Starter Pack, one reply gets a 100% refund—and you still keep the
+              article.
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="workflow">
+            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer"
+              type="button" aria-expanded="false">
+              <span class="text-sm sm:text-base font-bold text-brand-ink">Do SEO keywords, internal anchor links,
+                comparison tables, and HTML stay intact?</span>
+              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div
+              class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
+              Yes. Gate 1 locks every statistic, exact anchor text + URL, H1–H3 tag, Markdown/HTML table, and required
+              keyword before writing starts, and automated diff checks verify 100% link and tag preservation prior to
+              delivery.
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="workflow">
+            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer"
+              type="button" aria-expanded="false">
+              <span class="text-sm sm:text-base font-bold text-brand-ink">Do I need a developer, or can I just paste a
+                Google Doc or Notion draft?</span>
+              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div
+              class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
+              Zero technical setup needed—paste text or drop Google Docs, Word files, Markdown, or CSVs right inside our
+              web portal. If you run an automated agency pipeline, you can also connect Zapier, Make, n8n, WordPress,
+              Webflow, or our async REST webhook API.
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="pricing">
+            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer"
+              type="button" aria-expanded="false">
+              <span class="text-sm sm:text-base font-bold text-brand-ink">When do word credits expire, and how are words
+                counted?</span>
+              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div
+              class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
+              Every word pack—including the $99 Starter Pack—stays valid for <strong>12 full months</strong> from
+              purchase with zero subscriptions or auto-rebill. Words are counted strictly on delivered plain-text output
+              (HTML/Markdown tags are never billed), and you can top up anytime.
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-xl border border-brand-line p-4 sm:p-5" data-faq-cat="detection">
+            <button class="faq-toggle w-full flex items-center justify-between text-left gap-4 cursor-pointer"
+              type="button" aria-expanded="false">
+              <span class="text-sm sm:text-base font-bold text-brand-ink">Is my identity private? Can I also clean up
+                already-published posts on my site?</span>
+              <svg class="faq-chevron w-5 h-5 text-brand-muted shrink-0 transition-transform" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div
+              class="faq-content hidden pt-3 text-sm text-brand-slate leading-relaxed border-t border-brand-line mt-3">
+              100% private. Writers work inside an anonymized clean-room interface and never see your name, company, or
+              domain; all inputs are covered by mutual NDA, zero AI training, and 100% IP transfer. Already published
+              AI-assisted posts you’re worried someone might scan? Drop the live URLs into your portal to replace the
+              body copy cleanly without changing your URLs or SEO structure.
             </div>
           </div>
         </div>
@@ -905,109 +1322,161 @@
       </div>
     </section>
 
-    <!-- FINAL CONVERSION CLOSER -->
+    <!-- ========================================================= -->
+    <!-- FINAL CONVERSION CLOSER                                   -->
+    <!-- ========================================================= -->
     <section class="w-full bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-4xl mx-auto rounded-3xl bg-brand-ink text-white p-8 sm:p-10 text-center flex flex-col items-center gap-4 shadow-card-lg">
-        <span class="font-mono text-xs font-semibold text-brand-accent uppercase">Same-Day Desk Active • Zero Subscription Lock-In</span>
+      <div
+        class="max-w-4xl mx-auto rounded-3xl bg-brand-ink text-white p-8 sm:p-10 text-center flex flex-col items-center gap-4 shadow-card-lg">
+        <span class="font-mono text-xs font-semibold text-brand-accent uppercase">No Subscription Lock-In
+          • Credits Valid for 12 Months</span>
         <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight max-w-2xl">
-          Act before Google acts, Humanize 5 Articles in the next 4&nbsp;hours.
+          Publish without looking over your shoulder.
         </h2>
-        <button type="button" data-plan="blind-test" class="open-order-modal inline-flex items-center justify-center gap-2.5 bg-brand-accent hover:bg-brand-accentHover text-brand-ink font-bold text-base px-8 py-4 rounded-xl cursor-pointer transition-colors">
-          <span>Test 5 Articles Risk-Free — $99</span>
-          <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </button>
-        <p class="font-mono text-xs text-neutral-300 max-w-lg">
-          Up to 7,500 words. 100% refunded if flagged or unimpressed—or 100% credited to your first word pack.
+        <p class="text-sm sm:text-base text-neutral-300 max-w-xl leading-relaxed">
+          Humanize 1 draft in the next 4 hours and bank 4 more credits for a full year—verified <strong
+            class="text-white">0.0% AI on Pangram</strong>, or every dollar back.
         </p>
+        <button type="button" data-plan="blind-test"
+          class="open-order-modal inline-flex items-center justify-center gap-2.5 bg-brand-accent hover:bg-brand-accentHover text-brand-ink font-extrabold text-base px-8 py-4 rounded-xl cursor-pointer transition-colors mt-1">
+          <span>Start With 5 Credits — $99</span>
+          <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </button>
       </div>
     </section>
 
   </main>
 
-  <!-- CLEAN FOOTER -->
+  <!-- FOOTER -->
   <footer class="w-full bg-brand-paper border-t border-brand-line py-8 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-muted">
-      <div class="font-mono">Angram™ — the antidote to Pangram</div>
+    <div
+      class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-muted">
+      <div class="font-mono">Angram™ — The antidote to Pangram</div>
       <div class="flex flex-wrap items-center gap-5 font-medium">
-        <button type="button" data-policy="sla" class="open-policy-modal hover:text-brand-ink underline underline-offset-4 cursor-pointer">200% Zero-Flag SLA</button>
-        <button type="button" data-policy="security" class="open-policy-modal hover:text-brand-ink underline underline-offset-4 cursor-pointer">NDA &amp; Data Isolation</button>
-        <button type="button" data-policy="ip" class="open-policy-modal hover:text-brand-ink underline underline-offset-4 cursor-pointer">IP &amp; Refund Policy</button>
+        <button type="button" data-policy="sla"
+          class="open-policy-modal hover:text-brand-ink underline underline-offset-4 cursor-pointer">200% Zero-Flag
+          SLA</button>
+        <button type="button" data-policy="security"
+          class="open-policy-modal hover:text-brand-ink underline underline-offset-4 cursor-pointer">NDA &amp; Author
+          Anonymity</button>
+        <button type="button" data-policy="ip"
+          class="open-policy-modal hover:text-brand-ink underline underline-offset-4 cursor-pointer">IP, 12-Mo Credits
+          &amp; Refunds</button>
       </div>
     </div>
   </footer>
 
   <!-- COMPACT STICKY MOBILE CONVERSION BAR (MOBILE-ONLY <1024px) -->
-  <div id="mobile-sticky-cta" aria-hidden="true" class="lg:hidden fixed bottom-0 left-0 right-0 z-30 bg-brand-ink/95 backdrop-blur-md border-t border-white/15 px-4 pt-2.5 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex items-center justify-between gap-3 opacity-0 pointer-events-none invisible transition-opacity duration-150">
+  <div id="mobile-sticky-cta" aria-hidden="true"
+    class="lg:hidden fixed bottom-0 left-0 right-0 z-30 bg-brand-ink/95 backdrop-blur-md border-t border-white/15 px-4 pt-2.5 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex items-center justify-between gap-3 opacity-0 pointer-events-none invisible transition-opacity duration-150">
     <div class="flex flex-col min-w-0">
-      <span class="text-xs font-bold text-white truncate">5-Article Blind Test — $99</span>
-      <span class="font-mono text-[11px] text-neutral-300 truncate">0.0% AI or 100% refund</span>
+      <span class="text-xs font-bold text-white truncate">5-Article Credit Pack — $99</span>
+      <span class="font-mono text-[11px] text-neutral-300 truncate">Use 1 today • Valid 12 mo • 0.0% AI</span>
     </div>
-    <button type="button" data-plan="blind-test" tabindex="-1" class="open-order-modal mobile-sticky-btn bg-brand-accent text-brand-ink font-bold text-xs px-4 py-2.5 rounded-lg shrink-0 cursor-pointer whitespace-nowrap">
-      Start Test →
+    <button type="button" data-plan="blind-test" tabindex="-1"
+      class="open-order-modal mobile-sticky-btn bg-brand-accent text-brand-ink font-bold text-xs px-4 py-2.5 rounded-lg shrink-0 cursor-pointer whitespace-nowrap">
+      Get 5 Credits →
     </button>
   </div>
 
-  <!-- STREAMLINED LOW-FRICTION INTAKE MODAL (FITS 390x844 ABOVE THE FOLD) -->
-  <div id="order-modal" class="fixed inset-0 z-50 hidden justify-center items-center bg-black/70 backdrop-blur-xs p-2.5 sm:p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-label="Word pack intake">
-    <div class="bg-white text-brand-ink rounded-2xl border border-brand-line shadow-card-lg max-w-lg w-full p-4 sm:p-6 flex flex-col gap-3 sm:gap-3.5 relative my-auto max-h-[96vh] overflow-y-auto">
+  <!-- LOW-FRICTION DUAL-PERSONA INTAKE MODAL -->
+  <div id="order-modal"
+    class="fixed inset-0 z-50 hidden justify-center items-center bg-black/70 backdrop-blur-xs p-2.5 sm:p-4 overflow-y-auto"
+    role="dialog" aria-modal="true" aria-label="Word credit pack setup">
+    <div
+      class="bg-white text-brand-ink rounded-2xl border border-brand-line shadow-card-lg max-w-lg w-full p-4 sm:p-6 flex flex-col gap-3 sm:gap-3.5 relative my-auto max-h-[96vh] overflow-y-auto">
       <div class="flex items-center justify-between border-b border-brand-line pb-2.5">
-        <span class="font-mono text-[11px] sm:text-xs font-semibold text-brand-emerald bg-brand-emeraldBg px-2.5 py-1 rounded-full" id="modal-badge">$99 ONE-TIME • 7,500 WORDS</span>
-        <button type="button" id="close-modal-btn" class="w-8 h-8 rounded-lg bg-brand-surface hover:bg-brand-line font-mono font-bold cursor-pointer flex items-center justify-center shrink-0" aria-label="Close modal">✕</button>
+        <span
+          class="font-mono text-[11px] sm:text-xs font-semibold text-brand-emerald bg-brand-emeraldBg px-2.5 py-1 rounded-full"
+          id="modal-badge">$99 ONE-TIME • 5 CREDITS (VALID 12 MO)</span>
+        <button type="button" id="close-modal-btn"
+          class="w-8 h-8 rounded-lg bg-brand-surface hover:bg-brand-line font-mono font-bold cursor-pointer flex items-center justify-center shrink-0"
+          aria-label="Close modal">✕</button>
       </div>
 
       <!-- Compact Tier Switcher -->
-      <div id="modal-pre-submit" class="flex flex-col gap-2.5 sm:gap-3">
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 font-mono text-[11px] sm:text-xs" role="group" aria-label="Select pack tier">
-          <button type="button" data-modal-plan="blind-test" class="modal-plan-tab px-2.5 py-1.5 sm:py-2 rounded-lg border cursor-pointer text-left leading-tight"></button>
-          <button type="button" data-modal-plan="start" class="modal-plan-tab px-2.5 py-1.5 sm:py-2 rounded-lg border cursor-pointer text-left leading-tight"></button>
-          <button type="button" data-modal-plan="grow" class="modal-plan-tab px-2.5 py-1.5 sm:py-2 rounded-lg border cursor-pointer text-left leading-tight"></button>
-          <button type="button" data-modal-plan="build" class="modal-plan-tab px-2.5 py-1.5 sm:py-2 rounded-lg border cursor-pointer text-left leading-tight"></button>
+      <div id="modal-pre-submit" class="flex flex-col gap-2">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 font-mono text-[11px] sm:text-xs" role="group"
+          aria-label="Select credit pack">
+          <button type="button" data-modal-plan="blind-test"
+            class="modal-plan-tab px-2.5 py-1.5 sm:py-2 rounded-lg border cursor-pointer text-left leading-tight"></button>
+          <button type="button" data-modal-plan="start"
+            class="modal-plan-tab px-2.5 py-1.5 sm:py-2 rounded-lg border cursor-pointer text-left leading-tight"></button>
+          <button type="button" data-modal-plan="grow"
+            class="modal-plan-tab px-2.5 py-1.5 sm:py-2 rounded-lg border cursor-pointer text-left leading-tight"></button>
+          <button type="button" data-modal-plan="build"
+            class="modal-plan-tab px-2.5 py-1.5 sm:py-2 rounded-lg border cursor-pointer text-left leading-tight"></button>
         </div>
+        <p class="text-xs text-brand-slate leading-snug" id="modal-plan-desc"></p>
       </div>
 
       <form id="modal-intake-form" class="flex flex-col gap-2.5 sm:gap-3" novalidate>
         <div class="flex flex-col gap-1">
-          <label for="intake-email" class="text-xs font-bold text-brand-ink">Work Email (Receives Encrypted Portal + Checkout Link) *</label>
-          <input id="intake-email" type="email" required placeholder="founder@youragency.com" class="w-full rounded-xl border border-brand-line bg-brand-paper px-3.5 py-2.5 sm:py-3 text-sm focus:border-brand-ink focus:bg-white focus:ring-0" />
+          <label for="intake-email" class="text-xs font-bold text-brand-ink">Your Email (For Private Upload Portal &amp;
+            Checkout Link) *</label>
+          <input id="intake-email" type="email" required placeholder="you@domain.com"
+            class="w-full rounded-xl border border-brand-line bg-brand-paper px-3.5 py-2.5 text-sm focus:border-brand-ink focus:bg-white focus:ring-0" />
           <p id="intake-email-error" class="hidden text-xs text-brand-danger font-medium" role="alert"></p>
         </div>
 
+        <div class="flex flex-col gap-1">
+          <label for="intake-draft" class="text-xs font-semibold text-brand-slate">Have a draft ready now? Paste Google
+            Doc / URL <span class="text-brand-muted font-normal">(Optional — or upload later)</span></label>
+          <input id="intake-draft" type="text"
+            placeholder="https://docs.google.com/... (leave blank to upload inside portal)"
+            class="w-full rounded-xl border border-brand-line bg-brand-paper px-3.5 py-2 text-xs sm:text-sm focus:border-brand-ink focus:bg-white focus:ring-0" />
+        </div>
+
         <div class="rounded-xl bg-brand-surface px-3 py-2 flex items-center justify-between gap-2 text-xs">
-          <span class="text-brand-muted font-mono">DUE TODAY</span>
-          <span class="font-bold text-brand-ink text-right" id="modal-total-summary">$0 to reserve • $99 link sent</span>
+          <span class="text-brand-muted font-mono">TERMS</span>
+          <span class="font-bold text-brand-ink text-right" id="modal-total-summary">$99 one-time • Valid 12
+            months</span>
         </div>
 
         <div class="flex flex-col gap-1.5">
-          <button type="submit" id="modal-submit-btn" class="w-full bg-brand-accent hover:bg-brand-accentHover text-brand-ink font-bold text-sm sm:text-base py-3 sm:py-3.5 px-4 rounded-xl border border-brand-ink transition-colors cursor-pointer">
-            Get Portal &amp; Checkout Link ($99) →
+          <button type="submit" id="modal-submit-btn"
+            class="w-full bg-brand-accent hover:bg-brand-accentHover text-brand-ink font-extrabold text-sm sm:text-base py-3 sm:py-3.5 px-4 rounded-xl border border-brand-ink transition-colors cursor-pointer">
+            Open Private Portal &amp; Checkout ($99) →
           </button>
           <p class="text-[11px] text-brand-muted text-center" id="modal-guarantee-note">
-            No card entered here — pay only when you upload drafts. 100% money-back guarantee.
+            Use 1 credit today, save 4 for 12 months. 100% refunded if flagged or unimpressed.
           </p>
         </div>
       </form>
 
-      <!-- Compact Intake Confirmation State -->
+      <!-- Intake Confirmation State -->
       <div id="modal-confirmation" class="hidden flex-col gap-3.5">
-        <div class="inline-flex items-center gap-2 font-mono text-xs font-bold text-brand-emerald bg-brand-emeraldBg px-3 py-1 rounded-full self-start">
-          <span>✓ Workspace Reserved</span>
+        <div
+          class="inline-flex items-center gap-2 font-mono text-xs font-bold text-brand-emerald bg-brand-emeraldBg px-3 py-1 rounded-full self-start">
+          <span>✓ Clean-Room Portal Reserved</span>
         </div>
         <div>
-          <h4 class="text-lg font-extrabold text-brand-ink" id="confirm-heading">Blind Test Workspace Ready</h4>
+          <h4 class="text-lg font-extrabold text-brand-ink" id="confirm-heading">Starter 5-Credit Pack Ready</h4>
           <p class="text-sm text-brand-slate leading-relaxed mt-1" id="confirm-summary"></p>
         </div>
-        <div class="bg-brand-paper rounded-xl border border-brand-line p-3.5 font-mono text-xs space-y-1 text-brand-slate" id="confirm-details"></div>
+        <div
+          class="bg-brand-paper rounded-xl border border-brand-line p-3.5 font-mono text-xs space-y-1 text-brand-slate"
+          id="confirm-details"></div>
         <div class="bg-brand-ink text-white rounded-xl p-3.5 font-mono text-xs leading-relaxed space-y-1">
           <div class="text-brand-accent font-bold">NEXT 3 STEPS (60 SECONDS):</div>
-          <div>1. Open the encrypted upload portal + checkout link emailed to you</div>
-          <div>2. Drop up to 5 Google Docs / Markdown / HTML drafts (≤ 7,500 words)</div>
-          <div>3. Receive native human prose + Pangram 0.0% AI PDFs in &lt; 4 hours</div>
+          <div>1. Open the private portal + checkout link sent to your inbox</div>
+          <div>2. Drop 1 draft today (or up to 5) + optional voice samples</div>
+          <div>3. Receive 100% human prose + 0.0% AI Pangram proof in &lt; 4 hours</div>
         </div>
         <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
-          <button type="button" id="modal-edit-btn" class="text-xs font-semibold text-brand-slate hover:text-brand-ink underline cursor-pointer">← Edit Selection</button>
+          <button type="button" id="modal-edit-btn"
+            class="text-xs font-semibold text-brand-slate hover:text-brand-ink underline cursor-pointer">← Change
+            Pack</button>
           <div class="flex items-center gap-2">
-            <button type="button" id="copy-intake-btn" class="font-mono text-xs font-semibold px-3 py-2 rounded-lg border border-brand-line bg-white hover:border-brand-ink cursor-pointer">Copy Summary</button>
-            <button type="button" id="modal-done-btn" class="bg-brand-ink text-white font-semibold text-xs px-5 py-2 rounded-lg cursor-pointer">Done</button>
+            <button type="button" id="copy-intake-btn"
+              class="font-mono text-xs font-semibold px-3 py-2 rounded-lg border border-brand-line bg-white hover:border-brand-ink cursor-pointer">Copy
+              Receipt</button>
+            <button type="button" id="modal-done-btn"
+              class="bg-brand-ink text-white font-semibold text-xs px-5 py-2 rounded-lg cursor-pointer">Done</button>
           </div>
         </div>
       </div>
@@ -1015,19 +1484,46 @@
   </div>
 
   <!-- POLICY & SLA INFO MODAL -->
-  <div id="policy-modal" class="fixed inset-0 z-50 hidden justify-center items-center bg-black/70 backdrop-blur-xs p-4" role="dialog" aria-modal="true" aria-labelledby="policy-modal-title">
-    <div class="bg-white text-brand-ink rounded-2xl border border-brand-line shadow-card-lg max-w-lg w-full p-6 flex flex-col gap-4">
+  <div id="policy-modal" class="fixed inset-0 z-50 hidden justify-center items-center bg-black/70 backdrop-blur-xs p-4"
+    role="dialog" aria-modal="true" aria-labelledby="policy-modal-title">
+    <div
+      class="bg-white text-brand-ink rounded-2xl border border-brand-line shadow-card-lg max-w-lg w-full p-6 flex flex-col gap-4">
       <div class="flex items-center justify-between border-b border-brand-line pb-3">
-        <span class="font-mono text-xs font-bold text-brand-ink bg-brand-surface px-2.5 py-1 rounded-full" id="policy-modal-badge">CLEAN-ROOM PROTOCOL</span>
-        <button type="button" id="close-policy-btn" class="w-8 h-8 rounded-lg bg-brand-surface hover:bg-brand-line font-mono font-bold cursor-pointer" aria-label="Close policy dialog">✕</button>
+        <span class="font-mono text-xs font-bold text-brand-ink bg-brand-surface px-2.5 py-1 rounded-full"
+          id="policy-modal-badge">CLEAN-ROOM PROTOCOL</span>
+        <button type="button" id="close-policy-btn"
+          class="w-8 h-8 rounded-lg bg-brand-surface hover:bg-brand-line font-mono font-bold cursor-pointer"
+          aria-label="Close policy dialog">✕</button>
       </div>
       <h3 class="text-xl font-extrabold text-brand-ink" id="policy-modal-title">Policy Details</h3>
       <div class="text-sm text-brand-slate leading-relaxed space-y-3" id="policy-modal-body"></div>
-      <button type="button" id="done-policy-btn" class="self-end bg-brand-ink text-white font-semibold text-xs px-5 py-2.5 rounded-lg cursor-pointer">Close</button>
+      <button type="button" id="done-policy-btn"
+        class="self-end bg-brand-ink text-white font-semibold text-xs px-5 py-2.5 rounded-lg cursor-pointer">Close</button>
     </div>
   </div>
 
   <script>
+    // Utility: Count exact plain-text words so sample metadata is always 100% accurate
+    function countWords(str) {
+      return str.trim().split(/\s+/).filter(Boolean).length;
+    }
+
+    function safeCopyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(() => { });
+      }
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (_) { }
+      document.body.removeChild(ta);
+      return Promise.resolve();
+    }
+
     // FAQ Accordion + Category Filter
     function setFaqOpenState(item, shouldOpen) {
       const content = item.querySelector('.faq-content');
@@ -1090,22 +1586,6 @@
       });
     });
 
-    function safeCopyText(text) {
-      if (navigator.clipboard && window.isSecureContext) {
-        return navigator.clipboard.writeText(text).catch(() => {});
-      }
-      const ta = document.createElement('textarea');
-      ta.value = text;
-      ta.setAttribute('readonly', '');
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      try { document.execCommand('copy'); } catch (_) {}
-      document.body.removeChild(ta);
-      return Promise.resolve();
-    }
-
     const copyBtn = document.getElementById('copy-cert-btn');
     const copyStatus = document.getElementById('copy-cert-status');
     copyBtn?.addEventListener('click', () => {
@@ -1118,63 +1598,69 @@
       }, 2000);
     });
 
-    // Live Sample Gallery Tabs + Forensic X-Ray + Format Switcher + Copy-to-Test
-    let activeSampleKey = 'saas';
+    // Live Sample Gallery: 4 Tracks (Founder Essay + SaaS + Legal + Local SEO) with realistic modern Claude tells
+    let activeSampleKey = 'essay';
     let sampleFormat = 'rendered';
     let xrayOn = true;
+
     const sampleData = {
+      essay: {
+        rawBadge: 'Pangram: 99.2% AI Flagged',
+        rawTitle: 'Founder Essay: Why Seed Startups Hire a VP of Sales Too Early',
+        rawMeta: 'Highlighted = Claude structural tells ("isn’t X—it’s Y" contrast, neat triads, symmetrical rhythm)',
+        rawRendered: '<h4 class="font-bold text-brand-ink mb-2">Don’t Outsource Discovery Before Repeatability</h4><p class="mb-3">Most early-stage founders assume stalling revenue <span class="ai-flag-mark">isn’t a product problem—it’s a pipeline problem</span>. <span class="ai-flag-mark">Instead of refining positioning, they immediately hire</span> a VP of Sales from a Big Tech logo to build out an outbound machine beyond <span class="underline">founder-led sales</span>.</p><p class="mb-2"><span class="ai-flag-mark">This predictable misstep creates three compounding failure modes:</span></p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-slate"><li>Enterprise reps sell the roadmap rather than what exists today</li><li>Product feedback gets filtered through CRM notes</li><li>Burn rate doubles before repeatable messaging is proven</li></ul>',
+        rawSource: '<h2>Don’t Outsource Discovery Before Repeatability</h2>\n<p>Most early-stage founders assume stalling revenue isn’t a product problem—it’s a pipeline problem. Instead of refining positioning, they immediately hire a VP of Sales from a Big Tech logo to build out an outbound machine beyond <a href="/blog/founder-led-sales">founder-led sales</a>.</p>\n<p>This predictable misstep creates three compounding failure modes:</p>\n<ul>\n  <li>Enterprise reps sell the roadmap rather than what exists today</li>\n  <li>Product feedback gets filtered through CRM notes</li>\n  <li>Burn rate doubles before repeatable messaging is proven</li>\n</ul>',
+        humanBadge: 'Pangram: 0.0% AI • Voice Intact',
+        humanTitle: 'Founder Essay: Why Seed Startups Hire a VP of Sales Too Early',
+        humanMetaLeft: 'Pangram: 0.0% • GPTZero: 0.0% • Originality: 0.0%',
+        humanPreserveLabel: 'Tone + List + Link preserved',
+        humanRendered: '<h4 class="font-bold text-brand-ink mb-2">Don’t Outsource Discovery Before Repeatability</h4><p class="mb-3">Revenue stalls at $40k MRR and the board’s reflex is almost always the same: go hire a VP of Sales out of Salesforce. Six months and $140k in burned base salary later, you learn a painful lesson—nobody can scale a pitch the founders haven’t closed twenty times themselves. Handing off <span class="human-keep-mark underline">founder-led sales</span> too early doesn’t buy you leverage; it just puts a pricey buffer between you and the exact objections killing your deals.</p><p class="mb-2">Watch what breaks the week a big-logo exec walks into a ten-person seed company:</p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-ink"><li><strong>Phantom roadmap promises:</strong> Senior reps close Logos by promising Q4 features your two engineers haven’t scoped.</li><li><strong>Sanitized HubSpot notes:</strong> You stop hearing the awkward five-second silence right after you quote pricing on Zoom.</li><li><strong>Doubled burn:</strong> Payroll spikes right when you still need three cheap messaging pivots to find real pull.</li></ul>',
+        humanPlain: 'Don’t Outsource Discovery Before Repeatability\n\nRevenue stalls at $40k MRR and the board’s reflex is almost always the same: go hire a VP of Sales out of Salesforce. Six months and $140k in burned base salary later, you learn a painful lesson—nobody can scale a pitch the founders haven’t closed twenty times themselves. Handing off founder-led sales too early doesn’t buy you leverage; it just puts a pricey buffer between you and the exact objections killing your deals.\n\nWatch what breaks the week a big-logo exec walks into a ten-person seed company. First, senior reps start closing deals by promising Q4 features your two engineers haven’t even scoped. Second, candid buyer pushback gets buried inside sanitized HubSpot dropdowns, so you stop hearing the awkward five-second silence right after you quote pricing on Zoom. Worst of all, payroll spikes at the exact moment you still need cheap messaging experiments to find real pull.',
+        humanSource: '<h2>Don’t Outsource Discovery Before Repeatability</h2>\n<p>Revenue stalls at $40k MRR and the board’s reflex is almost always the same: go hire a VP of Sales out of Salesforce. Six months and $140k in burned base salary later, you learn a painful lesson—nobody can scale a pitch the founders haven’t closed twenty times themselves. Handing off <a href="/blog/founder-led-sales">founder-led sales</a> too early doesn’t buy you leverage; it just puts a pricey buffer between you and the exact objections killing your deals.</p>\n<p>Watch what breaks the week a big-logo exec walks into a ten-person seed company:</p>\n<ul>\n  <li><strong>Phantom roadmap promises:</strong> Senior reps close Logos by promising Q4 features your two engineers haven’t scoped.</li>\n  <li><strong>Sanitized HubSpot notes:</strong> You stop hearing the awkward five-second silence right after you quote pricing on Zoom.</li>\n  <li><strong>Doubled burn:</strong> Payroll spikes right when you still need three cheap messaging pivots to find real pull.</li>\n</ul>'
+      },
       saas: {
         rawBadge: 'Pangram: 99.4% AI Flagged',
         rawTitle: 'B2B SaaS: Automated Expense Reconciliation',
-        rawMeta: 'Highlighted = Pangram AI token triggers ("dynamic ecosystem", "paramount", "delve")',
-        rawRendered: '<h4 class="font-bold text-brand-ink mb-2">Why Automated Reconciliation Matters</h4><p class="mb-3"><span class="ai-flag-mark">In today’s dynamic financial ecosystem</span>, leveraging <span class="underline">automated expense reconciliation</span> is <span class="ai-flag-mark">paramount for unlocking efficiency</span>. <span class="ai-flag-mark">Moreover</span>, modern finance leaders must <span class="ai-flag-mark">delve into</span> real-time ledger syncing to <span class="ai-flag-mark">elevate operational transparency</span> across departments.</p><p class="mb-3"><span class="ai-flag-mark">By seamlessly bridging the gap</span> between corporate card feeds and ERP ledgers, organizations can <span class="ai-flag-mark">foster a culture of accountability</span> while <span class="ai-flag-mark">mitigating costly human errors</span>:</p><table class="w-full text-xs font-mono border border-brand-line rounded"><thead><tr class="bg-brand-surface border-b border-brand-line"><th class="p-2 text-left border-r border-brand-line">Workflow</th><th class="p-2 text-left">Close Speed</th></tr></thead><tbody><tr><td class="p-2 border-r border-brand-line">Manual Spreadsheet</td><td class="p-2">5–7 Business Days</td></tr><tr><td class="p-2 border-r border-brand-line">Real-Time Sync</td><td class="p-2">Same-Day Close</td></tr></tbody></table>',
-        rawSource: '<h2>Why Automated Reconciliation Matters</h2>\n<p>In today’s dynamic financial ecosystem, leveraging <a href="/features/reconciliation">automated expense reconciliation</a> is paramount for unlocking efficiency. Moreover, modern finance leaders must delve into real-time ledger syncing to elevate operational transparency across departments.</p>\n<p>By seamlessly bridging the gap between corporate card feeds and ERP ledgers, organizations can foster a culture of accountability while mitigating costly human errors:</p>\n<table>\n  <tr><th>Workflow</th><th>Close Speed</th></tr>\n  <tr><td>Manual Spreadsheet</td><td>5–7 Business Days</td></tr>\n  <tr><td>Real-Time Sync</td><td>Same-Day Close</td></tr>\n</table>',
-        humanBadge: 'Pangram: 0.0% AI • Intact',
+        rawMeta: 'Highlighted = LLM parallel clauses ("Not only does...", "isn’t just slow—it’s fragile")',
+        rawRendered: '<h4 class="font-bold text-brand-ink mb-2">Why Automated Reconciliation Matters</h4><p class="mb-3">For growing finance teams, chasing card receipts at month-end <span class="ai-flag-mark">isn’t just slow—it’s operationally fragile</span>. Implementing <span class="underline">automated expense reconciliation</span> <span class="ai-flag-mark">transforms reactive bookkeeping into a proactive financial engine</span>.</p><p class="mb-3"><span class="ai-flag-mark">Not only does real-time ledger syncing eliminate manual CSV uploads, but it also empowers controllers</span> to spot budget variances before the quarter closes:</p><table class="w-full text-xs font-mono border border-brand-line rounded"><thead><tr class="bg-brand-surface border-b border-brand-line"><th class="p-2 text-left border-r border-brand-line">Workflow</th><th class="p-2 text-left">Close Speed</th></tr></thead><tbody><tr><td class="p-2 border-r border-brand-line">Manual Spreadsheet</td><td class="p-2">5–7 Business Days</td></tr><tr><td class="p-2 border-r border-brand-line">Real-Time Sync</td><td class="p-2">Same-Day Close</td></tr></tbody></table>',
+        rawSource: '<h2>Why Automated Reconciliation Matters</h2>\n<p>For growing finance teams, chasing card receipts at month-end isn’t just slow—it’s operationally fragile. Implementing <a href="/features/reconciliation">automated expense reconciliation</a> transforms reactive bookkeeping into a proactive financial engine.</p>\n<p>Not only does real-time ledger syncing eliminate manual CSV uploads, but it also empowers controllers to spot budget variances before the quarter closes:</p>\n<table>\n  <tr><th>Workflow</th><th>Close Speed</th></tr>\n  <tr><td>Manual Spreadsheet</td><td>5–7 Business Days</td></tr>\n  <tr><td>Real-Time Sync</td><td>Same-Day Close</td></tr>\n</table>',
+        humanBadge: 'Pangram: 0.0% AI • HTML Intact',
         humanTitle: 'B2B SaaS: Automated Expense Reconciliation',
         humanMetaLeft: 'Pangram: 0.0% • GPTZero: 0.0% • Originality: 0.0%',
-        humanMetaRight: '158 words • H2 + Table + Link preserved',
-        humanRendered: '<h4 class="font-bold text-brand-ink mb-2">Why Automated Reconciliation Matters</h4><p class="mb-3">Month-end close stalls when card receipts sit across three separate inboxes until the 28th. Direct ledger matching pairs receipts as spend happens, keeping <span class="human-keep-mark underline">automated expense reconciliation</span> continuous rather than reactive. Controllers no longer spend Friday nights chasing missing $47 ride receipts instead of reviewing variance reports.</p><p class="mb-3">This operational gap shows up immediately in the monthly close calendar. Instead of downloading batches of static CSV files every four weeks, finance teams surface uncoded spend in real time and flag missing VAT invoices before the quarter shuts. Department leads approve transactions inside one thread while every line item maps directly to its general ledger code.</p><table class="w-full text-xs font-mono border border-brand-line rounded"><thead><tr class="bg-brand-surface border-b border-brand-line"><th class="p-2 text-left border-r border-brand-line">Workflow</th><th class="p-2 text-left">Close Speed</th></tr></thead><tbody><tr><td class="p-2 border-r border-brand-line">Manual Spreadsheet</td><td class="p-2">5–7 Business Days</td></tr><tr class="bg-brand-emeraldBg/60"><td class="p-2 border-r border-brand-line font-semibold">Real-Time Sync</td><td class="p-2 font-semibold text-brand-emerald">Same-Day Close</td></tr></tbody></table>',
-        humanPlain: 'Month-end close stalls when card receipts sit across three separate inboxes until the 28th. Direct ledger matching pairs receipts as spend happens, keeping automated expense reconciliation continuous rather than reactive. Controllers no longer spend Friday nights chasing missing $47 ride receipts instead of reviewing variance reports.\n\nThis operational gap shows up immediately in the monthly close calendar. Instead of downloading batches of static CSV files every four weeks, finance teams surface uncoded spend in real time and flag missing VAT invoices before the quarter shuts. Department leads approve transactions inside one thread while every line item maps directly to its general ledger code.\n\nOnce rules are live, recurring software subscriptions auto-categorize without manual review, and duplicate merchant charges trigger alerts on day one rather than week four. By the final business day of the month, controllers review clean exception logs instead of rebuilding spreadsheets from scratch—cutting close cycles from seven business days to the same afternoon.',
-        humanSource: '<h2>Why Automated Reconciliation Matters</h2>\n<p>Month-end close stalls when card receipts sit across three separate inboxes until the 28th. Direct ledger matching pairs receipts as spend happens, keeping <a href="/features/reconciliation">automated expense reconciliation</a> continuous rather than reactive. Controllers no longer spend Friday nights chasing missing $47 ride receipts instead of reviewing variance reports.</p>\n<p>This operational gap shows up immediately in the monthly close calendar. Instead of downloading batches of static CSV files every four weeks, finance teams surface uncoded spend in real time and flag missing VAT invoices before the quarter shuts. Department leads approve transactions inside one thread while every line item maps directly to its general ledger code.</p>\n<table>\n  <tr><th>Workflow</th><th>Close Speed</th></tr>\n  <tr><td>Manual Spreadsheet</td><td>5–7 Business Days</td></tr>\n  <tr><td>Real-Time Sync</td><td>Same-Day Close</td></tr>\n</table>'
+        humanPreserveLabel: 'H2 + Table + Link preserved',
+        humanRendered: '<h4 class="font-bold text-brand-ink mb-2">Why Automated Reconciliation Matters</h4><p class="mb-3">Month-end close stalls when corporate card receipts sit across three Slack channels and two inboxes until the 28th. Direct card-to-ERP matching pairs receipts the minute a swipe clears, keeping <span class="human-keep-mark underline">automated expense reconciliation</span> running daily so controllers aren’t spending Friday night hunting down a missing $47 Uber receipt.</p><p class="mb-3">You feel the difference most during the final week of the quarter. Nobody downloads static CSV exports or rebuilds broken VLOOKUPs; uncoded software spend and missing VAT invoices surface on day one while department heads approve charges inside a single thread.</p><table class="w-full text-xs font-mono border border-brand-line rounded"><thead><tr class="bg-brand-surface border-b border-brand-line"><th class="p-2 text-left border-r border-brand-line">Workflow</th><th class="p-2 text-left">Close Speed</th></tr></thead><tbody><tr><td class="p-2 border-r border-brand-line">Manual Spreadsheet</td><td class="p-2">5–7 Business Days</td></tr><tr class="bg-brand-emeraldBg/60"><td class="p-2 border-r border-brand-line font-semibold">Real-Time Sync</td><td class="p-2 font-semibold text-brand-emerald">Same-Day Close</td></tr></tbody></table>',
+        humanPlain: 'Why Automated Reconciliation Matters\n\nMonth-end close stalls when corporate card receipts sit across three Slack channels and two inboxes until the 28th. Direct card-to-ERP matching pairs receipts the minute a swipe clears, keeping automated expense reconciliation running daily so controllers aren’t spending Friday night hunting down a missing $47 Uber receipt.\n\nYou feel the difference most during the final week of the quarter. Nobody downloads static CSV exports or rebuilds broken VLOOKUPs; uncoded software spend and missing VAT invoices surface on day one while department heads approve charges inside a single thread. Recurring SaaS renewals map straight to their NetSuite GL codes automatically, shrinking a seven-day close down to one afternoon.',
+        humanSource: '<h2>Why Automated Reconciliation Matters</h2>\n<p>Month-end close stalls when corporate card receipts sit across three Slack channels and two inboxes until the 28th. Direct card-to-ERP matching pairs receipts the minute a swipe clears, keeping <a href="/features/reconciliation">automated expense reconciliation</a> running daily so controllers aren’t spending Friday night hunting down a missing $47 Uber receipt.</p>\n<p>You feel the difference most during the final week of the quarter. Nobody downloads static CSV exports or rebuilds broken VLOOKUPs; uncoded software spend and missing VAT invoices surface on day one while department heads approve charges inside a single thread.</p>\n<table>\n  <tr><th>Workflow</th><th>Close Speed</th></tr>\n  <tr><td>Manual Spreadsheet</td><td>5–7 Business Days</td></tr>\n  <tr><td>Real-Time Sync</td><td>Same-Day Close</td></tr>\n</table>'
       },
       legal: {
         rawBadge: 'Pangram: 99.1% AI Flagged',
         rawTitle: 'Legal / Finance: Commercial Lease Audit Checklist',
-        rawMeta: 'Highlighted = uniform clause cadence + generic filler ("pivotal clauses", "optimal protection")',
-        rawRendered: '<h4 class="font-bold text-brand-ink mb-2">Key Clauses to Review Before Signing</h4><p class="mb-3"><span class="ai-flag-mark">Navigating commercial real estate agreements requires careful consideration</span> of <span class="ai-flag-mark">pivotal clauses</span>. <span class="ai-flag-mark">Furthermore</span>, prospective tenants should examine <span class="underline">commercial lease audit</span> escalation schedules for <span class="ai-flag-mark">optimal financial protection</span> across multi-year occupancy terms.</p><p class="mb-2"><span class="ai-flag-mark">It is imperative for businesses</span> to thoroughly scrutinize operating expense definitions:</p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-slate"><li>Base-year property tax stop calculation</li><li>HVAC capital vs. routine repair cap</li></ul>',
-        rawSource: '<h2>Key Clauses to Review Before Signing</h2>\n<p>Navigating commercial real estate agreements requires careful consideration of pivotal clauses. Furthermore, prospective tenants should examine <a href="/guides/commercial-lease-audit">commercial lease audit</a> escalation schedules for optimal financial protection across multi-year occupancy terms.</p>\n<p>It is imperative for businesses to thoroughly scrutinize operating expense definitions:</p>\n<ul>\n  <li>Base-year property tax stop calculation</li>\n  <li>HVAC capital vs. routine repair cap</li>\n</ul>',
-        humanBadge: 'Pangram: 0.0% AI • Intact',
+        rawMeta: 'Highlighted = uniform clause cadence + synthetic transitions ("Beyond base rent...", "imperative")',
+        rawRendered: '<h4 class="font-bold text-brand-ink mb-2">Key Clauses to Review Before Signing</h4><p class="mb-3"><span class="ai-flag-mark">Beyond base rent negotiations, commercial tenants face hidden financial exposure</span> buried inside operating expense schedules. Conducting a thorough <span class="underline">commercial lease audit</span> before execution <span class="ai-flag-mark">is imperative for protecting long-term margins</span>.</p><p class="mb-2"><span class="ai-flag-mark">Specifically, legal counsel should evaluate two high-risk pass-through provisions:</span></p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-slate"><li>Base-year property tax stop calculation</li><li>HVAC capital vs. routine repair cap</li></ul>',
+        rawSource: '<h2>Key Clauses to Review Before Signing</h2>\n<p>Beyond base rent negotiations, commercial tenants face hidden financial exposure buried inside operating expense schedules. Conducting a thorough <a href="/guides/commercial-lease-audit">commercial lease audit</a> before execution is imperative for protecting long-term margins.</p>\n<p>Specifically, legal counsel should evaluate two high-risk pass-through provisions:</p>\n<ul>\n  <li>Base-year property tax stop calculation</li>\n  <li>HVAC capital vs. routine repair cap</li>\n</ul>',
+        humanBadge: 'Pangram: 0.0% AI • Exact Anchor Lock',
         humanTitle: 'Legal / Finance: Commercial Lease Audit Checklist',
         humanMetaLeft: 'Pangram: 0.0% • GPTZero: 0.0% • Originality: 0.0%',
-        humanMetaRight: '158 words • H2 + List + Anchor preserved',
-        humanRendered: '<h4 class="font-bold text-brand-ink mb-2">Key Clauses to Review Before Signing</h4><p class="mb-3">You negotiate a base rent per square foot, sign the lease and 18 months later get hit with an uncapped CAM reconciliation bill. One vague pass-through phrase can add five figures to your annual occupancy cost. Before you sign on the dotted line of a five-year <span class="human-keep-mark underline">commercial lease</span> commitment, audit every line item for building expenses that will be passed on to your P&amp;L.</p><p class="mb-2">Pay special attention to definitions landlords rarely volunteer upfront:</p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-ink"><li><strong>Tax stops:</strong> Verify the base-year baseline reflects full building reassessment</li><li><strong>HVAC carve-outs:</strong> Draw a hard dollar cap separating filter service from $40k rooftop replacements</li></ul>',
-        humanPlain: 'Key Clauses to Review Before Signing\n\nYou negotiate a base rent per square foot, sign the lease and 18 months later get hit with an uncapped CAM reconciliation bill. One vague pass-through phrase can add five figures to your annual occupancy cost. Before you sign on the dotted line of a five-year commercial lease commitment, audit every line item for building expenses that will be passed on to your P&L.\n\nPay special attention to definitions landlords rarely volunteer upfront. First, check tax stops so the base-year property tax baseline reflects full building reassessment rather than partial construction values. Second, enforce HVAC carve-outs with a hard dollar cap separating routine filter service from forty-thousand-dollar rooftop unit replacements.',
-        humanSource: '<h2>Key Clauses to Review Before Signing</h2>\n<p>You negotiate a base rent per square foot, sign the lease and 18 months later get hit with an uncapped CAM reconciliation bill. One vague pass-through phrase can add five figures to your annual occupancy cost. Before you sign on the dotted line of a five-year <a href="/guides/commercial-lease-audit">commercial lease</a> commitment, audit every line item for building expenses that will be passed on to your P&amp;L.</p>\n<p>Pay special attention to definitions landlords rarely volunteer upfront:</p>\n<ul>\n  <li><strong>Tax stops:</strong> Verify the base-year baseline reflects full building reassessment</li>\n  <li><strong>HVAC carve-outs:</strong> Draw a hard dollar cap separating filter service from $40k rooftop replacements</li>\n</ul>'
+        humanPreserveLabel: 'H2 + List + Exact Anchor preserved',
+        humanRendered: '<h4 class="font-bold text-brand-ink mb-2">Key Clauses to Review Before Signing</h4><p class="mb-3">Tenants haggle for weeks over fifty cents per square foot on base rent, sign the agreement, and get blindsided eighteen months later by an uncapped CAM reconciliation invoice. One loose pass-through definition can tack five figures onto your annual occupancy cost. Running a line-by-line <span class="human-keep-mark underline">commercial lease audit</span> before ink hits paper catches the landlord expenses quietly shifted onto your P&amp;L.</p><p class="mb-2">Scrutinize two clauses landlords almost never volunteer to cap upfront:</p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-ink"><li><strong>Tax stops:</strong> Confirm the base-year valuation reflects a fully assessed building, not a half-vacant shell.</li><li><strong>HVAC carve-outs:</strong> Write a hard annual dollar cap separating $300 belt swaps from $42,000 rooftop replacements.</li></ul>',
+        humanPlain: 'Key Clauses to Review Before Signing\n\nTenants haggle for weeks over fifty cents per square foot on base rent, sign the agreement, and get blindsided eighteen months later by an uncapped CAM reconciliation invoice. One loose pass-through definition can tack five figures onto your annual occupancy cost. Running a line-by-line commercial lease audit before ink hits paper catches the landlord expenses quietly shifted onto your P&L.\n\nScrutinize two clauses landlords almost never volunteer to cap upfront. First, check property tax stops to confirm the base-year valuation reflects a fully assessed building rather than a half-vacant shell prior to sale. Second, demand explicit HVAC carve-outs with a hard annual dollar cap separating routine $300 belt swaps from $42,000 rooftop condenser replacements.',
+        humanSource: '<h2>Key Clauses to Review Before Signing</h2>\n<p>Tenants haggle for weeks over fifty cents per square foot on base rent, sign the agreement, and get blindsided eighteen months later by an uncapped CAM reconciliation invoice. One loose pass-through definition can tack five figures onto your annual occupancy cost. Running a line-by-line <a href="/guides/commercial-lease-audit">commercial lease audit</a> before ink hits paper catches the landlord expenses quietly shifted onto your P&amp;L.</p>\n<p>Scrutinize two clauses landlords almost never volunteer to cap upfront:</p>\n<ul>\n  <li><strong>Tax stops:</strong> Confirm the base-year valuation reflects a fully assessed building, not a half-vacant shell.</li>\n  <li><strong>HVAC carve-outs:</strong> Write a hard annual dollar cap separating $300 belt swaps from $42,000 rooftop replacements.</li>\n</ul>'
       },
       local: {
-        rawBadge: 'Pangram: 98.7% AI Flagged',
+        rawBadge: 'Pangram: 98.9% AI Flagged',
         rawTitle: 'Local SEO: Emergency HVAC Repair in Austin, TX',
-        rawMeta: 'Highlighted = generic transitions ("As temperatures soar", "crucial for", "seamless peace of mind")',
-        rawRendered: '<h4 class="font-bold text-brand-ink mb-2">Signs Your AC Compressor Is Failing</h4><p class="mb-3"><span class="ai-flag-mark">As temperatures soar in Austin</span>, maintaining a reliable cooling system is <span class="ai-flag-mark">crucial for homeowner comfort</span>. <span class="ai-flag-mark">Additionally</span>, trusted <span class="underline">emergency HVAC repair in Austin</span> technicians recommend <span class="ai-flag-mark">proactive vigilance</span> when warning signs emerge during peak summer humidity.</p><p class="mb-2"><span class="ai-flag-mark">Recognizing these vital indicators</span> early ensures <span class="ai-flag-mark">seamless peace of mind</span>:</p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-slate"><li>Breaker trips immediately on startup</li><li>Warm air despite thermostat set to 70°F</li></ul>',
-        rawSource: '<h2>Signs Your AC Compressor Is Failing</h2>\n<p>As temperatures soar in Austin, maintaining a reliable cooling system is crucial for homeowner comfort. Additionally, trusted <a href="/austin-emergency-hvac">emergency HVAC repair in Austin</a> technicians recommend proactive vigilance when warning signs emerge during peak summer humidity.</p>\n<p>Recognizing these vital indicators early ensures seamless peace of mind:</p>\n<ul>\n  <li>Breaker trips immediately on startup</li>\n  <li>Warm air despite thermostat set to 70°F</li>\n</ul>',
-        humanBadge: 'Pangram: 0.0% AI • Intact',
+        rawMeta: 'Highlighted = generic local-SEO AI opener + symmetrical symptom framing',
+        rawRendered: '<h4 class="font-bold text-brand-ink mb-2">Signs Your AC Compressor Is Failing</h4><p class="mb-3"><span class="ai-flag-mark">When triple-digit summer heat arrives in Central Texas</span>, a struggling air conditioner <span class="ai-flag-mark">quickly shifts from a minor inconvenience to an urgent household priority</span>. Booking <span class="underline">emergency HVAC repair in Austin</span> at the first sign of strain prevents complete system failure.</p><p class="mb-2"><span class="ai-flag-mark">Watch for these two critical warning indicators:</span></p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-slate"><li>Breaker trips immediately on startup</li><li>Warm air despite thermostat set to 70°F</li></ul>',
+        rawSource: '<h2>Signs Your AC Compressor Is Failing</h2>\n<p>When triple-digit summer heat arrives in Central Texas, a struggling air conditioner quickly shifts from a minor inconvenience to an urgent household priority. Booking <a href="/austin-emergency-hvac">emergency HVAC repair in Austin</a> at the first sign of strain prevents complete system failure.</p>\n<p>Watch for these two critical warning indicators:</p>\n<ul>\n  <li>Breaker trips immediately on startup</li>\n  <li>Warm air despite thermostat set to 70°F</li>\n</ul>',
+        humanBadge: 'Pangram: 0.0% AI • Geo + Link Intact',
         humanTitle: 'Local SEO: Emergency HVAC Repair in Austin, TX',
         humanMetaLeft: 'Pangram: 0.0% • GPTZero: 0.0% • Originality: 0.0%',
-        humanMetaRight: '154 words • Geo + List + Link preserved',
-        humanRendered: '<h4 class="font-bold text-brand-ink mb-2">Signs Your AC Compressor Is Failing</h4><p class="mb-3">If you’re in Round Rock in July when it’s 103 degrees outside and hallway vents push muggy air, your outdoor condenser likely gave warnings 24 hours earlier. Cranking the thermostat down to 68 can overheat a struggling run capacitor and lock up the compressor. Catching those signs early lets you book <span class="human-keep-mark underline">emergency HVAC repair in Austin</span> before a $220 capacitor swap turns into a $2,800 compressor replacement.</p><p class="mb-2">Shut the unit off at the thermostat if you notice either pattern:</p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-ink"><li><strong>Hard-start breaker trip:</strong> The 240V outdoor disconnect snaps off within 3 seconds</li><li><strong>Ambient supply air:</strong> Blower runs constantly while registers push warm air at 70°F</li></ul>',
-        humanPlain: 'Signs Your AC Compressor Is Failing\n\nIf you’re in Round Rock in July when it’s 103 degrees outside and hallway vents push muggy air, your outdoor condenser likely gave warnings 24 hours earlier. Cranking the thermostat down to 68 can overheat a struggling run capacitor and lock up the compressor. Catching those signs early lets you book emergency HVAC repair in Austin before a $220 capacitor swap turns into a $2,800 compressor replacement.\n\nShut the unit off at the thermostat if you notice either pattern. First, watch for a hard-start breaker trip where the 240V outdoor disconnect snaps off within 3 seconds. Second, check for ambient supply air where the blower runs constantly while registers push warm air even set to 70°F.',
-        humanSource: '<h2>Signs Your AC Compressor Is Failing</h2>\n<p>If you’re in Round Rock in July when it’s 103 degrees outside and hallway vents push muggy air, your outdoor condenser likely gave warnings 24 hours earlier. Cranking the thermostat down to 68 can overheat a struggling run capacitor and lock up the compressor. Catching those signs early lets you book <a href="/austin-emergency-hvac">emergency HVAC repair in Austin</a> before a $220 capacitor swap turns into a $2,800 compressor replacement.</p>\n<p>Shut the unit off at the thermostat if you notice either pattern:</p>\n<ul>\n  <li><strong>Hard-start breaker trip:</strong> The 240V outdoor disconnect snaps off within 3 seconds</li>\n  <li><strong>Ambient supply air:</strong> Blower runs constantly while registers push warm air at 70°F</li>\n</ul>'
+        humanPreserveLabel: 'Geo + List + Link preserved',
+        humanRendered: '<h4 class="font-bold text-brand-ink mb-2">Signs Your AC Compressor Is Failing</h4><p class="mb-3">When it’s 103°F in Round Rock in July and your hallway vents start pushing sticky air, the outdoor condenser usually gave you a warning the day before. Dropping the wall thermostat down to 68 won’t force cold air—it just cooks a weak run capacitor until the compressor locks up solid. Calling for <span class="human-keep-mark underline">emergency HVAC repair in Austin</span> early is often the difference between a $220 capacitor swap and a $2,900 compressor bill.</p><p class="mb-2">Flip the system off at the thermostat if you spot either symptom:</p><ul class="list-disc list-inside text-xs space-y-1 font-mono text-brand-ink"><li><strong>Instant 240V breaker trip:</strong> The outdoor disconnect buzzes loudly and snaps off within three seconds of kicking on.</li><li><strong>Warm supply registers at 70°F:</strong> Your indoor blower runs nonstop, yet ceiling vents blow room-temperature air.</li></ul>',
+        humanPlain: 'Signs Your AC Compressor Is Failing\n\nWhen it’s 103°F in Round Rock in July and your hallway vents start pushing sticky air, the outdoor condenser usually gave you a warning the day before. Dropping the wall thermostat down to 68 won’t force cold air—it just cooks a weak run capacitor until the compressor locks up solid. Calling for emergency HVAC repair in Austin early is often the difference between a $220 capacitor swap and a $2,900 compressor bill.\n\nFlip the system off at the thermostat if you spot either symptom. First, listen for an instant 240V breaker trip where the outdoor disconnect buzzes loudly and snaps off within three seconds of kicking on. Second, check for warm supply registers where your indoor blower runs nonstop at a 70°F setting, yet every ceiling vent blows room-temperature air.',
+        humanSource: '<h2>Signs Your AC Compressor Is Failing</h2>\n<p>When it’s 103°F in Round Rock in July and your hallway vents start pushing sticky air, the outdoor condenser usually gave you a warning the day before. Dropping the wall thermostat down to 68 won’t force cold air—it just cooks a weak run capacitor until the compressor locks up solid. Calling for <a href="/austin-emergency-hvac">emergency HVAC repair in Austin</a> early is often the difference between a $220 capacitor swap and a $2,900 compressor bill.</p>\n<p>Flip the system off at the thermostat if you spot either symptom:</p>\n<ul>\n  <li><strong>Instant 240V breaker trip:</strong> The outdoor disconnect buzzes loudly and snaps off within three seconds of kicking on.</li>\n  <li><strong>Warm supply registers at 70°F:</strong> Your indoor blower runs nonstop, yet ceiling vents blow room-temperature air.</li>\n</ul>'
       }
     };
-
-    const heroCopyBtn = document.getElementById('hero-copy-sample-btn');
-    heroCopyBtn?.addEventListener('click', () => {
-      safeCopyText(sampleData.saas.humanPlain);
-      heroCopyBtn.textContent = 'Copied! Test in Pangram';
-      setTimeout(() => {
-        heroCopyBtn.textContent = 'Copy 158w Sample';
-      }, 2400);
-    });
 
     const copySampleTextBtn = document.getElementById('copy-sample-text-btn');
     const copySampleStatusEl = document.getElementById('copy-sample-status');
@@ -1183,18 +1669,20 @@
       if (!data) return;
       const textToCopy = sampleFormat === 'source' ? data.humanSource : data.humanPlain;
       safeCopyText(textToCopy);
-      copySampleTextBtn.textContent = 'Copied!';
-      if (copySampleStatusEl) copySampleStatusEl.textContent = 'Copied — paste into Pangram';
+      copySampleTextBtn.textContent = '✓ Copied! Now Click Step 2 →';
+      if (copySampleStatusEl) copySampleStatusEl.textContent = 'Copied to clipboard';
       setTimeout(() => {
-        copySampleTextBtn.textContent = 'Copy & Test in Pangram';
+        copySampleTextBtn.textContent = '1. Copy Human Sample';
         if (copySampleStatusEl) copySampleStatusEl.textContent = '0.0% AI Verified';
-      }, 2500);
+      }, 2600);
     });
 
     const samplePanelEl = document.getElementById('sample-gallery-panel');
     function renderSampleGallery() {
       const data = sampleData[activeSampleKey];
       if (!data) return;
+      const exactWords = countWords(data.humanPlain);
+
       document.getElementById('sample-raw-badge').textContent = data.rawBadge;
       document.getElementById('sample-raw-title').textContent = data.rawTitle;
       document.getElementById('sample-raw-meta').textContent = data.rawMeta;
@@ -1202,7 +1690,7 @@
       document.getElementById('sample-human-title').textContent = data.humanTitle;
       const metaEl = document.getElementById('sample-human-meta');
       if (metaEl) {
-        metaEl.innerHTML = `<span>${data.humanMetaLeft}</span><span class="text-brand-ink">${data.humanMetaRight}</span>`;
+        metaEl.innerHTML = `<span>${data.humanMetaLeft}</span><span class="text-brand-ink">${exactWords} words • ${data.humanPreserveLabel}</span>`;
       }
 
       const rawEl = document.getElementById('sample-raw-body');
@@ -1299,6 +1787,7 @@
     const modalForm = document.getElementById('modal-intake-form');
     const modalConfirm = document.getElementById('modal-confirmation');
     const emailInput = document.getElementById('intake-email');
+    const draftInput = document.getElementById('intake-draft');
     const emailError = document.getElementById('intake-email-error');
     let activePlanKey = 'blind-test';
     let lastTriggerEl = null;
@@ -1306,48 +1795,44 @@
 
     const modalPlans = {
       'blind-test': {
-        pillTop: 'Blind Test',
-        pillSub: '$99 once',
-        badge: '$99 ONE-TIME • 7,500 WORDS',
-        summary: '$0 to reserve • $99 link sent',
-        cta: 'Get Portal & Checkout Link ($99) →',
-        termsLine: '5 rewrites (≤7,500w) · 0.0% AI PDFs · 100% refunded or credited to your first pack',
-        title: 'The 5-Article Blind Test',
-        desc: 'Send 5 flagged AI drafts. Get 100% human prose + Pangram 0.0% AI PDFs in <4 hours.',
-        guarantee: 'No card entered here — pay only when you upload drafts. 100% money-back guarantee.'
+        pillTop: '5-Credit Pack',
+        pillSub: '$99 intro',
+        badge: '$99 ONE-TIME • 5 CREDITS (VALID 12 MO)',
+        summary: '$99 one-time • Valid 12 months • $0 auto-rebill',
+        cta: 'Open Private Portal & Checkout ($99) →',
+        title: 'Starter 5-Article Credit Pack (7,500w)',
+        desc: 'Submit 1 draft today (~1,500w) and bank 4 credits for up to 12 months—or drop all 5 at once. Full $99 can be credited toward Grow or Build.',
+        guarantee: '100% refunded if flagged or unimpressed (keep the rewrite) • Valid 12 months.'
       },
       'start': {
-        pillTop: 'Start',
+        pillTop: 'Start (25k)',
         pillSub: '$500 pack',
         badge: '25,000 WORDS • $500 ($20/1K)',
-        summary: '$500 one-time pack • Valid 3 months',
-        cta: 'Get Portal & Checkout Link ($500) →',
-        termsLine: '25,000 words (~18 articles) · Credits expire after 3 months · Buy overage credits anytime',
-        title: 'Start Word Pack',
-        desc: '25,000 Clean-Room Human Words at $20/1k with zero subscriptions. Credits stay valid for 3 months.',
-        guarantee: 'No subscriptions or auto-rebill — just buy what you need.'
+        summary: '$500 one-time pack • Valid 12 months',
+        cta: 'Open Private Portal & Checkout ($500) →',
+        title: 'Start Word Pack (25,000w)',
+        desc: '25,000 human words (~16 articles @ 1,500w) at $20/1k. Spend one draft at a time for 12 full months.',
+        guarantee: 'Zero subscriptions or auto-rebill • Credits valid for 12 months.'
       },
       'grow': {
-        pillTop: 'Grow',
+        pillTop: 'Grow (100k)',
         pillSub: '$1,500 pack',
         badge: 'MOST POPULAR • $1,500 ($15/1K)',
-        summary: '$1,500 one-time pack • Valid 3 months',
-        cta: 'Get Portal & Checkout Link ($1,500) →',
-        termsLine: '100,000 words (~75 articles) · Credits expire after 3 months · Buy overage credits anytime',
-        title: 'Grow Word Pack',
-        desc: '100,000 Clean-Room Human Words at $15/1k (25% bulk savings) with zero subscriptions. Valid 3 months.',
-        guarantee: 'No subscriptions or auto-rebill — just buy what you need.'
+        summary: '$1,500 one-time ($1,401 w/ Starter credit) • Valid 12 mo',
+        cta: 'Open Private Portal & Checkout ($1,500) →',
+        title: 'Grow Word Pack (100,000w)',
+        desc: '100,000 human words (~66 articles @ 1,500w) at $15/1k—save $500 (25% off). Valid for 12 full months.',
+        guarantee: 'Zero subscriptions or auto-rebill • Credits valid for 12 months.'
       },
       'build': {
-        pillTop: 'Build',
+        pillTop: 'Build (350k)',
         pillSub: '$3,850 pack',
         badge: 'LOWEST RATE • $3,850 ($11/1K)',
-        summary: '$3,850 one-time pack • Cards, ACH & Invoice',
-        cta: 'Get Portal & Checkout Link ($3,850) →',
-        termsLine: '350k words · Valid 3 months · Dedicated API SLA + Slack, Unlimited Voices, 4h Rush & ACH',
-        title: 'Build Word Pack',
-        desc: '350,000 Clean-Room Human Words at $11/1k plus Dedicated API SLA, Priority Slack, Unlimited Voices, 4h rush, and ACH.',
-        guarantee: 'No subscriptions or auto-rebill — Card, ACH & invoicing supported.'
+        summary: '$3,850 one-time • Card, ACH or Invoice • Valid 12 mo',
+        cta: 'Open Portal / Request Invoice ($3,850) →',
+        title: 'Build Agency Pack (350,000w)',
+        desc: '350,000 human words (~233 articles) at $11/1k + Dedicated API SLA, Priority Slack, Unlimited Voices & ACH.',
+        guarantee: 'Card, ACH & agency invoicing supported • Credits valid for 12 months.'
       }
     };
 
@@ -1356,6 +1841,7 @@
       const plan = modalPlans[activePlanKey];
 
       document.getElementById('modal-badge').textContent = plan.badge;
+      document.getElementById('modal-plan-desc').textContent = plan.desc;
       document.getElementById('modal-total-summary').textContent = plan.summary;
       document.getElementById('modal-guarantee-note').textContent = plan.guarantee;
       document.getElementById('modal-submit-btn').textContent = plan.cta;
@@ -1416,9 +1902,10 @@
     modalForm?.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = emailInput.value.trim();
+      const draftVal = draftInput ? draftInput.value.trim() : '';
       const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
       if (!validEmail) {
-        emailError.textContent = 'Enter a valid work email so we can send your encrypted portal link.';
+        emailError.textContent = 'Enter a valid email address so we can send your private portal link.';
         emailError.classList.remove('hidden');
         emailInput.classList.add('border-brand-danger');
         emailInput.focus();
@@ -1429,17 +1916,18 @@
       const info = modalPlans[activePlanKey];
       const refCode = `AN-${Math.floor(10000 + Math.random() * 89999)}`;
       const billingText = activePlanKey === 'blind-test'
-        ? 'One-Time ($99 Credited to First Pack)'
-        : 'One-Time Word Pack (Valid 3 Months • Zero Auto-Rebill)';
+        ? 'One-Time $99 (Valid 12 Months • $99 Upgrade Credit Included)'
+        : 'One-Time Word Pack (Valid 12 Months • Zero Auto-Rebill)';
 
-      document.getElementById('confirm-heading').textContent = `${info.title} — Workspace Ready`;
-      document.getElementById('confirm-summary').textContent = `Your encrypted upload portal and checkout link for ${info.title} are queued for ${email}.`;
+      document.getElementById('confirm-heading').textContent = `${info.title} — Portal Ready`;
+      document.getElementById('confirm-summary').textContent = `Your private clean-room portal and checkout link are queued for ${email}.`;
 
       const detailLines = [
-        `INTAKE ID: ${refCode}`,
-        `TIER: ${info.title}`,
-        `BILLING: ${billingText}`,
-        `SLA: Under 4 Hours (0.0% AI Verified)`
+        `PORTAL ID: ${refCode}`,
+        `PACK: ${info.title}`,
+        `VALIDITY: ${billingText}`,
+        draftVal ? `QUEUED DRAFT: ${draftVal}` : `FIRST DRAFT: Upload 1 or more inside portal`,
+        `SLA: Under 4 Hours (0.0% AI Verified on Pangram)`
       ];
       lastIntakeSummaryText = detailLines.join('\n');
 
@@ -1448,6 +1936,7 @@
       detailLines.forEach(line => {
         const [label, ...rest] = line.split(': ');
         const row = document.createElement('div');
+        row.className = 'break-words';
         const strong = document.createElement('strong');
         strong.textContent = `${label}: `;
         row.appendChild(strong);
@@ -1467,7 +1956,7 @@
       if (!lastIntakeSummaryText) return;
       safeCopyText(lastIntakeSummaryText);
       copyIntakeBtn.textContent = 'Copied!';
-      setTimeout(() => { copyIntakeBtn.textContent = 'Copy Summary'; }, 2000);
+      setTimeout(() => { copyIntakeBtn.textContent = 'Copy Receipt'; }, 2000);
     });
 
     document.getElementById('modal-edit-btn')?.addEventListener('click', () => {
@@ -1484,30 +1973,30 @@
       if (e.target === modal) closeModal();
     });
 
-    // Policy & SLA Modal
+    // Policy & SLA Modal (Updated to 12-Month Credit Validity & Dual-Persona Privacy)
     const policyMap = {
       sla: {
         badge: '200% ZERO-FLAG SLA',
         title: '200% Zero-Flag & 4-Hour Turnaround SLA',
         body: [
-          'Every article delivered through Angram™ includes live verification across Pangram, GPTZero, and Originality.ai.',
-          'If any piece triggers an AI flag (>0.0% AI), drops a required keyword/link, fails native readability review, or exceeds our 4-hour turnaround SLA, we rewrite it free within 2 hours and automatically credit 200% of the word count back to your account.'
+          'Every article delivered through Angram™ clears Pangram, GPTZero, and Originality.ai at 0.0% AI prior to release.',
+          'If any deliverable ever triggers an AI flag (>0.0% AI), drops a locked anchor link or keyword, or exceeds our 4-hour turnaround SLA, we rewrite it free within 2 hours and credit 200% of the word count back to your balance.'
         ]
       },
       security: {
-        badge: 'NDA & DATA ISOLATION',
-        title: 'Clean-Room Confidentiality & Zero AI Training',
+        badge: 'NDA & AUTHOR ANONYMITY',
+        title: 'Clean-Room Confidentiality, Blind Desk & Zero AI Training',
         body: [
-          'Your agency drafts, target keywords, and client domain lists are protected under strict mutual confidentiality.',
-          'Inputs are never used to train AI models. Writers receive stripped conceptual briefs without client domain exposure, and automated post-delivery data purge schedules are available across all agency tiers.'
+          'Whether you publish under your personal name or manage agency clients, your drafts, bylines, and domains are protected under strict mutual confidentiality.',
+          'Writers work inside an anonymized clean-room interface without seeing your identity or URL. Inputs are never used to train AI models, and automated post-delivery data purge is available on every account.'
         ]
       },
       ip: {
-        badge: 'IP & REFUND TERMS',
-        title: '100% Client IP Ownership & Blind Test Refund Policy',
+        badge: 'IP, 12-MO CREDITS & REFUNDS',
+        title: '100% IP Ownership, 12-Month Credit Validity & Refund Terms',
         body: [
-          'Upon delivery, 100% of work-for-hire copyright and publishing rights transfer immediately to your agency and clients.',
-          'On the $99 5-Article Blind Test, if your team is not thrilled with native readability or if any paragraph trips Pangram, email us once for a full $99 refund. Word packs carry no subscriptions or auto-rebill, stay valid for 3 months, and allow overage credits anytime.'
+          'Upon delivery, 100% of work-for-hire copyright and publishing rights transfer immediately to you or your client.',
+          'All word packs—including the $99 5-Article Starter Pack—remain valid for 12 full months with zero subscriptions or auto-rebills. On your Starter Pack, if any paragraph flags Pangram or you aren’t thrilled with the prose, reply once to your delivery email for a 100% refund and keep the rewrite.'
         ]
       }
     };
@@ -1566,4 +2055,5 @@
     });
   </script>
 </body>
+
 </html>
